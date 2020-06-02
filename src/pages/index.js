@@ -20,7 +20,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <About />
-    <Work />
+    {/* <Work />
     <Education />
     <Skills />
     <Projects />
@@ -29,7 +29,7 @@ const IndexPage = () => (
     <Certifications />
     <Photography />
     <Resume />
-    <Contact />
+    <Contact /> */}
   </Layout>
 )
 

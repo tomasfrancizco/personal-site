@@ -32,8 +32,7 @@ body {
 }
 
 .section {
-  height: 250px;
-  outline: 1px solid red;
+  height: auto;
   width: 100%;
 }
 
@@ -74,6 +73,27 @@ body {
   position: absolute;
   top: 0;
   width: calc(100% - 60px);
+}
+
+#about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#about img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+#social-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+#social-list img {
+  width: 20px;
 }
 
 /* 
