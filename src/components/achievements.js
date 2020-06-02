@@ -1,7 +1,7 @@
 import React from "react";
 
 const Achievements = () => (
-  <div>Achievements</div>
+  <div className="section" id="achievements">Achievements</div>
 );
 
 export default Achievements;

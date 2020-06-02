@@ -1,7 +1,7 @@
 import React from "react";
 
 const Education = () => (
-  <div>Education</div>
+  <div className="section" id="education">Education</div>
 );
 
 export default Education;
