@@ -20,9 +20,11 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <About />
-    {/* <Work />
-    <Education />
-    <Skills />
+    <div id="work-education">
+      <Work />
+      <Education />
+    </div>
+    {/* <Skills />
     <Projects />
     <Languages />
     <Achievements />
