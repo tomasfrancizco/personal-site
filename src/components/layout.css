@@ -22,7 +22,7 @@ FFF Blanco
 }
 
 html {
-  height: 100%;
+  min-height: 100%;
   background-color: #fafafa;
   color: #262626;
 }
@@ -55,6 +55,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   border-right: 1px solid #dbdbdb;
+  opacity: 0.9;
 }
 
 #sidebar img {
@@ -112,12 +113,6 @@ body {
   margin: 0 5px;
 }
 
-#work-education {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* ------------------------------------------------------------------------ */
 
 @media only screen and (min-width: 768px){
@@ -172,10 +167,6 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-  }
-
-  #about {
-    margin-top: 50px;
   }
 
 }

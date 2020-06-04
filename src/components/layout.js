@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Sidebar from "./common/sidebar"
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./layout.css"
 
 import Footer from "./common/footer"
