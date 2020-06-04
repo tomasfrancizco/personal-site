@@ -4,7 +4,7 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
     <div id="sidebar">
-      <Link to="/#about"><img title="About" src="../../icons/about.png" alt="about"/></Link>
+      <Link to="/#cover"><img title="About" src="../../icons/about.png" alt="about"/></Link>
       <Link to="/#work"><img title="Work" src="../../icons/work.png" alt="work"/></Link>
       <Link to="/#education"><img title="Education" src="../../icons/education.png" alt="education"/></Link>
       <Link to="/#skills"><img title="Skills" src="../../icons/skills.png" alt="skills"/></Link>

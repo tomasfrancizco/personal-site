@@ -6,7 +6,7 @@ const About = () => (
     <div className="section" id="cover">
       <img src={profilePic} alt="TomasFreire" />
       <div id="cover-info">
-        <h1>Tomás Freire Knight</h1>
+        <h1 style={{textAlign: "center"}}>Tomás Freire Knight</h1>
         <p>MERN Stack Web Developer</p>
         <ul id="social-list">
           <li>

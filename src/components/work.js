@@ -1,25 +1,40 @@
 import React from "react"
 import { Card, Button } from "react-bootstrap"
+import { Link } from "gatsby";
 
 import warnerMedia from "../images/warnermedia.png"
 
 const Work = () => (
   <div className="section" id="work">
     <h3>Work</h3>
-    <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src={warnerMedia} />
-      <Card.Body>
-        <Card.Title>Sales Operations Manager @ WarnerMedia</Card.Title>
-        <Card.Subtitle>2015 - 2020</Card.Subtitle>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <a href="https://www.warnermediagroup.com/" target="_blank">
-          <Button variant="primary">Go to WarnerMedia site</Button>
-        </a>
-      </Card.Body>
-    </Card>
+    <div className="card-container">
+      <Card style={{ width: "18rem" }} className="card">
+        <Card.Img variant="top" src={warnerMedia} />
+        <Card.Body>
+          <Card.Title>Sales Operations Manager</Card.Title>
+          <Card.Subtitle>@ <a href="https://www.warnermediagroup.com/" target="_blank">WarnerMedia México</a></Card.Subtitle><br></br>
+          <Card.Subtitle>2015 - 2020</Card.Subtitle>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </Card.Text>
+          <Link to="/work/salesopsmanager">See description</Link>
+        </Card.Body>
+      </Card>
+      <Card style={{ width: "18rem" }} className="card">
+        <Card.Img variant="top" src={warnerMedia} />
+        <Card.Body>
+          <Card.Title>Ad Sales Supervisor</Card.Title>
+          <Card.Subtitle>@ <a href="https://www.warnermediagroup.com/" target="_blank">WarnerMedia Argentina</a></Card.Subtitle><br></br>
+          <Card.Subtitle>2009 - 2015</Card.Subtitle>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </Card.Text>
+          <Link to="/work/adsalessupervisor">See description</Link>
+        </Card.Body>
+      </Card>
+    </div>
   </div>
 )
 
