@@ -12,7 +12,7 @@ const Work = () => (
         <Card.Img variant="top" src={warnerMedia} />
         <Card.Body>
           <Card.Title>Sales Operations Manager</Card.Title>
-          <Card.Subtitle>@ <a href="https://www.warnermediagroup.com/" target="_blank">WarnerMedia México</a></Card.Subtitle><br></br>
+          <Card.Subtitle>@ <a href="https://www.warnermediagroup.com/" target="_blank">WarnerMedia</a></Card.Subtitle><br></br>
           <Card.Subtitle>2015 - 2020</Card.Subtitle>
           <Card.Text>
             Some quick example text to build on the card title and make up the
@@ -25,7 +25,7 @@ const Work = () => (
         <Card.Img variant="top" src={warnerMedia} />
         <Card.Body>
           <Card.Title>Ad Sales Supervisor</Card.Title>
-          <Card.Subtitle>@ <a href="https://www.warnermediagroup.com/" target="_blank">WarnerMedia Argentina</a></Card.Subtitle><br></br>
+          <Card.Subtitle>@ <a href="https://www.warnermediagroup.com/" target="_blank">WarnerMedia</a></Card.Subtitle><br></br>
           <Card.Subtitle>2009 - 2015</Card.Subtitle>
           <Card.Text>
             Some quick example text to build on the card title and make up the
