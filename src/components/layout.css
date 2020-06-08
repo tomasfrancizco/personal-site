@@ -113,6 +113,17 @@ body {
   margin: 0 5px;
 }
 
+#about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about > img {
+  width: 50%;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: 80%;
@@ -178,6 +189,14 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+
+  #about {
+    flex-direction: row;
+  }
+
+  #about > img {
+    width: 30%;
   }
 
   .card-container {
