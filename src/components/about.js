@@ -1,25 +1,28 @@
 import React from "react"
+import Typewriter from "typewriter-effect"
 // import profilePic from "../images/tomasFreire.png"
 import profilePic2 from "../images/tomasFreire2.jpg"
 // import profilePic3 from "../images/babyBoss.png"
 
-import nyantocat from "../images/octodex/nyantocat.gif"
-import codercat from "../images/octodex/codercat.jpg"
-import eclipseCat from "../images/octodex/total-eclipse-of-the-octocat.jpg"
-import original from "../images/octodex/original.png"
-import defunktocat from "../images/octodex/defunktocat.png"
-import hipster from "../images/octodex/hipster-partycat.jpg"
-import linktocat from "../images/octodex/linktocat.jpg"
-import diaDeMuertos from "../images/octodex/octocat-de-los-muertos.jpg"
-import oktobercat from "../images/octodex/oktobercat.png"
-import orderedList from "../images/octodex/orderedlistocat.png"
-import plumber from "../images/octodex/plumber.jpg"
-import homercat from "../images/octodex/homercat.png"
-import droidtocat from "../images/octodex/droidtocat.png"
-import thanktocat from "../images/octodex/thanktocat.png"
-import visionary from "../images/octodex/visionary.jpg"
 import daftpunktocatguy from "../images/octodex/daftpunktocat-guy.gif"
 import daftpunkttocatthomas from "../images/octodex/daftpunktocat-thomas.gif"
+import original from "../images/octodex/original.png"
+import oktobercat from "../images/octodex/oktobercat.png"
+import orderedList from "../images/octodex/orderedlistocat.png"
+import homercat from "../images/octodex/homercat.png"
+
+// import nyantocat from "../images/octodex/nyantocat.gif"
+// import codercat from "../images/octodex/codercat.jpg"
+// import eclipseCat from "../images/octodex/total-eclipse-of-the-octocat.jpg"
+// import defunktocat from "../images/octodex/defunktocat.png"
+// import hipster from "../images/octodex/hipster-partycat.jpg"
+// import linktocat from "../images/octodex/linktocat.jpg"
+// import diaDeMuertos from "../images/octodex/octocat-de-los-muertos.jpg"
+// import plumber from "../images/octodex/plumber.jpg"
+// import droidtocat from "../images/octodex/droidtocat.png"
+// import thanktocat from "../images/octodex/thanktocat.png"
+// import visionary from "../images/octodex/visionary.jpg"
+
 import mummytocat from "../images/octodex/mummytocat.gif"
 
 const About = () => {
@@ -39,7 +42,26 @@ const About = () => {
         <img src={profilePic2} alt="TomasFreire" />
         <div id="cover-info">
           <h1 style={{ textAlign: "center" }}>Tomás Freire Knight</h1>
-          <p>MERN Stack Web Developer</p>
+          {/* <p>MERN Stack Web Developer</p> */}
+          <Typewriter
+            options={{
+              loop: true
+            }}
+            onInit={typewriter => {
+              typewriter
+                .typeString("Full Stack Web Developer")
+                .callFunction(() => {
+                  console.log("String typed out!")
+                })
+                .pauseFor(2500)
+                .deleteAll()
+
+                .callFunction(() => {
+                  console.log("All strings were deleted")
+                })
+                .start()
+            }}
+          />
           <ul id="social-list">
             <li>
               <a href="https://github.com/tomasfrancizco" target="_blank">
