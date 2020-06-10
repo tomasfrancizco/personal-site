@@ -103,7 +103,7 @@ body {
   margin-top: 20px;
 }
 
-#cover-info > p{
+#cover-info > p {
   margin: 20px 0;
 }
 
@@ -137,22 +137,40 @@ body {
   width: 50%;
 }
 
-.card-container {
+.card {
+  margin: 5px;
+  height: 98%;
+  transition: border 0.1s;
+  font-size: 0.5em;
+}
+
+.card:hover {
+  border: 1px solid #acacac;
+}
+
+.we-card-container {
   display: grid;
   grid-template-columns: 80%;
   place-items: center;
   place-content: center;
-  max-width: 900px;
+  /* max-width: 900px; */
 }
 
-.card {
-  margin: 5px;
-  height: 98%;
+.skills-card-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  place-items: center;
+  place-content: center;
+}
+
+.skills-card {
+  width: 98%;
+  padding: 2px;
 }
 
 /* ------------------------------------------------------------------------ */
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   .section {
     padding: 80px;
     width: 80%;
@@ -216,11 +234,18 @@ body {
     width: 30%;
   }
 
-  .card-container {
+  .we-card-container {
     display: grid;
     grid-template-columns: 50% 50%;
     place-items: center;
     place-content: center;
   }
 
+  .card {
+    margin: 5px 5%;
+  }
+
+  .skills-card-container {
+    grid-template-columns: 45% 45% 45%;
+  }
 }
