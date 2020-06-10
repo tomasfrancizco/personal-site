@@ -50,15 +50,8 @@ const About = () => {
             onInit={typewriter => {
               typewriter
                 .typeString("Full Stack Web Developer")
-                .callFunction(() => {
-                  console.log("String typed out!")
-                })
                 .pauseFor(2500)
                 .deleteAll()
-
-                .callFunction(() => {
-                  console.log("All strings were deleted")
-                })
                 .start()
             }}
           />

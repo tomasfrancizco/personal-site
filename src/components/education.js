@@ -6,7 +6,7 @@ import uces from "../images/uces.jpg"
 
 const Education = () => (
   <div className="section" id="education">
-    <h3>Education</h3>
+    <h3 className="section-title">Education</h3>
     <div className="card-container">
       <Card style={{ width: "18rem" }} className="card">
         <Card.Img variant="top" src={ironhack} />

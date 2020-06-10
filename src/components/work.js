@@ -6,7 +6,7 @@ import warnerMedia from "../images/warnermedia.png"
 
 const Work = () => (
   <div className="section" id="work">
-    <h3>Work</h3>
+    <h3 className="section-title">Work</h3>
     <div className="card-container">
       <Card style={{ width: "18rem" }} className="card">
         <Card.Img variant="top" src={warnerMedia} />
