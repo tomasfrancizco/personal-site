@@ -1,6 +1,6 @@
 import React from "react"
 // import profilePic from "../images/tomasFreire.png"
-import profilePic2 from "../images/tomasFreire2.png"
+import profilePic2 from "../images/tomasFreire2.jpg"
 // import profilePic3 from "../images/babyBoss.png"
 
 import nyantocat from "../images/octodex/nyantocat.gif"
@@ -24,24 +24,12 @@ import mummytocat from "../images/octodex/mummytocat.gif"
 
 const About = () => {
   const octoFiles = [
-    nyantocat,
-    codercat,
     original,
-    eclipseCat,
-    defunktocat,
-    hipster,
-    linktocat,
-    diaDeMuertos,
     oktobercat,
     orderedList,
-    plumber,
     homercat,
-    droidtocat,
-    thanktocat,
-    visionary,
     daftpunktocatguy,
     daftpunkttocatthomas,
-    mummytocat,
   ]
   const octoImg = octoFiles[Math.floor(Math.random() * octoFiles.length)]
 
@@ -103,29 +91,16 @@ const About = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis
             vestibulum diam, nec placerat dolor. Morbi porta, lacus vitae
             pharetra facilisis, felis augue placerat enim, ac tempus mi augue
-            vehicula odio. Suspendisse nec neque pharetra, hendrerit justo
-            elementum, venenatis tellus. Sed egestas, turpis a luctus aliquet,
-            erat ligula viverra nunc, a porttitor urna ipsum ut nisi. Fusce et
-            libero eget metus ullamcorper varius. Suspendisse potenti. Donec
-            lobortis, eros et tristique posuere, turpis ante pellentesque dui,
-            sit amet placerat erat tellus ac purus. Praesent eu ante malesuada
-            nibh volutpat porttitor vel eu mi.<br></br>
+            vehicula odio. Suspendisse nec neque pharetra, hendrerit justo.
+            <br></br>
             <br />
             Pellentesque erat massa, mollis et hendrerit non, tempor vel velit.
             Maecenas semper libero sit amet turpis pharetra, eu viverra sapien
             luctus. Phasellus eu metus aliquam, semper augue sed, varius odio.
             Aliquam dignissim posuere ante sit amet vestibulum. Aenean nec massa
             risus. Pellentesque semper tincidunt eleifend. Ut rhoncus rutrum
-            sollicitudin. Aliquam eget nisl justo. Nulla ultricies commodo ipsum
-            rutrum fermentum. Cras ex eros, euismod id tempus ut, imperdiet a
-            ipsum. Quisque viverra pharetra sapien, et ullamcorper dui rutrum
-            eget. Fusce leo lacus, facilisis nec mi ac, varius dictum dui. Nunc
-            malesuada, lacus vitae egestas mollis, sem justo euismod mi, vel
-            auctor nibh nisi non lorem. Fusce nec libero in ipsum pharetra
-            eleifend quis hendrerit metus. Sed consequat lorem vel libero
-            ullamcorper elementum. Nam blandit massa vel augue semper ultricies.
-            Pellentesque quis massa ut tellus dignissim interdum quis et tellus.
-            Morbi ac metus ac velit tempus euismod vel id nisi.
+            sollicitudin. Aliquam eget nisl justo. Nulla ultricies commodo
+            ipsum.
           </p>
         </div>
       </div>

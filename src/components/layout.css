@@ -83,7 +83,8 @@ body {
 
 #cover > img {
   width: 200px;
-  border-radius: 10px;
+  border-radius: 100px;
+  border: 5px solid #c9c9c9;
 }
 
 #cover-info {
@@ -129,6 +130,7 @@ body {
   grid-template-columns: 80%;
   place-items: center;
   place-content: center;
+  max-width: 900px;
 }
 
 .card {

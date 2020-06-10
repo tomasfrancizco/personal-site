@@ -22,8 +22,8 @@ const IndexPage = () => (
     <About />
     <Work />
     <Education />
-    {/* <Skills />
-    <Projects />
+    <Skills />
+    {/* <Projects />
     <Languages />
     <Achievements />
     <Certifications />
