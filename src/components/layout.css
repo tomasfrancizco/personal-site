@@ -91,8 +91,8 @@ body {
 
 #cover > img {
   width: 200px;
-  border-radius: 100px;
-  border: 5px solid #c9c9c9;
+  /* border-radius: 100px; */
+  /* border: 5px solid #c9c9c9; */
 }
 
 #cover-info {
@@ -101,10 +101,6 @@ body {
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
-}
-
-#cover-info > p {
-  margin: 20px 0;
 }
 
 .Typewriter {
@@ -197,6 +193,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     border-right: 1px solid #dbdbdb;
+    opacity: 1;
   }
 
   #main {
@@ -210,20 +207,22 @@ body {
     align-items: center;
     margin-top: 40px;
     flex-direction: row;
-  }
-
-  #cover > img {
-    margin-right: 30px;
-  }
-
-  #cover-info {
-    margin: 20px 0 0 30px;
+    color: #000810;
   }
 
   #cover-info {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    margin: 20px 0 0 -10px;
+    width: 50%;
+  }
+
+  #cover.section {
+    background-color: #d7dff2;
+    margin: 0;
+    width: 100%;
+    padding: 80px 80px 0 80px;
   }
 
   #about {
@@ -244,7 +243,9 @@ body {
   .card {
     margin: 5px 5%;
   }
+}
 
+@media only screen and (min-width: 960px){
   .skills-card-container {
     grid-template-columns: 45% 45% 45%;
   }

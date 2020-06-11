@@ -3,6 +3,7 @@ import Typewriter from "typewriter-effect"
 // import profilePic from "../images/tomasFreire.png"
 import profilePic2 from "../images/tomasFreire2.jpg"
 // import profilePic3 from "../images/babyBoss.png"
+import profileSinFondo from "../images/sinFondo.png"
 
 import daftpunktocatguy from "../images/octodex/daftpunktocat-guy.gif"
 import daftpunkttocatthomas from "../images/octodex/daftpunktocat-thomas.gif"
@@ -39,9 +40,9 @@ const About = () => {
   return (
     <div>
       <div className="section" id="cover">
-        <img src={profilePic2} alt="TomasFreire" />
+        <img src={profileSinFondo} alt="TomasFreire" />
         <div id="cover-info">
-          <h1 style={{ textAlign: "center" }}>Tomás Freire Knight</h1>
+          <h1 style={{ textAlign: "center" }}>HELLO.</h1>
           {/* <p>MERN Stack Web Developer</p> */}
           <Typewriter
             options={{
@@ -49,7 +50,7 @@ const About = () => {
             }}
             onInit={typewriter => {
               typewriter
-                .typeString("Full Stack Web Developer")
+                .typeString("My name is Tomás, and i'm a Software Developer.")
                 .pauseFor(2500)
                 .deleteAll()
                 .start()
