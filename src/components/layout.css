@@ -103,9 +103,15 @@ body {
   margin-top: 20px;
 }
 
+#cover-info > h1 {
+  font-size: 400%;
+}
+
 .Typewriter {
   margin-bottom: 5px;
   text-align: center;
+  width: 225px;
+  height: 50px;
 }
 
 #social-list {
@@ -222,7 +228,6 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     margin: 20px 0 0 -10px;
-    width: 50%;
   }
 
   #cover.section {
@@ -230,6 +235,9 @@ body {
     margin: 0;
     width: 100%;
     padding: 80px 80px 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .Typewriter {

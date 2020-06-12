@@ -42,7 +42,7 @@ const About = () => {
       <div className="section" id="cover">
         <img src={profileSinFondo} alt="TomasFreire" />
         <div id="cover-info">
-          <h1 style={{fontSize: "400%"}}>HELLO,</h1>
+          <h1>HELLO,</h1>
           {/* <p>MERN Stack Web Developer</p> */}
 
           <Typewriter
