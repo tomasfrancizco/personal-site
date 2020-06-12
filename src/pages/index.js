@@ -23,11 +23,11 @@ const IndexPage = () => (
     <Work />
     <Education />
     <Skills />
+    <Photography />
     {/* <Projects />
     <Languages />
     <Achievements />
     <Certifications />
-    <Photography />
     <Resume />
     <Contact /> */}
   </Layout>

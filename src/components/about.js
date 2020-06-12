@@ -42,18 +42,18 @@ const About = () => {
       <div className="section" id="cover">
         <img src={profileSinFondo} alt="TomasFreire" />
         <div id="cover-info">
-          <h1>HELLO,</h1>
+          <h1>Tomás Freire Knight</h1>
           {/* <p>MERN Stack Web Developer</p> */}
 
           <Typewriter
-            // options={{
-            //   loop: true
-            // }}
+            options={{
+              loop: true
+            }}
             onInit={typewriter => {
               typewriter
-                .typeString("<span>My name is Tomas</span><br><span>and i'm a Software Developer.</span>")
-                // .pauseFor(2500)
-                // .deleteAll()
+                .typeString("Full Stack Software Developer.")
+                .pauseFor(2500)
+                .deleteAll()
                 .start()
             }}
           />

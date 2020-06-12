@@ -108,15 +108,13 @@ body {
 }
 
 #cover-info > h1 {
-  font-size: 400%;
+  font-size: 200%;
   color: #fff;
 }
 
 .Typewriter {
   margin-bottom: 5px;
   text-align: center;
-  width: 225px;
-  height: 50px;
 }
 
 #social-list {
@@ -154,6 +152,7 @@ body {
 
 .card:hover {
   border: 1px solid #acacac;
+  box-shadow: 2px 2px 2px grey;
 }
 
 .we-card-container {
