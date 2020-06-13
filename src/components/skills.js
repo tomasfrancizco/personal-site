@@ -30,7 +30,7 @@ const Skills = () => (
       <div className="card skills-card">
         <img src={database} alt="database" />
         <h6 className="card-title">Database Management</h6>
-        <p className="card-subtitle mb-2 text-muted">(MongoDB/MySQL)</p>
+        <p className="card-subtitle mb-2 text-muted">(MongoDB/MySQL/GraphQL)</p>
       </div>
       <div className="card skills-card">
         <img src={uikit} alt="uikit" />

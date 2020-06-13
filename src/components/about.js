@@ -51,7 +51,7 @@ const About = () => {
             }}
             onInit={typewriter => {
               typewriter
-                .typeString("Full Stack Software Developer.")
+                .typeString("Full Stack Web Developer.")
                 .pauseFor(2500)
                 .deleteAll()
                 .start()

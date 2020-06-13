@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import SEO from "../components/seo"
 
@@ -16,21 +17,56 @@ import Photography from "../components/photography"
 import Resume from "../components/resume"
 import Contact from "../components/contact"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <About />
-    <Work />
-    <Education />
-    <Skills />
-    <Photography />
-    {/* <Projects />
-    <Languages />
-    <Achievements />
-    <Certifications />
-    <Resume />
-    <Contact /> */}
-  </Layout>
-)
+export default function IndexPage({data}) {
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <About />
+      <Work />
+      <Education />
+      <Skills />
+      <Photography instagram={data}/>
+      {/* <Projects />
+      <Languages />
+      <Achievements />
+      <Certifications />
+      <Resume />
+      <Contact /> */}
+    </Layout>
+  )
+}
 
-export default IndexPage
+export const query = graphql`
+  query {
+    allInstaNode {
+      edges {
+        node {
+          id
+          likes
+          comments
+          mediaType
+          preview
+          original
+          timestamp
+          caption
+          localFile {
+            childImageSharp {
+              fixed(width: 150, height: 150) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+          thumbnails {
+            src
+            config_width
+            config_height
+          }
+          dimensions {
+            height
+            width
+          }
+        }
+      }
+    }
+  }
+`
