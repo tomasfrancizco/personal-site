@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Card, Button } from "react-bootstrap"
-import { Link } from "gatsby"
 import Modal from "react-bootstrap/Modal"
 
 import warnerMedia from "../images/warnermedia.png"
@@ -22,7 +21,7 @@ const Work = () => {
             <Card.Title>Sales Operations Manager</Card.Title>
             <Card.Subtitle>
               @{" "}
-              <a href="https://www.warnermediagroup.com/" target="_blank">
+              <a href="https://www.warnermediagroup.com/" target="_blank" rel="noopener noreferrer">
                 WarnerMedia
               </a>
             </Card.Subtitle>
@@ -60,7 +59,7 @@ const Work = () => {
             <Card.Title>Ad Sales Supervisor</Card.Title>
             <Card.Subtitle>
               @{" "}
-              <a href="https://www.warnermediagroup.com/" target="_blank">
+              <a href="https://www.warnermediagroup.com/" target="_blank" rel="noopener noreferrer">
                 WarnerMedia
               </a>
             </Card.Subtitle>

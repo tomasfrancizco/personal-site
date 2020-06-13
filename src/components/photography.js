@@ -32,13 +32,11 @@ export default function Photography() {
   return (
     <div className="section" id="photography">
       <h3 className="section-title">Photography</h3>
-      {data.allInstaNode.edges.map(({ node }, i) => {
-        return (
-          <a key={i} href={node.original} target="_blank">
+      {data.allInstaNode.edges.map(({ node }, i) => (
+          <a key={i} href={`https://www.instagram.com/p/${node.id}`} target="_blank" rel="noopener noreferrer">
             <Img fixed={node.localFile.childImageSharp.fixed} alt="" />
           </a>
-        )
-      })}
+        ))}
     </div>
   )
 }
