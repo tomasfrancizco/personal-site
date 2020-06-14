@@ -19,7 +19,7 @@ import Contact from "../components/contact"
 export default function IndexPage() {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Homeee" />
       <About />
       <Work />
       <Education />

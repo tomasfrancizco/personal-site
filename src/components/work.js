@@ -13,7 +13,7 @@ const Work = () => {
 
   return (
     <div className="section" id="work">
-      <h3 className="section-title">Work</h3>
+      <h3 className="section-title">WORK</h3>
       <div className="card-container we-card-container">
         <Card style={{ width: "18rem" }} className="card">
           <Card.Img variant="top" src={warnerMedia} />

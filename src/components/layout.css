@@ -115,7 +115,7 @@ body {
 
 #cover-info > h1 {
   font-size: 200%;
-  color: #fff;
+  color: #fff
 }
 
 .Typewriter {
@@ -185,6 +185,13 @@ body {
 .skills-card > img {
   width: 20px;
   margin-bottom: 1px;
+}
+
+#instagram-feed-container {
+  display: grid;
+  grid-template-columns: 55% 55%;
+  place-content: center;
+  place-items: center;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -274,6 +281,10 @@ body {
 
   .card {
     margin: 5px 5%;
+  }
+
+  #instagram-feed-container {
+    grid-template-columns: 50% 50% 50%;
   }
 }
 

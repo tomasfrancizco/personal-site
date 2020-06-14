@@ -23,8 +23,7 @@ import homercat from "../images/octodex/homercat.png"
 // import droidtocat from "../images/octodex/droidtocat.png"
 // import thanktocat from "../images/octodex/thanktocat.png"
 // import visionary from "../images/octodex/visionary.jpg"
-
-import mummytocat from "../images/octodex/mummytocat.gif"
+// import mummytocat from "../images/octodex/mummytocat.gif"
 
 const About = () => {
   const octoFiles = [
@@ -35,6 +34,7 @@ const About = () => {
     daftpunktocatguy,
     daftpunkttocatthomas,
   ]
+
   const octoImg = octoFiles[Math.floor(Math.random() * octoFiles.length)]
 
   return (
@@ -43,11 +43,9 @@ const About = () => {
         <img src={profileSinFondo} alt="TomasFreire" />
         <div id="cover-info">
           <h1>Tomás Freire Knight</h1>
-          {/* <p>MERN Stack Web Developer</p> */}
-
           <Typewriter
             options={{
-              loop: true
+              loop: true,
             }}
             onInit={typewriter => {
               typewriter
@@ -87,23 +85,13 @@ const About = () => {
                 />
               </a>
             </li>
-            {/* <li>
-              <a href="mailto:tomasfreire@gmail.com" target="_blank">
-                <img src="../../icons/gmail.png" alt="gmail" title="gmail" />
-              </a>
-            </li>
-            <li>
-              <a href="https://wa.link/x0nbkf" target="_blank">
-                <img src="../../icons/whatsapp.png" alt="whatsapp" title="whatsapp" />
-              </a>
-            </li> */}
           </ul>
         </div>
       </div>
       <div className="section" id="about">
         <img src={octoImg} alt="codercat" />
         <div>
-          <h3 className="section-title">About</h3>
+          <h3 className="section-title">ABOUT</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis
             vestibulum diam, nec placerat dolor. Morbi porta, lacus vitae
