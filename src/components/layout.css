@@ -225,20 +225,12 @@ body {
   }
 
   #sidebar {
-    position: fixed;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 0;
     left: 0;
     bottom: 0;
     min-height: 100vh;
     max-width: 60px;
-    z-index: 1;
-    background-color: #fff;
-    overflow-x: hidden;
-    margin: 0;
+    overflow-x: visible;
     border-right: 1px solid #dbdbdb;
     opacity: 1;
   }
@@ -256,12 +248,13 @@ body {
 .tooltips .tooltiptext {
   visibility: hidden;
   display: inline-block;
-  width: 120px;
+  width: 100px;
   background-color: black;
   color: #fff;
   text-align: center;
   padding: 5px 0;
-  border-radius: 6px;
+  border-radius: 5px;
+  font-size: .5em;
  
   /* Position the tooltip text - see examples below! */
   position: absolute;
