@@ -104,7 +104,10 @@ body {
 }
 
 #cover.section {
-  background-color: #e5e5e5;
+  background-image: url("../images/backgrounds/IMG_2771.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin-top: 0;
 }
 
@@ -120,16 +123,19 @@ body {
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
+  text-shadow: 1px 1px 5px black;
 }
 
 #cover-info > h1 {
   font-size: 200%;
-  color: #fff
+  -webkit-text-stroke: 0.3px black;
+  -webkit-text-fill-color: white;
 }
 
 .Typewriter {
   margin-bottom: 5px;
   text-align: center;
+  color: #fff;
 }
 
 #social-list {
@@ -144,7 +150,7 @@ body {
 }
 
 #social-list > li {
-  margin: 0 5px;
+  margin: 2px 5px;
 }
 
 #about {
