@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import { motion } from "framer-motion"
 
 export default function Photography() {
   const data = useStaticQuery(graphql`
@@ -34,14 +35,15 @@ export default function Photography() {
       <h3 className="section-title">PHOTOGRAPHY</h3>
       <div id="instagram-feed-container">
         {data.allInstaNode.edges.map(({ node }, i) => (
-          <a
+          <motion.a
+            whileHover={{rotate: 360}}
             key={i}
             href={`https://www.instagram.com/p/${node.id}`}
             target="_blank"
             rel="noopener noreferrer"
           >
             <Img fixed={node.localFile.childImageSharp.fixed} alt="" />
-          </a>
+          </motion.a>
         ))}
       </div>
     </div>
