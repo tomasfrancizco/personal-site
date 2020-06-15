@@ -81,6 +81,15 @@ body {
   width: 23px;
 }
 
+/* beggining of Sidebar tooltips */
+
+/* Tooltip text */
+.tooltips .tooltiptext {
+  display: none;
+}
+
+/* end of Sidebar tooltips */
+
 #main {
   position: absolute;
   top: 40px;
@@ -194,6 +203,14 @@ body {
   place-items: center;
 }
 
+#instagram-feed-container a:hover {
+  transition: opacity 0.1s;
+}
+
+#instagram-feed-container a:hover {
+  opacity: 0.8;
+}
+
 /* ------------------------------------------------------------------------ */
 
 @media only screen and (min-width: 768px) {
@@ -225,6 +242,38 @@ body {
     border-right: 1px solid #dbdbdb;
     opacity: 1;
   }
+
+  /* beggining of Sidebar tooltips */
+
+/* Tooltip container */
+.tooltips {
+  position: relative;
+  display: inline-block;
+  color: black;
+}
+
+/* Tooltip text */
+.tooltips .tooltiptext {
+  visibility: hidden;
+  display: inline-block;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltips:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* end of Sidebar tooltips */
 
   #main {
     top: 0;
