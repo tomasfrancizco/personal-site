@@ -1,8 +1,5 @@
 import React from "react"
 import Typewriter from "typewriter-effect"
-// import profilePic from "../images/tomasFreire.png"
-import profilePic2 from "../images/tomasFreire2.jpg"
-// import profilePic3 from "../images/babyBoss.png"
 import profileSinFondo from "../images/sinFondo.png"
 
 import daftpunktocatguy from "../images/octodex/daftpunktocat-guy.gif"
@@ -11,19 +8,6 @@ import original from "../images/octodex/original.png"
 import oktobercat from "../images/octodex/oktobercat.png"
 import orderedList from "../images/octodex/orderedlistocat.png"
 import homercat from "../images/octodex/homercat.png"
-
-// import nyantocat from "../images/octodex/nyantocat.gif"
-// import codercat from "../images/octodex/codercat.jpg"
-// import eclipseCat from "../images/octodex/total-eclipse-of-the-octocat.jpg"
-// import defunktocat from "../images/octodex/defunktocat.png"
-// import hipster from "../images/octodex/hipster-partycat.jpg"
-// import linktocat from "../images/octodex/linktocat.jpg"
-// import diaDeMuertos from "../images/octodex/octocat-de-los-muertos.jpg"
-// import plumber from "../images/octodex/plumber.jpg"
-// import droidtocat from "../images/octodex/droidtocat.png"
-// import thanktocat from "../images/octodex/thanktocat.png"
-// import visionary from "../images/octodex/visionary.jpg"
-// import mummytocat from "../images/octodex/mummytocat.gif"
 
 const About = () => {
   const octoFiles = [
@@ -46,6 +30,7 @@ const About = () => {
           <Typewriter
             options={{
               loop: true,
+              cursor: "_"
             }}
             onInit={typewriter => {
               typewriter

@@ -25,8 +25,8 @@ export default function IndexPage() {
       <Education />
       <Skills />
       <Photography />
-      {/* <Projects />
-      <Languages />
+      <Projects />
+      {/* <Languages />
       <Achievements />
       <Certifications />
       <Resume />
