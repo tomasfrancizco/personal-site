@@ -5,7 +5,7 @@ const Projects = () => (
   <div className="section" id="projects">
     <h3 className="section-title">PROJECTS</h3>
     <div id="projects-card-container">
-      <Card style={{ width: "18rem" }} className="card projects-card">
+      <Card className="card projects-card">
         <Card.Img variant="top" src="" />
         <Card.Body>
           <Card.Title>Sales Operations Manager</Card.Title>
@@ -27,7 +27,7 @@ const Projects = () => (
           </Card.Text>
         </Card.Body>
       </Card>
-      <Card style={{ width: "18rem" }} className="card projects-card">
+      <Card className="card projects-card">
         <Card.Img variant="top" src="" />
         <Card.Body>
           <Card.Title>Sales Operations Manager</Card.Title>
@@ -49,7 +49,7 @@ const Projects = () => (
           </Card.Text>
         </Card.Body>
       </Card>
-      <Card style={{ width: "18rem" }} className="card projects-card">
+      <Card className="card projects-card">
         <Card.Img variant="top" src="" />
         <Card.Body>
           <Card.Title>Sales Operations Manager</Card.Title>

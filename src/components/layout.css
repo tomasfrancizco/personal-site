@@ -210,16 +210,14 @@ body {
 }
 
 #projects-card-container {
-  display: grid;
-  grid-template-columns: 40% 40% 40%;
-  width: 100%;
+  width: 100vw;
   height: 300px;
-  overflow-x: scroll;
-  overflow-y: visible;
+  overflow: auto;
 }
 
 .projects-card {
-  height: 80%;
+  display: inline-block;
+  width: 286px;
 }
 
 /* ------------------------------------------------------------------------ */

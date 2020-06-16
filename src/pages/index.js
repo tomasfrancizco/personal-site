@@ -29,8 +29,8 @@ export default function IndexPage() {
       {/* <Languages />
       <Achievements />
       <Certifications />
-      <Resume />
-      <Contact /> */}
+      <Resume /> */}
+      <Contact />
     </Layout>
   )
 }
