@@ -210,9 +210,12 @@ body {
 }
 
 #projects-card-container {
-  width: 100vw;
+  width: 100%;
   height: 300px;
-  overflow: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  border: 1px solid gray;
 }
 
 .projects-card {

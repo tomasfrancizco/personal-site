@@ -5,7 +5,12 @@ const Projects = () => (
   <div className="section" id="projects">
     <h3 className="section-title">PROJECTS</h3>
     <div id="projects-card-container">
-      <Card className="card projects-card">
+      <div className="projects-card">Hola!</div>
+      <div className="projects-card">Hola!</div>
+      <div className="projects-card">Hola!</div>
+      <div className="projects-card">Hola!</div>
+      <div className="projects-card">Hola!</div>
+      {/* <Card className="card projects-card">
         <Card.Img variant="top" src="" />
         <Card.Body>
           <Card.Title>Sales Operations Manager</Card.Title>
@@ -70,7 +75,7 @@ const Projects = () => (
             bulk of the card's content.
           </Card.Text>
         </Card.Body>
-      </Card>
+      </Card> */}
     </div>
   </div>
 )
