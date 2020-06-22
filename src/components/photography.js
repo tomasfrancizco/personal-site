@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { motion } from "framer-motion"
+import linkChain from "../images/linkChain.png"
 
 export default function Photography() {
   const data = useStaticQuery(graphql`
@@ -45,7 +46,8 @@ export default function Photography() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Img fixed={node.localFile.childImageSharp.fixed} alt="" />
+            <Img className="instagram-preview" fixed={node.localFile.childImageSharp.fixed} alt="" />
+            <img id="link-chain" src={linkChain} alt=""/>
           </motion.a>
         ))}
       </div>

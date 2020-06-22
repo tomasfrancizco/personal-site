@@ -199,10 +199,26 @@ body {
   grid-template-columns: 55% 55%;
   place-content: center;
   place-items: center;
+  position: relative;
+  transition: opacity 0.1s;
 }
 
-#instagram-feed-container a:hover {
-  transition: opacity 0.1s;
+.instagram-preview {
+  position: absolute;
+  top: 0;
+}
+
+#link-chain {
+  width: 150px;
+  position: relative;
+  margin-top: -157px;
+  display: none;
+  transition: all 0.1s;
+  transition-property: display;
+}
+
+#instagram-feed-container a:hover #link-chain{
+  display: block;
 }
 
 #instagram-feed-container a:hover {
