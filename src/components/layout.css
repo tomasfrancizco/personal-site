@@ -209,18 +209,23 @@ body {
   opacity: 0.8;
 }
 
+#projects.section {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
 #projects-card-container {
-  width: 100%;
-  height: 300px;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  width: 450px;
+  height: auto;
+  overflow-x: auto;
+  overflow-y: visible;
   white-space: nowrap;
   border: 1px solid gray;
 }
 
 .projects-card {
   display: inline-block;
-  width: 286px;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -335,6 +340,10 @@ body {
   #instagram-feed-container {
     grid-template-columns: 50% 50% 50%;
   }
+}
+
+#projects-card-container {
+  width: 700px;
 }
 
 /* ------------------------------------------------------------------------ */

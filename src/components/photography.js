@@ -36,8 +36,10 @@ export default function Photography() {
       <div id="instagram-feed-container">
         {data.allInstaNode.edges.map(({ node }, i) => (
           <motion.a
-            whileHover={{scale: 1.1, rotate: 360}}
-            style={{originX: 0.5}}
+            // whileHover={{scale: 1.1, rotate: 360}}
+            // style={{originX: 0.5}}
+            // animate={{ x: -200, y: 200}}
+            // transition={{ease: "easeInOut", duration: 2}}
             key={i}
             href={`https://www.instagram.com/p/${node.id}`}
             target="_blank"
