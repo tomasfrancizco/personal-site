@@ -74,15 +74,6 @@ body {
   list-style-type: none;
 }
 
-#burger-menu-list:hover {
-  display: block;
-}
-
-#burger-menu:hover + #burger-menu-list {
-  display: block;
-  z-index: 1;
-}
-
 #sidebar {
   display: none;
 }
