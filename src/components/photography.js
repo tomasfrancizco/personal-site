@@ -33,7 +33,8 @@ export default function Photography() {
 
   return (
     <div className="section" id="photography">
-      <h3 className="section-title">PHOTOGRAPHY</h3>
+      <h3>PHOTOGRAPHY</h3>
+      <h5 className="section-title">Check out my last Instagram posts!</h5>
       <div id="instagram-feed-container">
         {data.allInstaNode.edges.map(({ node }, i) => (
           <motion.a
@@ -46,7 +47,7 @@ export default function Photography() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Img className="instagram-preview" fixed={node.localFile.childImageSharp.fixed} alt="" />
+            <Img className="instagram-preview" style={{width: "345px", height: "345px"}} fixed={node.localFile.childImageSharp.fixed} alt="" />
             <img id="link-chain" src={linkChain} alt=""/>
           </motion.a>
         ))}

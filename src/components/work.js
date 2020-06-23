@@ -15,7 +15,7 @@ const Work = () => {
     <div className="section" id="work">
       <h3 className="section-title">WORK</h3>
       <div className="card-container we-card-container">
-        <Card style={{ width: "18rem" }} className="card">
+        <Card className="card">
           <Card.Img variant="top" src={warnerMedia} />
           <Card.Body>
             <Card.Title>Sales Operations Manager</Card.Title>
@@ -53,7 +53,7 @@ const Work = () => {
             </Modal>
           </Card.Body>
         </Card>
-        <Card style={{ width: "18rem" }} className="card">
+        <Card className="card">
           <Card.Img variant="top" src={warnerMedia} />
           <Card.Body>
             <Card.Title>Ad Sales Supervisor</Card.Title>
