@@ -58,20 +58,30 @@ body {
   width: 100%;
   z-index: 1;
   background-color: #fff;
-  /* overflow-x: hidden; */
   margin: 0;
   opacity: 0.9;
   overflow-y: visible;
 }
 
-#burger-menu-list {
-  display: none;
+#burger-menu {
+  cursor: pointer;
 }
 
-#burger-menu-list li {
+.burger-menu-list {
+  opacity: 0;
+  width: 50%;
+  transition: opacity 1s;
+}
+
+.burger-menu-list li {
   background-color: #fff;
-  width: 40%;
+  width: 100%;
   list-style-type: none;
+  color: black;
+  text-align: left;
+  padding-left: 10px;
+  border-bottom: 1px solid black;
+  border-radius: 3px;
 }
 
 #sidebar {

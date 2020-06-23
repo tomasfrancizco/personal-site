@@ -4,10 +4,10 @@ import burgerMenu from "../../../public/icons/burger-menu.png"
 
 const Header = () => {
   const displayMenu = () => {
-    const list = document.getElementById("burger-menu-list")
-    return list.style.display == "none"
-      ? (list.style.display = "block")
-      : (list.style.display = "none")
+    const list = document.getElementsByClassName("burger-menu-list")[0]
+    return list.style.opacity == "0"
+      ? (list.style.opacity = "1")
+      : (list.style.opacity = "0")
   }
 
   return (
@@ -16,22 +16,44 @@ const Header = () => {
         <img
           id="burger-menu"
           src={burgerMenu}
-          alt=""
+          alt="burger-menu"
           style={{ width: "50px" }}
           onClick={displayMenu}
         />
-        <ul id="burger-menu-list">
-          <li>ABOUT</li>
-          <li>WORK</li>
-          <li>EDUCATION</li>
-          <li>SKILLS</li>
-          <li>PROJECTS</li>
-          <li>LANGUAGES</li>
-          <li>ACHIEVEMENTS</li>
-          <li>CERTIFICATIONS</li>
-          <li>PHOTOGRAPHY</li>
-          <li>RESUME</li>
-          <li>CONTACT</li>
+        <ul className="burger-menu-list">
+          <Link to="/#about">
+            <li>ABOUT</li>
+          </Link>
+          <Link to="/#work">
+            <li>WORK</li>
+          </Link>
+          <Link to="/#education">
+            <li>EDUCATION</li>
+          </Link>
+          <Link to="/#skills">
+            <li>SKILLS</li>
+          </Link>
+          <Link to="/#projects">
+            <li>PROJECTS</li>
+          </Link>
+          <Link to="/#languages">
+            <li>LANGUAGES</li>
+          </Link>
+          <Link to="/#achievements">
+            <li>ACHIEVEMENTS</li>
+          </Link>
+          <Link to="/#certifications">
+            <li>CERTIFICATIONS</li>
+          </Link>
+          <Link to="/#photography">
+            <li>PHOTOGRAPHY</li>
+          </Link>
+          <Link to="/#resume">
+            <li>RESUME</li>
+          </Link>
+          <Link to="/#contact">
+            <li>CONTACT</li>
+          </Link>
         </ul>
       </div>
       <div id="sidebar">
