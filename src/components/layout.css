@@ -51,37 +51,39 @@ body {
   text-align: center;
 }
 
-#sidebar {
+#navbar {
   position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   top: 0;
   height: 50px;
   width: 100%;
   z-index: 1;
   background-color: #fff;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   margin: 0;
-  border-right: 1px solid #dbdbdb;
   opacity: 0.9;
+  overflow-y: visible;
 }
 
-.sidebar-link {
-  width: 24px;
-  height: 24px;
+#burger-menu-list {
+  display: none;
 }
 
-#sidebar img {
-  width: 20px;
-  transition: width 0.1s;
+#burger-menu-list li {
+  background-color: #fff;
+  width: 40%;
+  list-style-type: none;
 }
 
-#sidebar img:hover {
-  width: 23px;
+#burger-menu-list:hover {
+  display: block;
 }
 
-.tooltips .tooltiptext {
+#burger-menu:hover + #burger-menu-list {
+  display: block;
+  z-index: 1;
+}
+
+#sidebar {
   display: none;
 }
 
@@ -271,15 +273,42 @@ body {
     margin-bottom: 30px;
   }
 
+  #navbar {
+    display: none;
+  }
+
   #sidebar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    top: 0;
     left: 0;
     bottom: 0;
     min-height: 100vh;
     max-width: 60px;
+    min-width: 60px;
+    z-index: 1;
+    background-color: #fff;
     overflow-x: visible;
+    margin: 0;
     border-right: 1px solid #dbdbdb;
     opacity: 1;
+  }
+  
+  .sidebar-link {
+    width: 24px;
+    height: 24px;
+  }
+  
+  #sidebar img {
+    width: 20px;
+    transition: width 0.1s;
+  }
+  
+  #sidebar img:hover {
+    width: 23px;
   }
 
   /* beggining of Sidebar tooltips */
