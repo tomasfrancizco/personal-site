@@ -21,37 +21,37 @@ const Header = () => {
           onClick={displayMenu}
         />
         <ul className="burger-menu-list">
-          <Link to="/#about">
+          <Link to="/#about" onClick={displayMenu}>
             <li>ABOUT</li>
           </Link>
-          <Link to="/#work">
+          <Link to="/#work" onClick={displayMenu}>
             <li>WORK</li>
           </Link>
-          <Link to="/#education">
+          <Link to="/#education" onClick={displayMenu}>
             <li>EDUCATION</li>
           </Link>
-          <Link to="/#skills">
+          <Link to="/#skills" onClick={displayMenu}>
             <li>SKILLS</li>
           </Link>
-          <Link to="/#projects">
+          <Link to="/#projects" onClick={displayMenu}>
             <li>PROJECTS</li>
           </Link>
-          <Link to="/#languages">
+          <Link to="/#languages" onClick={displayMenu}>
             <li>LANGUAGES</li>
           </Link>
-          <Link to="/#achievements">
+          <Link to="/#achievements" onClick={displayMenu}>
             <li>ACHIEVEMENTS</li>
           </Link>
-          <Link to="/#certifications">
+          <Link to="/#certifications" onClick={displayMenu}>
             <li>CERTIFICATIONS</li>
           </Link>
-          <Link to="/#photography">
+          <Link to="/#photography" onClick={displayMenu}>
             <li>PHOTOGRAPHY</li>
           </Link>
-          <Link to="/#resume">
+          <Link to="/#resume" onClick={displayMenu}>
             <li>RESUME</li>
           </Link>
-          <Link to="/#contact">
+          <Link to="/#contact" onClick={displayMenu}>
             <li>CONTACT</li>
           </Link>
         </ul>

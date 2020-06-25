@@ -47,8 +47,12 @@ export default function Photography() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Img className="instagram-preview" style={{width: "345px", height: "345px"}} fixed={node.localFile.childImageSharp.fixed} alt="" />
-            <img id="link-chain" src={linkChain} alt=""/>
+            <Img
+              className="instagram-preview"
+              fixed={node.localFile.childImageSharp.fixed}
+              alt={node.id}
+            />
+            <img id="link-chain" src={linkChain} alt="" />
           </motion.a>
         ))}
       </div>

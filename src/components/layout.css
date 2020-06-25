@@ -69,7 +69,7 @@ body {
 
 .burger-menu-list {
   opacity: 0;
-  width: 50%;
+  width: 100%;
   transition: opacity 1s;
 }
 
@@ -80,8 +80,6 @@ body {
   color: black;
   text-align: left;
   padding-left: 10px;
-  border-bottom: 1px solid black;
-  border-radius: 3px;
 }
 
 #sidebar {
@@ -213,10 +211,10 @@ body {
   transition-property: opacity;
 }
 
-/* .instagram-preview {
+.instagram-preview {
   position: absolute;
   top: 0;
-} */
+}
 
 #link-chain {
   width: 140px;
@@ -400,6 +398,7 @@ body {
   #instagram-feed-container {
     grid-template-columns: 155px 155px 155px;
     grid-template-rows: 160px 160px 160px 160px;
+    gap: 20px;
   }
 }
 
