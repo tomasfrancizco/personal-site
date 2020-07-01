@@ -22,14 +22,15 @@ export default function IndexPage() {
       <SEO title="Homeee" />
       <About />
       <Work />
-      <Education />
       <Skills />
-      <Photography />
       <Projects />
-      {/* <Languages />
-      <Achievements />
-      <Certifications />
-      <Resume /> */}
+      {/* <Education /> // Actualizacion
+      <Photography /> // Actualizacion
+      <Languages /> // Actualizacion
+      <Achievements /> // Actualizacion
+      <Certifications /> // Actualizacion
+      // */}
+      <Resume />
       <Contact />
     </Layout>
   )

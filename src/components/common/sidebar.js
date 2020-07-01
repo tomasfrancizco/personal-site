@@ -5,9 +5,12 @@ import burgerMenu from "../../../public/icons/burger-menu.png"
 const Header = () => {
   const displayMenu = () => {
     const list = document.getElementsByClassName("burger-menu-list")[0]
-    return list.style.opacity == "0"
+    list.style.opacity == "0"
       ? (list.style.opacity = "1")
       : (list.style.opacity = "0")
+    list.style.display == "none"
+      ? (list.style.display = "block")
+      : list.style.display = "none"
   }
 
   return (
