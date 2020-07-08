@@ -5,7 +5,6 @@ import Modal from "react-bootstrap/Modal"
 import warnerMedia from "../images/warnermedia.png"
 
 const Work = () => {
-
   const [show, setShow] = useState(false)
 
   const handleClose = () => setShow(false)
@@ -21,36 +20,20 @@ const Work = () => {
             <Card.Title>Sales Operations Manager</Card.Title>
             <Card.Subtitle>
               @{" "}
-              <a href="https://www.warnermediagroup.com/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.warnermediagroup.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 WarnerMedia
               </a>
             </Card.Subtitle>
             <br></br>
             <Card.Subtitle>2015 - 2020</Card.Subtitle>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
+            <br></br>
             <Button variant="primary" onClick={handleShow}>
               See Description
             </Button>
-
-            <Modal show={show} onHide={handleClose}>
-              <Modal.Header closeButton>
-                <Modal.Title>Modal heading</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                Woohoo, you're reading this text in a modal!
-              </Modal.Body>
-              <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                  Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                  Save Changes
-                </Button>
-              </Modal.Footer>
-            </Modal>
           </Card.Body>
         </Card>
         <Card className="card">
@@ -59,33 +42,58 @@ const Work = () => {
             <Card.Title>Ad Sales Supervisor</Card.Title>
             <Card.Subtitle>
               @{" "}
-              <a href="https://www.warnermediagroup.com/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.warnermediagroup.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 WarnerMedia
               </a>
             </Card.Subtitle>
             <br></br>
             <Card.Subtitle>2009 - 2015</Card.Subtitle>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
+            <br></br>
             <Button variant="primary" onClick={handleShow}>
               See Description
             </Button>
 
             <Modal show={show} onHide={handleClose}>
               <Modal.Header closeButton>
-                <Modal.Title>Modal heading</Modal.Title>
+                <Modal.Title>Work Description</Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                Woohoo, you're reading this text in a modal!
+                <h4>Sales Operations Manager</h4>
+                <ul className="work-description-ul">
+                  <li>Lead teams in México, Colombia & Panamá offices.</li>
+                  <li>
+                    Redesigned the team's structure & dynamic, creating both a
+                    goals and people oriented group.
+                  </li>
+                  <li>
+                    Built a process to optimize revenue & ad inventory, saving
+                    millions of dollars per year.
+                  </li>
+                  <li>
+                    Migrated the digital operation from Buenos Aires to México,
+                    making the office Latam's central digital hub.
+                  </li>
+                </ul>
+                <h4>Ad Sales Supervisor</h4>
+                <ul className="work-description-ul">
+                  <li>
+                    Was responsible for the team that booked, managed and billed
+                    TV campaigns on TNT, Space, Warner, Cartoon Network & CNN.
+                  </li>
+                  <li>
+                    Through booking and billing accuracy we reduced the usual
+                    billing delays more than 40%, making the company & clients
+                    save time and thousands of dollars.
+                  </li>
+                </ul>
               </Modal.Body>
               <Modal.Footer>
                 <Button variant="secondary" onClick={handleClose}>
                   Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                  Save Changes
                 </Button>
               </Modal.Footer>
             </Modal>
