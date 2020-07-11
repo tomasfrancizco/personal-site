@@ -6,7 +6,6 @@ import warnerMedia from "../images/warnermedia.png"
 
 const Work = () => {
   const [show, setShow] = useState(false)
-
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
 
