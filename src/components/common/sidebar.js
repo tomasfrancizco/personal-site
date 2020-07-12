@@ -66,12 +66,14 @@ const Header = () => {
               <img src="../../icons/about.png" alt="about" />
             </Link>
             <span className="tooltiptext">About</span>
+            
           </div>
           <div className="tooltips">
             <Link to="/#work" className="sidebar-link">
               <img src="../../icons/work.png" alt="work" />
             </Link>
             <span className="tooltiptext">Work</span>
+            
           </div>
           <div className="tooltips">
             <Link to="/#education" className="sidebar-link">

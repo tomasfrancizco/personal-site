@@ -30,7 +30,7 @@ const About = () => {
           <Typewriter
             options={{
               loop: true,
-              cursor: "_"
+              cursor: "_",
             }}
             onInit={typewriter => {
               typewriter
@@ -78,19 +78,17 @@ const About = () => {
         <div>
           <h3 className="section-title">ABOUT</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis
-            vestibulum diam, nec placerat dolor. Morbi porta, lacus vitae
-            pharetra facilisis, felis augue placerat enim, ac tempus mi augue
-            vehicula odio. Suspendisse nec neque pharetra, hendrerit justo.
-            <br></br>
-            <br />
-            Pellentesque erat massa, mollis et hendrerit non, tempor vel velit.
-            Maecenas semper libero sit amet turpis pharetra, eu viverra sapien
-            luctus. Phasellus eu metus aliquam, semper augue sed, varius odio.
-            Aliquam dignissim posuere ante sit amet vestibulum. Aenean nec massa
-            risus. Pellentesque semper tincidunt eleifend. Ut rhoncus rutrum
-            sollicitudin. Aliquam eget nisl justo. Nulla ultricies commodo
-            ipsum.
+            Hi! I'm a sotware developer currently based in Buenos Aires,
+            Argentina.
+          </p>
+          <p>
+            I've been working for the last 11 years in the media industry,
+            leading Ad Operations teams across Latin America and I'm now looking
+            for a role in web development.
+          </p>
+          <p>
+            I handle pretty well the MERN stack and some other cool things as well, you can
+            check them out in the <a href="/#skills">skills</a> section.
           </p>
         </div>
       </div>
