@@ -1,6 +1,7 @@
 import React from "react"
 import Typewriter from "typewriter-effect"
 import profileSinFondo from "../images/sinFondo.png"
+import curriculumVitae from "../files/CVSP - Tomas Freire Knight.pdf"
 
 import daftpunktocatguy from "../images/octodex/daftpunktocat-guy.gif"
 import daftpunkttocatthomas from "../images/octodex/daftpunktocat-thomas.gif"
@@ -71,18 +72,24 @@ const About = () => {
               </a>
             </li>
           </ul>
-          <div>
+          <div id="podes">
             <p>Podés...</p>
-            <button>Ver mis proyectos</button>
-            <button>Descargar mi CV</button>
+            <div>
+              <a href="/#projects">
+                <button>Ver mis proyectos</button>
+              </a>
+              <a href={curriculumVitae} target="_blank">
+                <button>Descargar mi CV</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
       <div id="continue">
-          <a href="/#about">
-            <img src="../../icons/arrow.svg" alt="next" id="arrow"/>
-          </a>
-        </div>
+        <a href="/#about">
+          <img src="../../icons/arrow.svg" alt="next" id="arrow" />
+        </a>
+      </div>
       <div className="section" id="about">
         <img src={octoImg} alt="codercat" />
         <div>
@@ -94,8 +101,8 @@ const About = () => {
           </p>
           <p>
             Los últimos 11 años estuve trabajando en la industria de la TV y
-            Publicidad, liderando equipos de operaciones en América Latina y
-            ahora estoy buscando meterme de lleno en el mundo de desarrollo.
+            Publicidad, liderando equipos de operaciones en América Latina.
+            Ahora estoy buscando meterme de lleno en el mundo de desarrollo.
             {/* I've been working for the last 11 years in the media industry,
             leading Ad Operations teams across Latin America and I'm now looking
             for a role in web development. */}
