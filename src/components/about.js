@@ -71,10 +71,14 @@ const About = () => {
               </a>
             </li>
           </ul>
+          <div>
+            <p>Podés...</p>
+            <button>Ver mis proyectos</button>
+            <button>Descargar mi CV</button>
+          </div>
         </div>
       </div>
       <div id="continue">
-          <p>Sigue leyendo</p>
           <a href="/#about">
             <img src="../../icons/arrow.svg" alt="next" id="arrow"/>
           </a>
