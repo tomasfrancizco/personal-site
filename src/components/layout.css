@@ -4,20 +4,27 @@ E5E5E5 Gris
 FFF Blanco
 000 Negro */
 
-@font-face {
-  font-family: Johnston;
-  src: url(../fonts/London_Tube/TUBE.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap');
+
+@keyframes arrow {
+  0% {
+    opacity: 1
+  }
+
+  50% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
-@font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto/Roboto-Regular.ttf);
-}
 
 * {
   margin: 0;
   padding: 0;
-  font-family: Helvetica, sans-serif;
+  font-family: "Exo", sans-serif;
 }
 
 html {
@@ -92,7 +99,8 @@ body {
 
 #cover {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  padding-top: 50px;
   align-items: center;
   flex-direction: column;
   margin-top: 40px;
@@ -112,7 +120,6 @@ body {
 
 #cover-info {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
@@ -127,7 +134,7 @@ body {
 }
 
 .Typewriter {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   min-width: 300px;
   font-size: 150%;
   text-align: center;
@@ -147,6 +154,18 @@ body {
 
 #social-list > li {
   margin: 2px 5px;
+}
+
+#continue {
+  position: relative;
+  top: -170px;
+  text-align: center;
+}
+
+#arrow {
+  animation: arrow 2s infinite;
+  transform: rotate(90deg);
+  width: 40px;
 }
 
 #about {
@@ -377,18 +396,6 @@ body {
   visibility: visible;
 }
 
-/* .tooltips .tooltip-pike {
-  position: absolute;
-  width: 0;
-  border-top: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 5px solid black;
-  transform: rotate(180deg);
-  top: 3.5px;
-  left: 10px;
-} */
-
 /* end of Sidebar tooltips */
 
   #main {
@@ -420,7 +427,6 @@ body {
   #cover.section {
     margin: 0;
     width: 100%;
-    padding: 80px 80px 0 80px;
     display: flex;
     justify-content: center;
     align-items: center;

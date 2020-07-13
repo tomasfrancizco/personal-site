@@ -43,7 +43,7 @@ const About = () => {
           <ul id="social-list">
             <li>
               <a href="https://github.com/tomasfrancizco" target="_blank">
-                <img src="../../icons/github.png" alt="github" title="github" />
+                <img src="../../icons/github.svg" alt="github" title="github" />
               </a>
             </li>
             <li>
@@ -52,7 +52,7 @@ const About = () => {
                 target="_blank"
               >
                 <img
-                  src="../../icons/linkedin.png"
+                  src="../../icons/linkedin.svg"
                   alt="linkedin"
                   title="linkedin"
                 />
@@ -64,7 +64,7 @@ const About = () => {
                 target="_blank"
               >
                 <img
-                  src="../../icons/instagram.png"
+                  src="../../icons/instagram.svg"
                   alt="instagram"
                   title="instagram"
                 />
@@ -73,22 +73,34 @@ const About = () => {
           </ul>
         </div>
       </div>
+      <div id="continue">
+          <p>Sigue leyendo</p>
+          <a href="/#about">
+            <img src="../../icons/arrow.svg" alt="next" id="arrow"/>
+          </a>
+        </div>
       <div className="section" id="about">
         <img src={octoImg} alt="codercat" />
         <div>
           <h3 className="section-title">ABOUT</h3>
           <p>
-            Hi! I'm a sotware developer currently based in Buenos Aires,
-            Argentina.
+            Hola! Soy Tomás, un desarrollador web de Buenos Aires.
+            {/* Hi! I'm a sotware developer currently based in Buenos Aires,
+            Argentina. */}
           </p>
           <p>
-            I've been working for the last 11 years in the media industry,
+            Los últimos 11 años estuve trabajando en la industria de la TV y
+            Publicidad, liderando equipos de operaciones en América Latina y
+            ahora estoy buscando meterme de lleno en el mundo de desarrollo.
+            {/* I've been working for the last 11 years in the media industry,
             leading Ad Operations teams across Latin America and I'm now looking
-            for a role in web development.
+            for a role in web development. */}
           </p>
           <p>
-            I handle pretty well the MERN stack and some other cool things as well, you can
-            check them out in the <a href="/#skills">skills</a> section.
+            Me doy maña con el MERN Stack y algunas otras cosas copadas, que
+            podés ver en la sección de <a href="/#skills">skills</a>.
+            {/* I handle pretty well the MERN stack and some other cool things as well, you can
+            check them out in the <a href="/#skills">skills</a> section. */}
           </p>
         </div>
       </div>
