@@ -253,39 +253,11 @@ body {
 }
 
 #instagram-feed-container {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 50% 50%;
-  place-content: center;
-  place-items: center;
-  position: relative;
-  transition: all 0.1s;
-  transition-property: opacity;
+  
 }
 
 .instagram-preview {
-  position: absolute;
-  top: 0;
-}
-
-#link-chain {
-  width: 140px;
-  position: relative;
-  top: -150px;
-  left: 0;
-  display: none;
-  transition: all 0.1s;
-  transition-property: display;
-}
-
-#instagram-feed-container a:hover #link-chain{
-  display: block;
-  top: -150;
-}
-
-#instagram-feed-container a:hover {
-  opacity: 0.8;
-  margin-bottom: -150px;
+  
 }
 
 #projects.section {
@@ -480,18 +452,34 @@ body {
   }
 
   #instagram-feed-container {
-    grid-template-columns: 155px 155px 155px;
-    grid-template-rows: 160px 160px 160px 160px;
-    gap: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    place-items: center;
   }
-}
 
-#projects-card-container {
-  width: 700px;
-}
+  #instagram-feed-container > a {
+    margin: 5px 7.5px;
+  }
 
-.contact-form {
-  width: 80%;
+  .instagram-preview {
+    width: 200px;
+    transition: all .1s;
+    filter: grayscale(100%);
+  }
+
+  .instagram-preview:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+  }
+
+  #projects-card-container {
+    width: 700px;
+  }
+  
+  .contact-form {
+    width: 80%;
+  }
 }
 
 /* ------------------------------------------------------------------------ */
