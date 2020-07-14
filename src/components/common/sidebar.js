@@ -3,14 +3,18 @@ import React from "react"
 import burgerMenu from "../../../public/icons/burger-menu.png"
 
 const Header = () => {
-  const displayMenu = () => {
-    const list = document.getElementsByClassName("burger-menu-list")[0]
-    list.style.opacity == "0"
-      ? (list.style.opacity = "1")
-      : (list.style.opacity = "0")
-    list.style.display == "none"
-      ? (list.style.display = "block")
-      : (list.style.display = "none")
+  const listItems = document.getElementsByClassName("burger-menu-list-item")
+  const toggleMenu = () => {
+    console.log("PooP", listItems)
+    if (listItems[0].getAttribute("class") == "burger-menu-list-item") {
+      for (let i = 0; i < listItems.length; i++) {
+        listItems[i].setAttribute("class", "burger-menu-list-item toggle")
+      }
+    } else {
+      for (let i = 0; i < listItems.length; i++) {
+        listItems[i].setAttribute("class", "burger-menu-list-item")
+      }
+    }
   }
 
   return (
@@ -20,42 +24,41 @@ const Header = () => {
           id="burger-menu"
           src={burgerMenu}
           alt="burger-menu"
-          style={{ width: "50px" }}
-          onClick={displayMenu}
+          onClick={toggleMenu}
         />
         <ul className="burger-menu-list">
-          <Link to="/#about" onClick={displayMenu}>
-            <li>ABOUT</li>
+          <Link to="/#about">
+            <li className="burger-menu-list-item">ABOUT</li>
           </Link>
-          <Link to="/#work" onClick={displayMenu}>
-            <li>WORK</li>
+          <Link to="/#work">
+            <li className="burger-menu-list-item">WORK</li>
           </Link>
-          <Link to="/#education" onClick={displayMenu}>
-            <li>EDUCATION</li>
+          <Link to="/#education">
+            <li className="burger-menu-list-item">EDUCATION</li>
           </Link>
-          <Link to="/#skills" onClick={displayMenu}>
-            <li>SKILLS</li>
+          <Link to="/#skills">
+            <li className="burger-menu-list-item">SKILLS</li>
           </Link>
-          <Link to="/#projects" onClick={displayMenu}>
-            <li>PROJECTS</li>
+          <Link to="/#projects">
+            <li className="burger-menu-list-item">PROJECTS</li>
           </Link>
-          <Link to="/#languages" onClick={displayMenu}>
-            <li>LANGUAGES</li>
+          <Link to="/#languages">
+            <li className="burger-menu-list-item">LANGUAGES</li>
           </Link>
-          <Link to="/#achievements" onClick={displayMenu}>
-            <li>ACHIEVEMENTS</li>
+          <Link to="/#achievements">
+            <li className="burger-menu-list-item">ACHIEVEMENTS</li>
           </Link>
-          <Link to="/#certifications" onClick={displayMenu}>
-            <li>CERTIFICATIONS</li>
+          <Link to="/#certifications">
+            <li className="burger-menu-list-item">CERTIFICATIONS</li>
           </Link>
-          <Link to="/#photography" onClick={displayMenu}>
-            <li>PHOTOGRAPHY</li>
+          <Link to="/#photography">
+            <li className="burger-menu-list-item">PHOTOGRAPHY</li>
           </Link>
-          <Link to="/#resume" onClick={displayMenu}>
-            <li>RESUME</li>
+          <Link to="/#resume">
+            <li className="burger-menu-list-item">RESUME</li>
           </Link>
-          <Link to="/#contact" onClick={displayMenu}>
-            <li>CONTACT</li>
+          <Link to="/#contact">
+            <li className="burger-menu-list-item">CONTACT</li>
           </Link>
         </ul>
       </div>
@@ -66,14 +69,12 @@ const Header = () => {
               <img src="../../icons/about.png" alt="about" />
             </Link>
             <span className="tooltiptext">About</span>
-            
           </div>
           <div className="tooltips">
             <Link to="/#work" className="sidebar-link">
               <img src="../../icons/work.png" alt="work" />
             </Link>
             <span className="tooltiptext">Work</span>
-            
           </div>
           <div className="tooltips">
             <Link to="/#education" className="sidebar-link">

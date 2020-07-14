@@ -71,21 +71,25 @@ body {
 
 #burger-menu {
   cursor: pointer;
+  width: 50px;
 }
 
-.burger-menu-list {
-  opacity: 0;
-  width: 100%;
-  transition: opacity 1s;
-}
-
-.burger-menu-list li {
+.burger-menu-list-item {
   background-color: #fff;
+  visibility: hidden;
   width: 100%;
+  height: 0px;
   list-style-type: none;
   color: black;
   text-align: left;
   padding-left: 10px;
+  transition: all .05s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.toggle {
+  height: 35px !important;
+  visibility: visible;
 }
 
 #sidebar {
@@ -252,12 +256,32 @@ body {
   margin-bottom: 1px;
 }
 
-#instagram-feed-container {
-  
+#photography > h5 {
+  text-align: center;
 }
 
-.instagram-preview {
-  
+#instagram-feed-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  place-items: center;
+}
+
+#instagram-feed-container > a {
+  margin: 5px 7.5px;
+  width: 90%;
+}
+
+.instagram-preview {
+  width: 100%;
+  transition: all .1s;
+  filter: grayscale(100%);
+  border-radius: 5px;
+}
+
+.instagram-preview:hover {
+  transform: scale(1.1);
+  filter: grayscale(0);
 }
 
 #projects.section {
@@ -287,7 +311,6 @@ body {
 
 @media only screen and (min-width: 768px) {
   .section {
-    padding: 80px;
     width: 80%;
     margin: auto;
   }
@@ -452,25 +475,15 @@ body {
   }
 
   #instagram-feed-container {
-    width: 100%;
-    display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    place-items: center;
   }
 
   #instagram-feed-container > a {
-    margin: 5px 7.5px;
+    width: 100%;
   }
 
   .instagram-preview {
-    width: 200px;
-    transition: all .1s;
-    filter: grayscale(100%);
-  }
-
-  .instagram-preview:hover {
-    transform: scale(1.1);
-    filter: grayscale(0);
+    width: 95%;
   }
 
   #projects-card-container {
@@ -488,4 +501,8 @@ body {
   .skills-card-container {
     grid-template-columns: 45% 45% 45%;
   }
+  #instagram-feed-container > a {
+    width: 90%;
+  }
+  
 }

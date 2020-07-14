@@ -21,7 +21,7 @@ export default function IndexPage() {
     <Layout>
       <SEO title="Homeee" />
       <About />
-      <Work />
+      {/* <Work /> */}
       <Photography />
       {/* <Skills />
       <Projects /> */}
