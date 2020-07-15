@@ -4,22 +4,21 @@ E5E5E5 Gris
 FFF Blanco
 000 Negro */
 
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap");
 
 @keyframes arrow {
   0% {
-    opacity: 1
+    opacity: 1;
   }
 
   50% {
-    opacity: 0.1
+    opacity: 0.1;
   }
 
   100% {
     opacity: 1;
   }
 }
-
 
 * {
   margin: 0;
@@ -38,8 +37,7 @@ body {
   min-height: 100%;
 }
 
-@media only screen and (max-width: 325px){
-  
+@media only screen and (max-width: 325px) {
   #podes {
     display: flex;
     justify-content: center;
@@ -50,7 +48,6 @@ body {
   #podes div {
     text-align: center;
   }
-
 }
 
 .section {
@@ -84,9 +81,18 @@ body {
   overflow-y: visible;
 }
 
+.navbar-icon {
+  width: 20px;
+  margin: 0 15px 5px 0;
+}
+
 #burger-menu {
   cursor: pointer;
   width: 50px;
+}
+
+#burger-menu:active {
+  opacity: .5;
 }
 
 .burger-menu-list-item {
@@ -99,7 +105,7 @@ body {
   text-align: left;
   padding-left: 10px;
   transition-property: height, visibility;
-  transition-duration: .5s, 0s;
+  transition-duration: 0.5s, 0s;
   font-size: 1.5rem;
 }
 
@@ -188,7 +194,7 @@ body {
   border-radius: 5px;
   margin: 0 5px;
   opacity: 0.7;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 
 #podes button:hover {
@@ -287,7 +293,7 @@ body {
 
 .instagram-preview {
   width: 100%;
-  transition: all .5s;
+  transition: all 0.5s;
   filter: grayscale(100%);
   border-radius: 5px;
 }
@@ -362,8 +368,8 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    opacity: .3;
-    transition: opacity .5s;
+    opacity: 0.3;
+    transition: opacity 0.5s;
   }
 
   #sidebar-cont:hover #sidebar {
@@ -374,59 +380,67 @@ body {
     width: 24px;
     height: 24px;
   }
-  
-  #sidebar img {
+
+  .sidebar-icon {
     width: 20px;
-    transition: width 0.1s;
+    transition: all 0.3s;
   }
-  
-  #sidebar img:hover {
+
+  /* #sidebar img:hover {
     width: 23px;
-  }
+    transform: rotateY(360deg);
+  } */
 
   /* beggining of Sidebar tooltips */
 
-.tooltips {
-  position: relative;
-  display: inline-block;
-  color: black;
-  margin: 2.5px 0;
-}
+  .tooltips {
+    position: relative;
+    display: inline-block;
+    color: black;
+    margin: 2.5px 0;
+    width: 100%;
+    padding-left: 18px;
+  }
 
-.tooltips::before {
-  visibility: hidden;
-  position: absolute;
-  content: "";
-  border-top: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 5px solid black;
-  left: 20px;
-  top: 6px;
-  transform: rotate(180deg);
+  .tooltips::before {
+    visibility: hidden;
+    position: absolute;
+    content: "";
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid black;
+    left: 45px;
+    top: 6px;
+    transform: rotate(180deg);
+  }
 
-}
+  .tooltips .tooltiptext {
+    visibility: hidden;
+    display: inline-block;
+    width: 100px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 3px;
+    font-size: 0.5em;
+    position: absolute;
+    left: 55px;
+    z-index: 1;
+  }
 
-.tooltips .tooltiptext {
-  visibility: hidden;
-  display: inline-block;
-  width: 100px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 3px;
-  font-size: .5em;
-  position: absolute;
-  left: 30px;
-  z-index: 1;
-}
+  .tooltips:hover .tooltiptext,
+  .tooltips:hover.tooltips::before {
+    visibility: visible;
+  }
 
-.tooltips:hover .tooltiptext, .tooltips:hover.tooltips::before {
-  visibility: visible;
-}
+  .tooltips:hover .sidebar-icon {
+    width: 23px;
+    transform: rotateY(360deg);
+  }
 
-/* end of Sidebar tooltips */
+  /* end of Sidebar tooltips */
 
   #main {
     top: 0;
@@ -480,7 +494,7 @@ body {
     text-align: left;
     margin-left: 10px;
   }
-  
+
   .we-card-container {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -507,7 +521,7 @@ body {
   #projects-card-container {
     width: 700px;
   }
-  
+
   .contact-form {
     width: 80%;
   }
@@ -515,12 +529,11 @@ body {
 
 /* ------------------------------------------------------------------------ */
 
-@media only screen and (min-width: 960px){
+@media only screen and (min-width: 960px) {
   .skills-card-container {
     grid-template-columns: 45% 45% 45%;
   }
   #instagram-feed-container > a {
     width: 90%;
   }
-  
 }

@@ -95,7 +95,7 @@ const About = () => {
         <div>
           <h3 className="section-title">ABOUT</h3>
           <p>
-            Hola! Soy Tomás, un desarrollador web de Buenos Aires.
+            Hola! Soy Tomás, un desarrollador web ubicado en Buenos Aires.
             {/* Hi! I'm a sotware developer currently based in Buenos Aires,
             Argentina. */}
           </p>

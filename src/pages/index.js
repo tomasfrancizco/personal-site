@@ -11,9 +11,7 @@ import Skills from "../components/skills"
 import Projects from "../components/projects"
 import Languages from "../components/languages"
 import Achievements from "../components/achievements"
-import Certifications from "../components/certifications"
 import Photography from "../components/photography"
-import Resume from "../components/resume"
 import Contact from "../components/contact"
 
 export default function IndexPage() {
@@ -21,17 +19,13 @@ export default function IndexPage() {
     <Layout>
       <SEO title="Homeee" />
       <About />
-      {/* <Work /> */}
+      {/* <Work />
+      <Education />
+      <Skills />
+      <Projects />
+      <Achievements /> */}
       <Photography />
-      {/* <Skills />
-      <Projects /> */}
-      {/* <Education /> // Actualizacion
-      <Languages /> // Actualizacion
-      <Achievements /> // Actualizacion
-      <Certifications /> // Actualizacion
-      // */}
-      {/* <Resume />
-      <Contact /> */}
+      {/* <Contact /> */}
     </Layout>
   )
 }

@@ -26,39 +26,87 @@ const Header = () => {
           alt="burger-menu"
           onClick={toggleMenu}
         />
+        <br />
         <ul className="burger-menu-list">
           <Link to="/#about">
-            <li className="burger-menu-list-item">ABOUT</li>
+            <li className="burger-menu-list-item">
+              <img
+                className="navbar-icon"
+                src="../../icons/user.svg"
+                alt="about"
+              />
+              ABOUT
+            </li>
           </Link>
           <Link to="/#work">
-            <li className="burger-menu-list-item">WORK</li>
+            <li className="burger-menu-list-item">
+              <img
+                className="navbar-icon"
+                src="../../icons/work.svg"
+                alt="work"
+              />
+              WORK
+            </li>
           </Link>
           <Link to="/#education">
-            <li className="burger-menu-list-item">EDUCATION</li>
+            <li className="burger-menu-list-item">
+              <img
+                className="navbar-icon"
+                src="../../icons/education.svg"
+                alt="education"
+              />
+              EDUCATION
+            </li>
           </Link>
           <Link to="/#skills">
-            <li className="burger-menu-list-item">SKILLS</li>
+            <li className="burger-menu-list-item">
+              <img
+                className="navbar-icon"
+                src="../../icons/skills.svg"
+                alt="skills"
+              />
+              SKILLS
+            </li>
           </Link>
           <Link to="/#projects">
-            <li className="burger-menu-list-item">PROJECTS</li>
-          </Link>
-          <Link to="/#languages">
-            <li className="burger-menu-list-item">LANGUAGES</li>
+            <li className="burger-menu-list-item">
+              <img
+                className="navbar-icon"
+                src="../../icons/projects.svg"
+                alt="projects"
+              />
+              PROJECTS
+            </li>
           </Link>
           <Link to="/#achievements">
-            <li className="burger-menu-list-item">ACHIEVEMENTS</li>
-          </Link>
-          <Link to="/#certifications">
-            <li className="burger-menu-list-item">CERTIFICATIONS</li>
+            <li className="burger-menu-list-item">
+              <img
+                className="navbar-icon"
+                src="../../icons/achievements.svg"
+                alt="achievements"
+              />
+              ACHIEVEMENTS
+            </li>
           </Link>
           <Link to="/#photography">
-            <li className="burger-menu-list-item">PHOTOGRAPHY</li>
-          </Link>
-          <Link to="/#resume">
-            <li className="burger-menu-list-item">RESUME</li>
+            <li className="burger-menu-list-item">
+              <img
+                className="navbar-icon"
+                src="../../icons/photography.svg"
+                alt="photography"
+              />
+              PHOTOGRAPHY
+            </li>
           </Link>
           <Link to="/#contact">
-            <li className="burger-menu-list-item">CONTACT</li>
+            <li className="burger-menu-list-item">
+              <img
+                className="navbar-icon"
+                src="../../icons/contact.svg"
+                alt="contact"
+              />
+              CONTACT
+            </li>
           </Link>
         </ul>
       </div>
@@ -66,67 +114,81 @@ const Header = () => {
         <div id="sidebar">
           <div className="tooltips">
             <Link to="/#cover" className="sidebar-link">
-              <img src="../../icons/about.png" alt="about" />
+              <img
+                className="sidebar-icon"
+                src="../../icons/user.svg"
+                alt="about"
+              />
             </Link>
             <span className="tooltiptext">About</span>
           </div>
           <div className="tooltips">
             <Link to="/#work" className="sidebar-link">
-              <img src="../../icons/work.png" alt="work" />
+              <img
+                className="sidebar-icon"
+                src="../../icons/work.svg"
+                alt="work"
+              />
             </Link>
             <span className="tooltiptext">Work</span>
           </div>
           <div className="tooltips">
             <Link to="/#education" className="sidebar-link">
-              <img src="../../icons/education.png" alt="education" />
+              <img
+                className="sidebar-icon"
+                src="../../icons/education.svg"
+                alt="education"
+              />
             </Link>
             <span className="tooltiptext">Education</span>
           </div>
           <div className="tooltips">
             <Link to="/#skills" className="sidebar-link">
-              <img src="../../icons/skills.png" alt="skills" />
+              <img
+                className="sidebar-icon"
+                src="../../icons/skills.svg"
+                alt="skills"
+              />
             </Link>
             <span className="tooltiptext">Skills</span>
           </div>
           <div className="tooltips">
             <Link to="/#projects" className="sidebar-link">
-              <img src="../../icons/projects.png" alt="projects" />
+              <img
+                className="sidebar-icon"
+                src="../../icons/projects.svg"
+                alt="projects"
+              />
             </Link>
             <span className="tooltiptext">Projects</span>
           </div>
           <div className="tooltips">
-            <Link to="/#languages" className="sidebar-link">
-              <img src="../../icons/languages.png" alt="languages" />
-            </Link>
-            <span className="tooltiptext">Languages</span>
-          </div>
-          <div className="tooltips">
             <Link to="/#achievements" className="sidebar-link">
-              <img src="../../icons/achievements.png" alt="achievements" />
+              <img
+                className="sidebar-icon"
+                src="../../icons/achievements.svg"
+                alt="achievements"
+              />
             </Link>
             <span className="tooltiptext">Achievements</span>
           </div>
           <div className="tooltips">
-            <Link to="/#certifications" className="sidebar-link">
-              <img src="../../icons/certifications.png" alt="certifications" />
-            </Link>
-            <span className="tooltiptext">Certification</span>
-          </div>
-          <div className="tooltips">
             <Link to="/#photography" className="sidebar-link">
-              <img src="../../icons/photography.png" alt="photography" />
+              <img
+                className="sidebar-icon"
+                src="../../icons/photography.svg"
+                alt="photography"
+              />
             </Link>
             <span className="tooltiptext">Photography</span>
           </div>
           <div className="tooltips">
-            <Link to="/#resume" className="sidebar-link">
-              <img src="../../icons/resume.png" alt="resume" />
-            </Link>
-            <span className="tooltiptext">Resume</span>
-          </div>
-          <div className="tooltips">
             <Link to="/#contact" className="sidebar-link">
-              <img src="../../icons/contact.png" alt="contact" />
+              <img
+                className="sidebar-icon"
+                src="../../icons/contact.svg"
+                alt="contact"
+              />
             </Link>
             <span className="tooltiptext">Contact</span>
           </div>
