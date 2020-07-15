@@ -38,6 +38,21 @@ body {
   min-height: 100%;
 }
 
+@media only screen and (max-width: 325px){
+  
+  #podes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #podes div {
+    text-align: center;
+  }
+
+}
+
 .section {
   height: 100vh;
   width: 100%;
@@ -163,10 +178,7 @@ body {
 
 #podes p {
   color: white;
-}
-
-#podes div {
-  
+  text-align: center;
 }
 
 #podes button {
@@ -275,7 +287,7 @@ body {
 
 .instagram-preview {
   width: 100%;
-  transition: all .1s;
+  transition: all .5s;
   filter: grayscale(100%);
   border-radius: 5px;
 }
@@ -464,6 +476,11 @@ body {
     width: 30%;
   }
 
+  #podes p {
+    text-align: left;
+    margin-left: 10px;
+  }
+  
   .we-card-container {
     display: grid;
     grid-template-columns: 50% 50%;

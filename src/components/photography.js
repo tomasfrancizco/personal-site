@@ -32,7 +32,7 @@ export default () => {
       <h5>Chequeá algunas de las fotos que saco</h5>
       <div id="instagram-feed-container">
         {small.allFile.edges.map(({ node }) => (
-          <a href={`https://www.instagram.com/p/${node.id}`} target="_blank">
+          <a href="https://www.instagram.com/tomasfrancizco" target="_blank">
             <Img
               fluid={node.childImageSharp.fluid}
               className="instagram-preview"
