@@ -23,9 +23,10 @@ export default function IndexPage() {
       <Education />
       <Skills />
       <Projects />
-      <Achievements /> */}
+      <Achievements />
+       */}
       <Photography />
-      {/* <Contact /> */}
+      <Contact />
     </Layout>
   )
 }

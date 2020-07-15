@@ -303,7 +303,6 @@ body {
 }
 
 .instagram-preview {
-  width: 100%;
   transition: all 0.5s;
   filter: grayscale(100%);
   border-radius: 5px;
@@ -394,7 +393,7 @@ body {
 
   .sidebar-icon {
     width: 20px;
-    transition: all 0.5s;
+    transition: all 1s;
   }
 
   /* #sidebar img:hover {

@@ -3,24 +3,24 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 export default () => {
-  const small = useStaticQuery(graphql`
+  const original = useStaticQuery(graphql`
     query MyQuery {
       allFile(
-        filter: { relativeDirectory: { eq: "Instagram/Small" }, extension: {} }
+        filter: {
+          relativePath: { regex: "/^((?!small).)*$/" }
+          relativeDirectory: { eq: "Instagram" }
+        }
       ) {
         edges {
           node {
             id
-            base
             childImageSharp {
+              id
               fluid {
-                aspectRatio
-                base64
-                sizes
-                src
-                srcSet
+                ...GatsbyImageSharpFluid
               }
             }
+            publicURL
           }
         }
       }
@@ -31,8 +31,8 @@ export default () => {
       <h3 className="section-title">PHOTOGRAPHY</h3>
       <h5>Chequeá algunas de las fotos que saco</h5>
       <div id="instagram-feed-container">
-        {small.allFile.edges.map(({ node }) => (
-          <a href="https://www.instagram.com/tomasfrancizco" target="_blank">
+        {original.allFile.edges.map(({ node }) => (
+          <a href={node.publicURL} target="_blank">
             <Img
               fluid={node.childImageSharp.fluid}
               className="instagram-preview"
