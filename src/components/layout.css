@@ -6,7 +6,7 @@ FFF Blanco
 
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap");
 
-@keyframes arrow {
+@keyframes arrowAnimation {
   0% {
     opacity: 1;
   }
@@ -17,6 +17,16 @@ FFF Blanco
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes coverInfoAnimation {
+  0% {
+    margin-right: -500px;
+  }
+
+  100% {
+    margin-right: 0;
   }
 }
 
@@ -150,6 +160,7 @@ body {
   flex-direction: column;
   margin-top: 20px;
   text-shadow: 1px 1px 5px black;
+  animation: coverInfoAnimation 2s;
 }
 
 #cover-info > h1 {
@@ -208,7 +219,7 @@ body {
 }
 
 #arrow {
-  animation: arrow 2s infinite;
+  animation: arrowAnimation 2s infinite;
   transform: rotate(90deg);
   width: 40px;
 }
@@ -383,7 +394,7 @@ body {
 
   .sidebar-icon {
     width: 20px;
-    transition: all 0.3s;
+    transition: all 0.5s;
   }
 
   /* #sidebar img:hover {
