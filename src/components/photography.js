@@ -1,13 +1,15 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import { Carousel } from "react-bootstrap"
+import location from "../../public/icons/pin.svg"
 
 export default () => {
   const original = useStaticQuery(graphql`
     query MyQuery {
       allFile(
         filter: {
-          relativePath: { regex: "/^((?!small).)*$/" }
+          relativePath: { regex: "/^((?!original).)*$/" }
           relativeDirectory: { eq: "Instagram" }
         }
       ) {
@@ -21,6 +23,7 @@ export default () => {
               }
             }
             publicURL
+            name
           }
         }
       }
@@ -29,20 +32,18 @@ export default () => {
   return (
     <div className="section" id="photography">
       <h3 className="section-title">PHOTOGRAPHY</h3>
-      <h5>Chequeá algunas de las fotos que saco</h5>
       <Carousel>
         {original.allFile.edges.map(({ node }) => (
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={node.publicURL}
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
+          <Carousel.Item>
+            <Img
+              fluid={node.childImageSharp.fluid}
+              className="instagram-picture"
+              alt="Instagram picture"
+            />
+            <Carousel.Caption>
+              <p><img src={location} alt="location" style={{height: "1em"}}/> {node.name}</p>
+            </Carousel.Caption>
+          </Carousel.Item>
         ))}
       </Carousel>
     </div>
