@@ -6,23 +6,24 @@ import location from "../../public/icons/pin.svg"
 
 export default () => {
   const query = useStaticQuery(graphql`
-  query MyQuery {
-    __typename
-    allInstaNode(limit: 10, sort: {fields: localFile___birthTime}) {
-      edges {
-        node {
-          localFile {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
+    query MyQuery {
+      __typename
+      allInstaNode(limit: 10, sort: { fields: timestamp, order: DESC }) {
+        edges {
+          node {
+            localFile {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
               }
+              publicURL
             }
-            publicURL
+            id
           }
         }
       }
     }
-  }
   `)
   return (
     <div className="section" id="photography">
@@ -30,13 +31,18 @@ export default () => {
       <Carousel>
         {query.allInstaNode.edges.map(({ node }) => (
           <Carousel.Item>
-            <Img
-              fluid={node.localFile.childImageSharp.fluid}
-              className="instagram-picture"
-              alt="Instagram picture"
-            />
+            <a href={`https://www.instagram.com/p/${node.id}`} target="_blank">
+              <Img
+                fluid={node.localFile.childImageSharp.fluid}
+                className="instagram-picture"
+                alt="Instagram picture"
+              />
+            </a>
             <Carousel.Caption>
-              <p><img src={location} alt="location" style={{height: "1em"}}/>Insta</p>
+              <p>
+                <img src={location} alt="location" style={{ height: "1em" }} />
+                Insta
+              </p>
             </Carousel.Caption>
           </Carousel.Item>
         ))}
