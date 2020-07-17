@@ -291,7 +291,19 @@ body {
 }
 
 .slide {
-  width: 100%;
+  width: 95%;
+}
+
+.carousel-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-caption p {
+  background: rgba(0,0,0,0.8);
+  max-width: 60%;
+  border-radius: 5px;
 }
 
 #projects.section {
@@ -497,12 +509,7 @@ body {
   }
 
   .slide {
-    width: 100%;
-    height: 80vh;
-  }
-
-  .carousel-item {
-    width: 100%;
+    width: 80%;
   }
   
   .instagram-picture {
@@ -512,6 +519,7 @@ body {
   .instagram-picture picture img {
     object-fit: contain !important;
     background: lightgray;
+    border-radius: 10px;
   }
 
   .contact-form {

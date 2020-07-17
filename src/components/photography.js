@@ -17,9 +17,9 @@ export default () => {
                   ...GatsbyImageSharpFluid
                 }
               }
-              publicURL
             }
             id
+            caption
           }
         }
       }
@@ -39,10 +39,7 @@ export default () => {
               />
             </a>
             <Carousel.Caption>
-              <p>
-                <img src={location} alt="location" style={{ height: "1em" }} />
-                Insta
-              </p>
+              <p>{node.caption}</p>
             </Carousel.Caption>
           </Carousel.Item>
         ))}
