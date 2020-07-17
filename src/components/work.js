@@ -10,11 +10,10 @@ const Work = () => {
   const handleShow = () => setShow(true)
 
   return (
-    <div className="section" id="work">
+    <div id="work">
       <h3 className="section-title">WORK</h3>
       <div className="card-container we-card-container">
         <Card className="card">
-          <Card.Img variant="top" src={warnerMedia} />
           <Card.Body>
             <Card.Title>Sales Operations Manager</Card.Title>
             <Card.Subtitle>
@@ -36,7 +35,6 @@ const Work = () => {
           </Card.Body>
         </Card>
         <Card className="card">
-          <Card.Img variant="top" src={warnerMedia} />
           <Card.Body>
             <Card.Title>Ad Sales Supervisor</Card.Title>
             <Card.Subtitle>

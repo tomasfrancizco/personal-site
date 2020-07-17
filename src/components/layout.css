@@ -71,7 +71,7 @@ body {
 }
 
 .section-title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .section > h3 {
@@ -108,6 +108,7 @@ body {
   margin: 5px;
   border: 0;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .burger-menu-list a {
@@ -130,7 +131,6 @@ body {
 
 .burger-menu-list-item:hover {
   background-color: lightgray;
-  text-decoration: none;
 }
 
 .toggle {
@@ -251,8 +251,13 @@ body {
 }
 
 #about.section {
-  padding: 40px;
+  padding: 20px;
   text-align: justify;
+}
+
+.work-education-container {
+  width: 100%;
+  padding: 20px;
 }
 
 .card {
@@ -260,6 +265,7 @@ body {
   height: 98%;
   transition: border 0.1s;
   font-size: 0.5em;
+  width: 95%;
 }
 
 .card:hover {
@@ -268,11 +274,11 @@ body {
 }
 
 .we-card-container {
-  display: grid;
-  grid-template-columns: 100%;
+  width: 100%
+}
+
+#work, #education {
   width: 100%;
-  place-items: center;
-  place-content: center;
 }
 
 .work-description-ul {
@@ -508,15 +514,28 @@ body {
     margin-left: 10px;
   }
 
+  .work-education-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+  }
+
   .we-card-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    place-items: center;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+   
+  #work, #education {
+    width: 50%;
   }
 
   .card {
     margin: 5px 5%;
+    height: 160px;
   }
 
   #projects-card-container {

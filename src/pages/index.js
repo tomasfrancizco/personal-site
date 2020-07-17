@@ -18,8 +18,11 @@ export default function IndexPage() {
     <Layout>
       <SEO title="Homeee" />
       <About />
-      <Work />
-      <Education />
+      <div className="section work-education-container">
+        <Work />
+        <Education />
+      </div>
+
       {/* <Skills />
       <Projects />
       <Achievements />
