@@ -4,14 +4,19 @@ import burgerMenu from "../../../public/icons/burger-menu.png"
 
 const Header = () => {
   const listItems = document.getElementsByClassName("burger-menu-list-item")
+  const list = document.getElementsByClassName("burger-menu-list")
+  const icon = document.getElementsByClassName("navbar-icon")
   const toggleMenu = () => {
-    console.log("PooP", listItems)
     if (listItems[0].getAttribute("class") == "burger-menu-list-item") {
+      list[0].style.border = "1px solid gray"
       for (let i = 0; i < listItems.length; i++) {
+        icon[i].style.visibility = "visible"
         listItems[i].setAttribute("class", "burger-menu-list-item toggle")
       }
     } else {
+      list[0].style.border = "0"
       for (let i = 0; i < listItems.length; i++) {
+        icon[i].style.visibility = "hidden"
         listItems[i].setAttribute("class", "burger-menu-list-item")
       }
     }
@@ -29,7 +34,7 @@ const Header = () => {
         <br />
         <ul className="burger-menu-list">
           <Link to="/#about">
-            <li className="burger-menu-list-item">
+            <li className="burger-menu-list-item" onClick={toggleMenu}>
               <img
                 className="navbar-icon"
                 src="../../icons/user.svg"
@@ -39,7 +44,7 @@ const Header = () => {
             </li>
           </Link>
           <Link to="/#work">
-            <li className="burger-menu-list-item">
+            <li className="burger-menu-list-item" onClick={toggleMenu}>
               <img
                 className="navbar-icon"
                 src="../../icons/work.svg"
@@ -49,7 +54,7 @@ const Header = () => {
             </li>
           </Link>
           <Link to="/#education">
-            <li className="burger-menu-list-item">
+            <li className="burger-menu-list-item" onClick={toggleMenu}>
               <img
                 className="navbar-icon"
                 src="../../icons/education.svg"
@@ -59,7 +64,7 @@ const Header = () => {
             </li>
           </Link>
           <Link to="/#skills">
-            <li className="burger-menu-list-item">
+            <li className="burger-menu-list-item" onClick={toggleMenu}>
               <img
                 className="navbar-icon"
                 src="../../icons/skills.svg"
@@ -69,7 +74,7 @@ const Header = () => {
             </li>
           </Link>
           <Link to="/#projects">
-            <li className="burger-menu-list-item">
+            <li className="burger-menu-list-item" onClick={toggleMenu}>
               <img
                 className="navbar-icon"
                 src="../../icons/projects.svg"
@@ -79,7 +84,7 @@ const Header = () => {
             </li>
           </Link>
           <Link to="/#achievements">
-            <li className="burger-menu-list-item">
+            <li className="burger-menu-list-item" onClick={toggleMenu}>
               <img
                 className="navbar-icon"
                 src="../../icons/achievements.svg"
@@ -89,7 +94,7 @@ const Header = () => {
             </li>
           </Link>
           <Link to="/#photography">
-            <li className="burger-menu-list-item">
+            <li className="burger-menu-list-item" onClick={toggleMenu}>
               <img
                 className="navbar-icon"
                 src="../../icons/photography.svg"
@@ -99,7 +104,7 @@ const Header = () => {
             </li>
           </Link>
           <Link to="/#contact">
-            <li className="burger-menu-list-item">
+            <li className="burger-menu-list-item" onClick={toggleMenu}>
               <img
                 className="navbar-icon"
                 src="../../icons/contact.svg"

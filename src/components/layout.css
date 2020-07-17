@@ -87,7 +87,6 @@ body {
   z-index: 1;
   background-color: #fff;
   margin: 0;
-  opacity: 0.9;
   overflow-y: visible;
 }
 
@@ -105,23 +104,39 @@ body {
   opacity: .5;
 }
 
+.burger-menu-list {
+  margin: 5px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.burger-menu-list a {
+  text-decoration: none;
+}
+
 .burger-menu-list-item {
   background-color: #fff;
   visibility: hidden;
   width: 100%;
   height: 0px;
   list-style-type: none;
-  color: black;
+  color: transparent;
   text-align: left;
   padding-left: 10px;
-  transition-property: height, visibility;
-  transition-duration: 0.5s, 0s;
+  transition-property: height, visibility, color;
+  transition-duration: 0.5s, 0.5s, 0s;
   font-size: 1.5rem;
+}
+
+.burger-menu-list-item:hover {
+  background-color: lightgray;
+  text-decoration: none;
 }
 
 .toggle {
   height: 35px !important;
   visibility: visible;
+  color: black;
 }
 
 #sidebar {

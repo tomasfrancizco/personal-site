@@ -18,14 +18,14 @@ export default function IndexPage() {
     <Layout>
       <SEO title="Homeee" />
       <About />
-      {/* <Work />
+      <Work />
       <Education />
-      <Skills />
+      {/* <Skills />
       <Projects />
       <Achievements />
-       */}
       <Photography />
       <Contact />
+      */}
     </Layout>
   )
 }
