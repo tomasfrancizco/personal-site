@@ -109,6 +109,7 @@ body {
   border: 0;
   border-radius: 5px;
   overflow: hidden;
+  background: #fff;
 }
 
 .burger-menu-list a {
@@ -131,6 +132,10 @@ body {
 
 .burger-menu-list-item:hover {
   background-color: lightgray;
+}
+
+.burger-menu-list-item:active {
+  background-color: gray;
 }
 
 .toggle {
@@ -200,8 +205,18 @@ body {
   list-style-type: none;
 }
 
+#social-list li {
+  width: 40px;
+  height: 40px;
+}
+
 #social-list img {
   width: 35px;
+  transition: width .2s;
+}
+
+#social-list img:hover {
+  width: 38px;
 }
 
 #social-list > li {
@@ -566,8 +581,5 @@ body {
 @media only screen and (min-width: 960px) {
   .skills-card-container {
     grid-template-columns: 45% 45% 45%;
-  }
-  #instagram-feed-container > a {
-    width: 90%;
   }
 }

@@ -29,20 +29,25 @@ export default () => {
     <div className="section" id="photography">
       <h3 className="section-title">PHOTOGRAPHY</h3>
       <Carousel>
-        {query.allInstaNode.edges.map(({ node }) => (
-          <Carousel.Item>
-            <a href={`https://www.instagram.com/p/${node.id}`} target="_blank">
-              <Img
-                fluid={node.localFile.childImageSharp.fluid}
-                className="instagram-picture"
-                alt="Instagram picture"
-              />
-            </a>
-            <Carousel.Caption>
-              <p>{node.caption}</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        ))}
+        {query.allInstaNode.edges.map(({ node }, i) => {
+          return (
+            <Carousel.Item key={i}>
+              <a
+                href={`https://www.instagram.com/p/${node.id}`}
+                target="_blank"
+              >
+                <Img
+                  fluid={node.localFile.childImageSharp.fluid}
+                  className="instagram-picture"
+                  alt="Instagram picture"
+                />
+              </a>
+              <Carousel.Caption>
+                <p>{node.caption !== null ? node.caption.slice(0, 20) + "..." : null}</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          )
+        })}
       </Carousel>
     </div>
   )

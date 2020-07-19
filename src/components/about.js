@@ -71,6 +71,18 @@ const About = () => {
                 />
               </a>
             </li>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=5491140577446"
+                target="_blank"
+              >
+                <img
+                  src="../../icons/whatsapp.svg"
+                  alt="whatsapp"
+                  title="whatsapp"
+                />
+              </a>
+            </li>
           </ul>
           <div id="podes">
             <p>Podés...</p>
