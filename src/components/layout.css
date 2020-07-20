@@ -22,11 +22,11 @@ FFF Blanco
 
 @keyframes coverInfoAnimation {
   0% {
-    margin-right: -500px;
+    opacity: 0.2;
   }
 
   100% {
-    margin-right: 0;
+    opacity: 1;
   }
 }
 
@@ -168,6 +168,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 10px;
+  animation: coverInfoAnimation 2s;
 }
 
 #cover > img {
@@ -180,7 +181,6 @@ body {
   flex-direction: column;
   margin-top: 20px;
   text-shadow: 1px 1px 5px black;
-  animation: coverInfoAnimation 2s;
 }
 
 #cover-info > h1 {
