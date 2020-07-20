@@ -2,8 +2,6 @@ import React, { useState } from "react"
 import { Card, Button } from "react-bootstrap"
 import Modal from "react-bootstrap/Modal"
 
-import warnerMedia from "../images/warnermedia.png"
-
 const Work = () => {
   const [show, setShow] = useState(false)
   const handleClose = () => setShow(false)

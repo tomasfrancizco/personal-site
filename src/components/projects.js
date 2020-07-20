@@ -1,12 +1,15 @@
 import React from "react"
 import { Card } from "react-bootstrap"
+import morfappImg from "../images/projects/morfapp.png"
+import romaImg from "../images/projects/roma.png"
+import denunciaImg from "../images/projects/denuncia.jpg"
 
 const Projects = () => (
   <div className="section" id="projects">
     <h3 className="section-title">PROJECTS</h3>
     <div id="projects-card-container">
       <Card className="card projects-card">
-        <Card.Img variant="top" src="" />
+        <Card.Img variant="top" src={morfappImg} />
         <Card.Body>
           <Card.Title>morFapp</Card.Title>
           <Card.Subtitle>Julio 2019</Card.Subtitle>
@@ -18,7 +21,7 @@ const Projects = () => (
         </Card.Body>
       </Card>
       <Card className="card projects-card">
-        <Card.Img variant="top" src="" />
+        <Card.Img variant="top" src={romaImg} />
         <Card.Body>
           <Card.Title>La Roma Wars</Card.Title>
           <Card.Subtitle>Febrero 2019</Card.Subtitle>
@@ -35,7 +38,7 @@ const Projects = () => (
         </Card.Body>
       </Card>
       <Card className="card projects-card">
-        <Card.Img variant="top" src="" />
+        <Card.Img variant="top" src={denunciaImg} />
         <Card.Body>
           <Card.Title>Denuncia Chilanga</Card.Title>
           <Card.Subtitle>Abril 2019</Card.Subtitle>

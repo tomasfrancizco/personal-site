@@ -1,9 +1,6 @@
 import React from "react"
 import { Card } from "react-bootstrap"
 
-import ironhack from "../images/ironhack2.jpg"
-import uces from "../images/uces2.png"
-
 const Education = () => (
   <div id="education">
     <h3 className="section-title">EDUCATION</h3>
