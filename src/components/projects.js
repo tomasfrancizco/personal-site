@@ -8,66 +8,48 @@ const Projects = () => (
       <Card className="card projects-card">
         <Card.Img variant="top" src="" />
         <Card.Body>
-          <Card.Title>Sales Operations Manager</Card.Title>
-          <Card.Subtitle>
-            @{" "}
-            <a
-              href="https://www.warnermediagroup.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              WarnerMedia
-            </a>
-          </Card.Subtitle>
-          <br></br>
-          <Card.Subtitle>2015 - 2020</Card.Subtitle>
+          <Card.Title>morFapp</Card.Title>
+          <Card.Subtitle>Julio 2019</Card.Subtitle>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            morfApp es una red social gastronómica en la que los usuarios puede
+            compartir sus recetas, guardar sus favoritas y buscar otras de
+            acuerdo a los ingredientes con los que cuentan en el momento
           </Card.Text>
         </Card.Body>
       </Card>
       <Card className="card projects-card">
         <Card.Img variant="top" src="" />
         <Card.Body>
-          <Card.Title>Sales Operations Manager</Card.Title>
-          <Card.Subtitle>
-            @{" "}
-            <a
-              href="https://www.warnermediagroup.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              WarnerMedia
-            </a>
-          </Card.Subtitle>
-          <br></br>
-          <Card.Subtitle>2015 - 2020</Card.Subtitle>
+          <Card.Title>La Roma Wars</Card.Title>
+          <Card.Subtitle>Febrero 2019</Card.Subtitle>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            <p>Un juego de plataformas creado con HTML Canvas y Javascript.</p>
+            <p>Localizado en el barrio de "La Roma" en la Ciudad de México.</p>
+            <p>
+              Cuenta la historia de una lucha entre personajes típicos de la
+              colonia, teniendo como Jefa final a la niña conocida por ser la
+              voz del camión que recoge electrodomésticos.
+            </p>
+            <p>Cuenta con opción de uno y dos jugadores.</p>
           </Card.Text>
         </Card.Body>
       </Card>
       <Card className="card projects-card">
         <Card.Img variant="top" src="" />
         <Card.Body>
-          <Card.Title>Sales Operations Manager</Card.Title>
-          <Card.Subtitle>
-            @{" "}
-            <a
-              href="https://www.warnermediagroup.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              WarnerMedia
-            </a>
-          </Card.Subtitle>
-          <br></br>
-          <Card.Subtitle>2015 - 2020</Card.Subtitle>
+          <Card.Title>Denuncia Chilanga</Card.Title>
+          <Card.Subtitle>Abril 2019</Card.Subtitle>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            <p>
+              Una plataforma en la que los usuarios, luego de registrarse y
+              acceder, pueden realizar denuncias y/u observaciones acerca de
+              situaciones o problemas con los que se cruzan en la ciudad.
+            </p>
+            <p>
+              El objetivo es generar conciencia y un sentido de pertenencia a la
+              comunidad, impulsando de esta manera el cuidado de los espacios
+              comunes.
+            </p>
           </Card.Text>
         </Card.Body>
       </Card>

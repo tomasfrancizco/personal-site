@@ -22,11 +22,10 @@ export default function IndexPage() {
         <Work />
         <Education />
       </div>
-      {/* <Skills />
+      {/* <Skills /> */}
       <Projects />
-      <Achievements />
-      */}
-      <Photography />
+      {/* <Achievements />*/}
+      {/* <Photography /> */}
       {/* <Contact /> */}
       
     </Layout>
