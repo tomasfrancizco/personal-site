@@ -2,7 +2,6 @@ import React from "react"
 import { Form, Button } from "react-bootstrap"
 
 const Contact = () => {
-
   return (
     <div className="section" id="contact">
       <h3>CONTACT</h3>
@@ -12,7 +11,7 @@ const Contact = () => {
         method="post"
         action="https://getform.io/f/035d54f4-515a-461b-8cee-2a2ece721769"
       >
-        <Form.Group>
+        <Form.Group uk-scrollspy="cls: uk-animation-slide-left; delay: 300">
           <Form.Label>Full name</Form.Label>
           <Form.Control
             type="text"
@@ -21,7 +20,7 @@ const Contact = () => {
             id="name"
           />
         </Form.Group>
-        <Form.Group>
+        <Form.Group uk-scrollspy="cls: uk-animation-slide-right; delay: 300">
           <Form.Label>Email address</Form.Label>
           <Form.Control
             type="email"
@@ -30,11 +29,16 @@ const Contact = () => {
             id="email"
           />
         </Form.Group>
-        <Form.Group>
+        <Form.Group uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">
           <Form.Label>Message</Form.Label>
           <Form.Control as="textarea" rows="3" name="message" id="message" />
         </Form.Group>
-        <Button type="submit" variant="primary" id="submit">
+        <Button
+          type="submit"
+          variant="primary"
+          id="submit"
+          uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300"
+        >
           Send Message
         </Button>
       </Form>

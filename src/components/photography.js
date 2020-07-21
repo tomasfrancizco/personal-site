@@ -26,7 +26,7 @@ export default () => {
     }
   `)
   return (
-    <div className="section" id="photography">
+    <div className="section" id="photography" uk-scrollspy="cls: uk-animation-fade; delay: 300">
       <h3 className="section-title">PHOTOGRAPHY</h3>
       <Carousel>
         {query.allInstaNode.edges.map(({ node }, i) => {

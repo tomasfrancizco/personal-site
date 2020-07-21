@@ -26,7 +26,7 @@ export default function IndexPage() {
       <Projects />
       {/* <Achievements />*/}
       <Photography />
-      {/* <Contact /> */}
+      <Contact />
       
     </Layout>
   )

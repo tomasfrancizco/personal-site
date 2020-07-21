@@ -103,8 +103,12 @@ const About = () => {
         </a>
       </div>
       <div className="section" id="about">
-        <img src={octoImg} alt="codercat" uk-scrollspy="cls: uk-animation-slide-left; repeat: true; delay: 200"/>
-        <div uk-scrollspy="cls: uk-animation-fade; delay: 200; repeat: true">
+        <img
+          src={octoImg}
+          alt="codercat"
+          uk-scrollspy="cls: uk-animation-slide-left; delay: 300"
+        />
+        <div uk-scrollspy="cls: uk-animation-fade; delay: 300">
           <h3 className="section-title">ABOUT</h3>
           <p>
             Hola! Soy Tomás, un desarrollador web ubicado en Buenos Aires.
