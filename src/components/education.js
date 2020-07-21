@@ -2,7 +2,7 @@ import React from "react"
 import { Card } from "react-bootstrap"
 
 const Education = () => (
-  <div id="education">
+  <div id="education" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200; repeat: true">
     <h3 className="section-title">EDUCATION</h3>
     <div className="card-container we-card-container">
       <Card className="card">

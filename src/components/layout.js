@@ -11,9 +11,14 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Sidebar from "./common/sidebar"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../uikit-3.5.5/css/uikit.min.css';
 import "./layout.css"
 
-import Footer from "./common/footer"
+if (typeof window !== "undefined") {
+  const UIkit = require("uikit/dist/js/uikit.min")
+  const icons = require("uikit/dist/js/uikit-icons.min")
+  UIkit.use(icons)
+}
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

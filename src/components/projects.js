@@ -7,7 +7,7 @@ import trophy from "../../public/icons/trophy.svg"
 import noImage from "../images/No-Image-Available.png"
 
 const Projects = () => (
-  <div className="section" id="projects">
+  <div className="section" id="projects" uk-scrollspy="cls: uk-animation-fade; delay: 200; repeat: true">
     <h3 className="section-title">PROJECTS</h3>
     <div id="projects-card-container">
       <Card className="card projects-card">

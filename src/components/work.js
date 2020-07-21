@@ -8,7 +8,7 @@ const Work = () => {
   const handleShow = () => setShow(true)
 
   return (
-    <div id="work">
+    <div id="work" uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">
       <h3 className="section-title">WORK</h3>
       <div className="card-container we-card-container">
         <Card className="card">

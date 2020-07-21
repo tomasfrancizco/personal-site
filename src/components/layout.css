@@ -279,8 +279,12 @@ body {
 .card {
   margin: 5px;
   transition: border 0.1s;
-  font-size: 0.5em;
+  font-size: 0.5rem;
   width: 95%;
+}
+
+.card p {
+  font-size: 0.7rem;
 }
 
 .card:hover {
@@ -303,6 +307,7 @@ body {
 
 .work-description-ul li {
   margin-left: 20px;
+  font-size: 0.8rem;
 }
 
 .skills-card-container {
@@ -353,7 +358,6 @@ body {
   display: grid;
   grid-template-columns: 100% 100% 100% 100% 100%;
   overflow-x: auto;
-  border: 1px solid gray;
 }
 
 .projects-card {
@@ -376,9 +380,10 @@ body {
   display: inline-block;
   padding: 5px 25px;
   margin: 2px 2px 2px 0;
+  font-size: 0.45rem;
   background-color: #f1f1f1;
   border-radius: 25px;
-  transition: background-color .4s;
+  transition: background-color 0.4s;
 }
 
 .chip:hover {
@@ -392,9 +397,8 @@ body {
 /* ------------------------------------------------------------------------ */
 
 @media only screen and (min-width: 768px) {
-
   #main {
-    width: calc(100% - 60px);
+    width: calc(100% - 50px);
   }
 
   .section {
@@ -584,7 +588,7 @@ body {
 
   #projects-card-container {
     width: 80%;
-    max-height: 80%;
+    max-height: 90%;
     grid-template-columns: 40% 40% 40% 40% 40%;
     border-radius: 5px;
     justify-items: center;
