@@ -341,10 +341,11 @@ body {
   background: rgba(0, 0, 0, 0.8);
   max-width: 60%;
   border-radius: 5px;
+  height: 100%;
 }
 
 #projects.section {
-  width: 100vw;
+  width: 100%;
 }
 
 #projects-card-container {
@@ -391,6 +392,11 @@ body {
 /* ------------------------------------------------------------------------ */
 
 @media only screen and (min-width: 768px) {
+
+  #main {
+    width: calc(100% - 60px);
+  }
+
   .section {
     width: 80%;
     margin: auto;
