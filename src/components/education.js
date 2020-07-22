@@ -4,7 +4,7 @@ const Education = () => (
   <div id="education" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">
     <h3 className="section-title">EDUCATION</h3>
     <div className="card-container we-card-container">
-      <div className="uk-card uk-card-default uk-card-body uk-width-1@m">
+      <div className="uk-card uk-card-default uk-card-body uk-width-1@m card">
         <h3 className="uk-card-title">Full Stack Developer (MERN)</h3>
         <p>
           @{" "}
@@ -18,7 +18,7 @@ const Education = () => (
         </p>
         <p>2019</p>
       </div>
-      <div className="uk-card uk-card-default uk-card-body uk-width-1@m">
+      <div className="uk-card uk-card-default uk-card-body uk-width-1@m card">
         <h3 className="uk-card-title">Advertising</h3>
         <p>
           @{" "}

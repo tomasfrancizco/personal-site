@@ -26,5 +26,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
     },
+    "gatsby-plugin-dark-mode",
   ],
 }

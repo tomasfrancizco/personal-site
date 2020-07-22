@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Carousel } from "react-bootstrap"
-import location from "../../public/icons/pin.svg"
 
 export default () => {
   const query = useStaticQuery(graphql`

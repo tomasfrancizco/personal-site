@@ -5,7 +5,7 @@ const Work = () => {
     <div id="work" uk-scrollspy="cls: uk-animation-slide-top; delay: 300">
       <h3 className="section-title">WORK</h3>
       <div className="card-container we-card-container">
-        <div className="uk-card uk-card-default uk-card-body uk-width-1@m">
+        <div className="uk-card uk-card-default uk-card-body uk-width-1@m card">
           <h3 className="uk-card-title">Sales Operations Manager</h3>
           <p>
             @{" "}
@@ -53,7 +53,7 @@ const Work = () => {
           </div>
         </div>
 
-        <div className="uk-card uk-card-default uk-card-body uk-width-1@m">
+        <div className="uk-card uk-card-default uk-card-body uk-width-1@m card">
           <h3 className="uk-card-title">Ad Sales Supervisor</h3>
           <p>
             @{" "}

@@ -28,15 +28,15 @@ const Projects = () => (
             </a>
           </Card.Subtitle>
           <br />
+          <div className="chip-container">
+            <div className="chip">React</div>
+            <div className="chip">MongoDB</div>
+            <div className="chip">HTML</div>
+            <div className="chip">CSS</div>
+            <div className="chip">UIkit</div>
+            <div className="chip">Javascript</div>
+          </div>
           <Card.Text>
-            <div className="chip-container">
-              <div className="chip">React</div>
-              <div className="chip">MongoDB</div>
-              <div className="chip">HTML</div>
-              <div className="chip">CSS</div>
-              <div className="chip">UIkit</div>
-              <div className="chip">Javascript</div>
-            </div>
             morfApp es una red social gastronómica en la que los usuarios pueden
             compartir sus recetas, guardar sus favoritas y buscar otras de
             acuerdo a los ingredientes con los que cuentan en el momento.
@@ -69,19 +69,20 @@ const Projects = () => (
             </a>
           </Card.Subtitle>
           <br />
+          <div className="chip-container">
+            <div className="chip">Javascript</div>
+            <div className="chip">Canvas</div>
+          </div>
           <Card.Text>
-            <div className="chip-container">
-              <div className="chip">Javascript</div>
-              <div className="chip">Canvas</div>
-            </div>
-            <p>Un juego de plataformas creado con HTML Canvas y Javascript.</p>
-            <p>Localizado en el barrio de "La Roma" en la Ciudad de México.</p>
-            <p>
-              Cuenta la historia de una lucha entre personajes típicos de la
-              colonia, teniendo como Jefa final a la niña conocida por ser la
-              voz del camión que recoge electrodomésticos.
-            </p>
-            <p>Cuenta con opción de uno y dos jugadores.</p>
+            Un juego de plataformas creado con HTML Canvas y Javascript.
+            <br />
+            Localizado en el barrio de "La Roma" en la Ciudad de México.
+            <br />
+            Cuenta la historia de una lucha entre personajes típicos de la
+            colonia, teniendo como Jefa final a la niña conocida por ser la voz
+            del camión que recoge electrodomésticos.
+            <br />
+            Cuenta con opción de uno y dos jugadores.
           </Card.Text>
         </Card.Body>
       </Card>
@@ -99,26 +100,23 @@ const Projects = () => (
             </a>
           </Card.Subtitle>
           <br />
+          <div className="chip-container">
+            <div className="chip">HTML</div>
+            <div className="chip">CSS</div>
+            <div className="chip">Javascript</div>
+            <div className="chip">NodeJS</div>
+            <div className="chip">Express</div>
+            <div className="chip">MongoDB</div>
+            <div className="chip">Mongoose</div>
+          </div>
           <Card.Text>
-            <div className="chip-container">
-              <div className="chip">HTML</div>
-              <div className="chip">CSS</div>
-              <div className="chip">Javascript</div>
-              <div className="chip">NodeJS</div>
-              <div className="chip">Express</div>
-              <div className="chip">MongoDB</div>
-              <div className="chip">Mongoose</div>
-            </div>
-            <p>
-              Una plataforma en la que los usuarios, luego de registrarse y
-              acceder, pueden realizar denuncias y/u observaciones acerca de
-              situaciones o problemas con los que se cruzan en la ciudad.
-            </p>
-            <p>
-              El objetivo es generar conciencia y un sentido de pertenencia a la
-              comunidad, impulsando de esta manera el cuidado de los espacios
-              comunes.
-            </p>
+            Una plataforma en la que los usuarios, luego de registrarse y
+            acceder, pueden realizar denuncias y/u observaciones acerca de
+            situaciones o problemas con los que se cruzan en la ciudad.
+            <br />
+            El objetivo es generar conciencia y un sentido de pertenencia a la
+            comunidad, impulsando de esta manera el cuidado de los espacios
+            comunes.
           </Card.Text>
         </Card.Body>
       </Card>
@@ -136,16 +134,14 @@ const Projects = () => (
             </a>
           </Card.Subtitle>
           <br />
+          <div className="chip-container">
+            <div className="chip">HTML</div>
+            <div className="chip">CSS</div>
+            <div className="chip">Javascript</div>
+          </div>
           <Card.Text>
-            <div className="chip-container">
-              <div className="chip">HTML</div>
-              <div className="chip">CSS</div>
-              <div className="chip">Javascript</div>
-            </div>
-            <p>
-              Una simple web app con un cronómetro para aplicar la técnica
-              Pomodoro.
-            </p>
+            Una simple web app con un cronómetro para aplicar la técnica
+            Pomodoro.
           </Card.Text>
         </Card.Body>
       </Card>
@@ -163,14 +159,12 @@ const Projects = () => (
             </a>
           </Card.Subtitle>
           <br />
-          <Card.Text>
-            <div className="chip-container">
-              <div className="chip">HTML</div>
-              <div className="chip">CSS</div>
-              <div className="chip">Javascript</div>
-            </div>
-            <p>Una calculadora con diseño neomorfista.</p>
-          </Card.Text>
+          <div className="chip-container">
+            <div className="chip">HTML</div>
+            <div className="chip">CSS</div>
+            <div className="chip">Javascript</div>
+          </div>
+          <Card.Text>Una calculadora con diseño neomorfista.</Card.Text>
         </Card.Body>
       </Card>
     </div>

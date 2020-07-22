@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import burgerMenu from "../../../public/icons/burger-menu.png"
+import DarkMode from "./dark-mode"
 
 const Header = () => {
   const listItems = document.getElementsByClassName("burger-menu-list-item")
@@ -117,6 +118,7 @@ const Header = () => {
       </div>
       <div id="sidebar-cont">
         <div id="sidebar">
+          <DarkMode />
           <div className="tooltips">
             <Link to="/#cover" className="sidebar-link">
               <img
