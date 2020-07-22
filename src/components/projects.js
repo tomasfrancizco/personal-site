@@ -71,8 +71,6 @@ const Projects = () => (
           <br />
           <Card.Text>
             <div className="chip-container">
-              <div className="chip">HTML</div>
-              <div className="chip">CSS</div>
               <div className="chip">Javascript</div>
               <div className="chip">Canvas</div>
             </div>

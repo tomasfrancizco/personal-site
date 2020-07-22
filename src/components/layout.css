@@ -284,7 +284,7 @@ body {
 }
 
 .card p {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 .card:hover {
@@ -318,14 +318,28 @@ body {
 }
 
 .skills-card {
-  width: 98%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 25% 75%;
   padding: 5px;
   box-sizing: border-box;
+  min-height: 78px;
+}
+
+.skills-card img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skills-card-info {
+ margin: auto 0;
 }
 
 .skills-card > img {
   width: 20px;
-  margin-bottom: 1px;
+ 
 }
 
 #photography > h5 {
@@ -356,7 +370,7 @@ body {
 #projects-card-container {
   width: 95%;
   display: grid;
-  grid-template-columns: 100% 100% 100% 100% 100%;
+  grid-auto-columns: 100%;
   overflow-x: auto;
 }
 
@@ -589,7 +603,7 @@ body {
   #projects-card-container {
     width: 80%;
     max-height: 90%;
-    grid-template-columns: 40% 40% 40% 40% 40%;
+    grid-auto-columns: 40%;
     border-radius: 5px;
     justify-items: center;
   }
