@@ -213,11 +213,11 @@ body {
 
 #social-list img {
   width: 35px;
-  transition: width 0.2s;
+  transition: transform 0.2s;
 }
 
 #social-list img:hover {
-  width: 38px;
+  transform: scale(1.1);
 }
 
 #social-list > li {
