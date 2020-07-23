@@ -131,6 +131,7 @@ a {
   border: 0;
   border-radius: 5px;
   overflow: hidden;
+  padding-left: 5px;
   background: var(--bg);
 }
 
@@ -233,12 +234,12 @@ a {
   height: 40px;
 }
 
-#social-list img {
+#social-list svg {
   width: 35px;
   transition: transform 0.2s;
 }
 
-#social-list img:hover {
+#social-list svg:hover {
   transform: scale(1.1);
 }
 

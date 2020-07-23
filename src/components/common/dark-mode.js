@@ -3,7 +3,6 @@ import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
 class DarkMode extends React.Component {
   render() {
-    console.log("Desde el darkmode")
     return (
       <ThemeToggler>
         {({ theme, toggleTheme }) => (
