@@ -43,6 +43,7 @@ body {
   --textTitle: rgb(143, 131, 131);
   --textLink: blue;
   --hr: hsla(0, 0%, 0%, 0.2);
+  --icon: black;
 
   min-height: 100%;
   background-color: var(--bg);
@@ -58,6 +59,7 @@ body.dark {
   --textTitle: white;
   --textLink: #f2a365;
   --hr: hsla(0, 0%, 100%, 0.2);
+  --icon: white;
 }
 
 @media only screen and (max-width: 325px) {
@@ -483,7 +485,7 @@ a {
     background-color: var(--bg);
     overflow-x: visible;
     margin: 0;
-    border-right: 1px solid #dbdbdb;
+    border-right: 1px solid var(--elemBg);
     opacity: 1;
   }
 
@@ -509,6 +511,7 @@ a {
   .sidebar-icon {
     width: 20px;
     transition: all 1s;
+    fill: var(--icon);
   }
 
   /* beggining of Sidebar tooltips */
