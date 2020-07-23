@@ -161,6 +161,12 @@ a {
   background-color: gray;
 }
 
+.darkmode-mobile {
+  position: absolute;
+  left: 92%;
+  top: 33%;
+}
+
 .toggle {
   height: 35px !important;
   visibility: visible;
@@ -325,6 +331,15 @@ a {
   width: 100%;
 }
 
+
+.we-card-container .card {
+  padding: 15px;
+}
+
+.we-card-container p {
+  margin: 5px 0;
+}
+
 #work,
 #education {
   width: 100%;
@@ -337,6 +352,14 @@ a {
 .work-description-ul li {
   margin-left: 20px;
   font-size: 0.8rem;
+}
+
+.dot-menu {
+  position: absolute;
+  left: 90%;
+  top: 75%;
+  width: 20px;
+  animation: dotAnimation 2s;
 }
 
 .skills-card-container {
@@ -502,6 +525,12 @@ a {
 
   #sidebar-cont:hover #sidebar {
     opacity: 1;
+  }
+
+  .darkmode-mobile {
+    position: absolute;
+    left: 35%;
+    top: 5%;
   }
 
   .sidebar-link {

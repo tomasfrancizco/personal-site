@@ -5,8 +5,17 @@ const Work = () => {
     <div id="work" uk-scrollspy="cls: uk-animation-slide-top; delay: 300">
       <h3 className="section-title">WORK</h3>
       <div className="card-container we-card-container">
-        <div className="uk-card uk-card-default uk-card-body uk-width-1@m card">
-          <h3 className="uk-card-title">Sales Operations Manager</h3>
+        <div className="card">
+          <h3>Sales Operations Manager</h3>
+          <svg
+            viewBox="0 0 512 512"
+            className="dot-menu"
+            uk-toggle="target: #modal-close-default-a"
+          >
+            <circle cx="256" cy="256" r="64" />
+            <circle cx="256" cy="448" r="64" />
+            <circle cx="256" cy="64" r="64" />
+          </svg>
           <p>
             @{" "}
             <a
@@ -18,13 +27,6 @@ const Work = () => {
             </a>
           </p>
           <p>2015 - 2020</p>
-          <button
-            className="uk-button uk-button-default uk-margin-small-right"
-            type="button"
-            uk-toggle="target: #modal-close-default-a"
-          >
-            Descripción
-          </button>
 
           <div id="modal-close-default-a" uk-modal="true">
             <div className="uk-modal-dialog uk-modal-body">
@@ -55,6 +57,15 @@ const Work = () => {
 
         <div className="uk-card uk-card-default uk-card-body uk-width-1@m card">
           <h3 className="uk-card-title">Ad Sales Supervisor</h3>
+          <svg
+            viewBox="0 0 512 512"
+            className="dot-menu"
+            uk-toggle="target: #modal-close-default-b"
+          >
+            <circle cx="256" cy="256" r="64" />
+            <circle cx="256" cy="448" r="64" />
+            <circle cx="256" cy="64" r="64" />
+          </svg>
           <p>
             @{" "}
             <a
@@ -66,13 +77,6 @@ const Work = () => {
             </a>
           </p>
           <p>2009 - 2015</p>
-          <button
-            className="uk-button uk-button-default uk-margin-small-right"
-            type="button"
-            uk-toggle="target: #modal-close-default-b"
-          >
-            Descripción
-          </button>
 
           <div id="modal-close-default-b" uk-modal="true">
             <div className="uk-modal-dialog uk-modal-body">

@@ -7,6 +7,7 @@ class DarkMode extends React.Component {
       <ThemeToggler>
         {({ theme, toggleTheme }) => (
           <input
+            className="darkmode-mobile"
             type="checkbox"
             onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
             checked={theme === "dark"}

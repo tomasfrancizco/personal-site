@@ -34,7 +34,6 @@ const Header = () => {
           alt="burger-menu"
           onClick={toggleMenu}
         />
-        <br />
         <ul className="burger-menu-list">
           <Link to="/#about">
             <li className="burger-menu-list-item" onClick={toggleMenu}>
@@ -167,34 +166,19 @@ S146.75,171.7,146.75,119.4z M406.25,458.9H77.05v-55.6c0-90.7,73.8-164.6,164.6-16
           <Link to="/#contact">
             <li className="burger-menu-list-item" onClick={toggleMenu}>
               <svg className="navbar-icon" viewBox="0 0 512 512">
-                <g>
-                  <g>
-                    <rect x="27.688" y="132.092" width="58.801" height="30" />
-                  </g>
-                </g>
-                <g>
-                  <g>
-                    <rect x="27.688" y="252.092" width="58.801" height="30" />
-                  </g>
-                </g>
-                <g>
-                  <g>
-                    <rect y="192.092" width="86.49" height="30" />
-                  </g>
-                </g>
-                <g>
-                  <g>
-                    <path
-                      d="M116.489,132.095v247.813H512V132.095H116.489z M448.25,162.095l-134.005,91.088L180.24,162.095H448.25z M482,349.909
+                <rect x="27.688" y="132.092" width="58.801" height="30" />
+                <rect x="27.688" y="252.092" width="58.801" height="30" />
+                <rect y="192.092" width="86.49" height="30" />
+                <path
+                  d="M116.489,132.095v247.813H512V132.095H116.489z M448.25,162.095l-134.005,91.088L180.24,162.095H448.25z M482,349.909
 			H146.489v-174.48l167.755,114.029L482,175.429V349.909z"
-                    />
-                  </g>
-                </g>
+                />
               </svg>
               CONTACT
             </li>
           </Link>
         </ul>
+        <DarkMode />
       </div>
       <div id="sidebar-cont">
         <div id="sidebar">
@@ -330,29 +314,13 @@ S146.75,171.7,146.75,119.4z M406.25,458.9H77.05v-55.6c0-90.7,73.8-164.6,164.6-16
           <div className="tooltips">
             <Link to="/#contact" className="sidebar-link">
               <svg className="sidebar-icon" viewBox="0 0 512 512">
-                <g>
-                  <g>
-                    <rect x="27.688" y="132.092" width="58.801" height="30" />
-                  </g>
-                </g>
-                <g>
-                  <g>
-                    <rect x="27.688" y="252.092" width="58.801" height="30" />
-                  </g>
-                </g>
-                <g>
-                  <g>
-                    <rect y="192.092" width="86.49" height="30" />
-                  </g>
-                </g>
-                <g>
-                  <g>
-                    <path
-                      d="M116.489,132.095v247.813H512V132.095H116.489z M448.25,162.095l-134.005,91.088L180.24,162.095H448.25z M482,349.909
+                <rect x="27.688" y="132.092" width="58.801" height="30" />
+                <rect x="27.688" y="252.092" width="58.801" height="30" />
+                <rect y="192.092" width="86.49" height="30" />
+                <path
+                  d="M116.489,132.095v247.813H512V132.095H116.489z M448.25,162.095l-134.005,91.088L180.24,162.095H448.25z M482,349.909
 			H146.489v-174.48l167.755,114.029L482,175.429V349.909z"
-                    />
-                  </g>
-                </g>
+                />
               </svg>
             </Link>
             <span className="tooltiptext">Contact</span>
