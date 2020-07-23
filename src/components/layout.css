@@ -38,6 +38,7 @@ FFF Blanco
 
 body {
   --bg: white;
+  --elemBg: lightgray;
   --textNormal: #222;
   --textTitle: rgb(143, 131, 131);
   --textLink: blue;
@@ -46,16 +47,16 @@ body {
   min-height: 100%;
   background-color: var(--bg);
   color: var(--textNormal);
-
   scroll-behavior: smooth;
 }
 
 body.dark {
   -webkit-font-smoothing: antialiased;
-  --bg: darkslategray;
-  --textNormal: rgba(255, 255, 255, 0.88);
+  --bg: #222831;
+  --elemBg: #30475e;
+  --textNormal: #ececec;
   --textTitle: white;
-  --textLink: yellow;
+  --textLink: #f2a365;
   --hr: hsla(0, 0%, 100%, 0.2);
 }
 
@@ -89,11 +90,13 @@ a {
 .section-title {
   margin: 10px 0;
   text-align: center;
+  color: var(--textTitle);
 }
 
 .section > h3 {
   width: 100%;
   text-align: center;
+  color: var(--textTitle);
 }
 
 #navbar {
@@ -126,7 +129,7 @@ a {
   border: 0;
   border-radius: 5px;
   overflow: hidden;
-  background: #fff;
+  background: var(--bg);
 }
 
 .burger-menu-list a {
@@ -134,7 +137,7 @@ a {
 }
 
 .burger-menu-list-item {
-  background-color: #fff;
+  background-color: var(--bg);
   visibility: hidden;
   width: 100%;
   height: 0px;
@@ -158,7 +161,7 @@ a {
 .toggle {
   height: 35px !important;
   visibility: visible;
-  color: black;
+  color: var(--textNormal);
 }
 
 #sidebar {
@@ -298,10 +301,16 @@ a {
   transition: border 0.1s;
   font-size: 0.5rem;
   width: 95%;
+  background-color: var(--elemBg);
+}
+
+.card h3 {
+  color: var(--textTitle) !important;
 }
 
 .card p {
   font-size: 0.6rem;
+  color: var(--textNormal);
 }
 
 .card:hover {
@@ -343,6 +352,10 @@ a {
   min-height: 78px;
 }
 
+.card-title {
+  color: var(--textNormal);
+}
+
 .skills-card img {
   position: relative;
   top: 50%;
@@ -351,12 +364,11 @@ a {
 }
 
 .skills-card-info {
- margin: auto 0;
+  margin: auto 0;
 }
 
 .skills-card > img {
   width: 20px;
- 
 }
 
 #photography > h5 {
@@ -422,7 +434,7 @@ a {
   padding: 5px 25px;
   margin: 2px 2px 2px 0;
   font-size: 0.45rem;
-  background-color: #f1f1f1;
+  background-color: var(--bg);
   border-radius: 25px;
   transition: background-color 0.4s;
 }
@@ -468,7 +480,7 @@ a {
     max-width: 60px;
     min-width: 60px;
     z-index: 1;
-    background-color: var(--bg);;
+    background-color: var(--bg);
     overflow-x: visible;
     margin: 0;
     border-right: 1px solid #dbdbdb;
