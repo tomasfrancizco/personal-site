@@ -36,9 +36,6 @@ FFF Blanco
   font-family: "Exo", sans-serif;
 }
 
-html {
-}
-
 body {
   --bg: white;
   --textNormal: #222;
@@ -49,6 +46,7 @@ body {
   min-height: 100%;
   background-color: var(--bg);
   color: var(--textNormal);
+
   scroll-behavior: smooth;
 }
 
@@ -72,6 +70,10 @@ body.dark {
   #podes div {
     text-align: center;
   }
+}
+
+a {
+  color: var(--textLink);
 }
 
 .section {
@@ -100,7 +102,7 @@ body.dark {
   height: 50px;
   width: 100%;
   z-index: 1;
-  background-color: #fff;
+  background-color: var(--bg);
   margin: 0;
   overflow-y: visible;
 }
@@ -166,6 +168,7 @@ body.dark {
 #main {
   position: absolute;
   top: 40px;
+  background-color: var(--bg);
 }
 
 #cover {
@@ -465,7 +468,7 @@ body.dark {
     max-width: 60px;
     min-width: 60px;
     z-index: 1;
-    background-color: #fff;
+    background-color: var(--bg);;
     overflow-x: visible;
     margin: 0;
     border-right: 1px solid #dbdbdb;
