@@ -7,15 +7,11 @@ const Work = () => {
       <div className="card-container we-card-container">
         <div className="card">
           <h3>Sales Operations Manager</h3>
-          <svg
-            viewBox="0 0 512 512"
+          <span
+            uk-icon="more-vertical"
             className="dot-menu"
             uk-toggle="target: #modal-close-default-a"
-          >
-            <circle cx="256" cy="256" r="64" />
-            <circle cx="256" cy="448" r="64" />
-            <circle cx="256" cy="64" r="64" />
-          </svg>
+          ></span>
           <p>
             @{" "}
             <a
@@ -57,15 +53,11 @@ const Work = () => {
 
         <div className="uk-card uk-card-default uk-card-body uk-width-1@m card">
           <h3 className="uk-card-title">Ad Sales Supervisor</h3>
-          <svg
-            viewBox="0 0 512 512"
+          <span
+            uk-icon="more-vertical"
             className="dot-menu"
             uk-toggle="target: #modal-close-default-b"
-          >
-            <circle cx="256" cy="256" r="64" />
-            <circle cx="256" cy="448" r="64" />
-            <circle cx="256" cy="64" r="64" />
-          </svg>
+          ></span>
           <p>
             @{" "}
             <a

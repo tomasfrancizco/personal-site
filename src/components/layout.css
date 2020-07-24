@@ -36,6 +36,10 @@ FFF Blanco
   font-family: "Exo", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   --bg: white;
   --elemBg: lightgray;
@@ -48,7 +52,6 @@ body {
   min-height: 100%;
   background-color: var(--bg);
   color: var(--textNormal);
-  scroll-behavior: smooth;
 }
 
 body.dark {
@@ -115,11 +118,14 @@ a {
 .navbar-icon {
   width: 20px;
   margin: 0 25px 5px 0;
+  fill: var(--icon);
 }
 
 #burger-menu {
   cursor: pointer;
-  width: 50px;
+  width: 35px;
+  margin: 7px;
+  fill: var(--icon);
 }
 
 #burger-menu:active {
@@ -161,7 +167,7 @@ a {
   background-color: gray;
 }
 
-.darkmode-mobile {
+.darkmode {
   position: absolute;
   left: 92%;
   top: 33%;
@@ -359,7 +365,7 @@ a {
   left: 90%;
   top: 75%;
   width: 20px;
-  animation: dotAnimation 2s;
+  fill: var(--textTitle);
 }
 
 .skills-card-container {
@@ -527,7 +533,7 @@ a {
     opacity: 1;
   }
 
-  .darkmode-mobile {
+  .darkmode {
     position: absolute;
     left: 35%;
     top: 5%;
