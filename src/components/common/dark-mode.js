@@ -7,6 +7,10 @@ class DarkMode extends React.Component {
     // console.log(checkbox.checked)
     // console.log(checkbox)
     // return checkbox.toggleAttribute("checked")
+    
+    
+    // let event = new Event('change', { checked: true })
+    // return checkbox.dispatchEvent(event)
   }
 
   render() {

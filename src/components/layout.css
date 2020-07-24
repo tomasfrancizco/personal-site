@@ -41,13 +41,16 @@ html {
 }
 
 body {
-  --bg: white;
-  --elemBg: lightgray;
+  --bg: #f9f9f9;
+  --elemBg: #f2f2f2;
   --textNormal: #222;
   --textTitle: rgb(143, 131, 131);
   --textLink: blue;
   --hr: hsla(0, 0%, 0%, 0.2);
   --icon: black;
+  --shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.8),
+    -2px -2px 5px 0 rgba(255, 255, 255, 0.8);
+  --backgroundImg: url("../images/backgrounds/IMG_2771.jpeg");
 
   min-height: 100%;
   background-color: var(--bg);
@@ -63,6 +66,10 @@ body.dark {
   --textLink: #f2a365;
   --hr: hsla(0, 0%, 100%, 0.2);
   --icon: white;
+  --shadow: 2px 2px 5px 0 rgba(255, 255, 255, 0.8),
+    -2px -2px 5px 0 rgba(0, 0, 0, 0.8);
+  --backgroundImg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/backgrounds/IMG_2771.jpeg");
 }
 
 @media only screen and (max-width: 325px) {
@@ -199,7 +206,7 @@ a {
 }
 
 #cover.section {
-  background-image: url("../images/backgrounds/IMG_2771.jpeg");
+  background-image: var(--backgroundImg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -330,13 +337,12 @@ a {
 
 .card:hover {
   border: 1px solid #acacac;
-  box-shadow: 2px 2px 5px 0 grey, -2px -2px 5px 0 lightgray;
+  box-shadow: var(--shadow);
 }
 
 .we-card-container {
   width: 100%;
 }
-
 
 .we-card-container .card {
   padding: 15px;
