@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import SEO from "../components/seo"
 
@@ -9,7 +8,6 @@ import Work from "../components/work"
 import Education from "../components/education"
 import Skills from "../components/skills"
 import Projects from "../components/projects"
-import Achievements from "../components/achievements"
 import Photography from "../components/photography"
 import Contact from "../components/contact"
 
@@ -24,7 +22,6 @@ export default function IndexPage() {
       </div>
       <Skills />
       <Projects />
-      {/* <Achievements />*/}
       <Photography />
       <Contact />
     </Layout>

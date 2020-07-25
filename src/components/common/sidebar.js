@@ -1,16 +1,13 @@
 import { Link } from "gatsby"
 import React from "react"
-import burgerMenu from "../../../public/icons/burger-menu.png"
 import DarkMode from "./dark-mode"
-
-// import about from "../../../public/icons/user.svg"
 
 const Header = () => {
   const listItems = document.getElementsByClassName("burger-menu-list-item")
   const list = document.getElementsByClassName("burger-menu-list")
   const icon = document.getElementsByClassName("navbar-icon")
   const toggleMenu = () => {
-    if (listItems[0].getAttribute("class") == "burger-menu-list-item") {
+    if (listItems[0].getAttribute("class") === "burger-menu-list-item") {
       list[0].style.border = "1px solid gray"
       for (let i = 0; i < listItems.length; i++) {
         icon[i].style.visibility = "visible"

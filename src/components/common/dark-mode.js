@@ -23,7 +23,7 @@ class DarkMode extends React.Component {
               id="dark-checkbox"
               type="checkbox"
               onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
-              // checked={theme === "dark"}
+              checked={theme === "dark"}
             />
           </div>
         )}

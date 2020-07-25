@@ -34,6 +34,7 @@ export default () => {
               <a
                 href={`https://www.instagram.com/p/${node.id}`}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <Img
                   fluid={node.localFile.childImageSharp.fluid}

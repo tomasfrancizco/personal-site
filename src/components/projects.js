@@ -23,6 +23,7 @@ const Projects = () => (
             <a
               href="https://gist.github.com/tomasfrancizco/2f024b14f675226e57ad50cd1ea16ba2"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Link al repo
             </a>
@@ -64,6 +65,7 @@ const Projects = () => (
             <a
               href="https://github.com/tomasfrancizco/La-Roma-Wars-Videogame"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Link al repo
             </a>
@@ -95,6 +97,7 @@ const Projects = () => (
             <a
               href="https://github.com/ironhack-proyecto-2-fullstack-app/denuncia-chilanga"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Link al repo
             </a>
@@ -129,6 +132,7 @@ const Projects = () => (
             <a
               href="https://github.com/tomasfrancizco/pomodoro"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Link al repo
             </a>
@@ -154,6 +158,7 @@ const Projects = () => (
             <a
               href="https://github.com/tomasfrancizco/Javascript-calculator"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Link al repo
             </a>
