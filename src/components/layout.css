@@ -50,7 +50,8 @@ body {
   --icon: black;
   --shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.8),
     -2px -2px 5px 0 rgba(255, 255, 255, 0.8);
-  --backgroundImg: url("../images/backgrounds/IMG_2771.jpeg");
+  --cardShadow: 0 5px 15px rgba(0,0,0,.08);
+  --backgroundImg: url("../images/backgrounds/earth-nasa.jpg");
 
   min-height: 100%;
   background-color: var(--bg);
@@ -68,8 +69,9 @@ body.dark {
   --icon: white;
   --shadow: 2px 2px 5px 0 rgba(255, 255, 255, 0.8),
     -2px -2px 5px 0 rgba(0, 0, 0, 0.8);
+  --cardShadow: 0 5px 15px rgba(255,255,255,.08);
   --backgroundImg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/backgrounds/IMG_2771.jpeg");
+    url("../images/backgrounds/earth-nasa.jpg");
 }
 
 @media only screen and (max-width: 325px) {
@@ -251,6 +253,7 @@ a {
   flex-direction: row;
   align-items: center;
   list-style-type: none;
+  padding: 0;
 }
 
 #social-list li {
@@ -261,6 +264,7 @@ a {
 #social-list svg {
   width: 35px;
   transition: transform 0.2s;
+  fill: var(--icon);
 }
 
 #social-list svg:hover {
@@ -301,6 +305,7 @@ a {
   animation: arrowAnimation 2s infinite;
   transform: rotate(90deg);
   width: 40px;
+  fill: var(--icon);
 }
 
 #about {
@@ -395,6 +400,7 @@ a {
   padding: 5px;
   box-sizing: border-box;
   min-height: 78px;
+  box-shadow: var(--cardShadow);
 }
 
 .card-title {
@@ -426,6 +432,7 @@ a {
 
 .instagram-picture {
   height: 50vh;
+  width: 80vw;
 }
 
 .instagram-picture picture img {
@@ -460,6 +467,7 @@ a {
 
 .projects-card {
   width: 95%;
+  box-shadow: var(--cardShadow);
 }
 
 .projects-card .card-body {
