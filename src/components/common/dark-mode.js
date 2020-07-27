@@ -3,13 +3,12 @@ import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
 class DarkMode extends React.Component {
   state = {
-    condition: false,
+    condition: window.localStorage.theme,
   }
 
   handleClick = () => {
-    console.log("holiss")
     this.setState({
-      condition: !this.state.condition,
+      condition: window.localStorage.theme,
     })
   }
 
@@ -20,12 +19,14 @@ class DarkMode extends React.Component {
           <div className="darkmode">
             <div
               id="toggle-container"
-              onClick={() => {toggleTheme(theme === "light" ? "dark" : "light"); this.handleClick()}}
+              onClick={() => {
+                toggleTheme(theme === "light" ? "dark" : "light")
+                this.handleClick()
+              }}
             >
               <div
                 id="ball"
-                className="light"
-                className={this.state.condition ? "light off" : "light"}
+                className={this.state.condition === "dark" ? "light off" : "light"}
               ></div>
             </div>
           </div>
