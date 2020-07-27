@@ -7,6 +7,7 @@ class DarkMode extends React.Component {
   }
 
   handleClick = () => {
+    console.log("holiss")
     this.setState({
       condition: !this.state.condition,
     })
@@ -19,10 +20,7 @@ class DarkMode extends React.Component {
           <div className="darkmode">
             <div
               id="toggle-container"
-              onClick={
-                (this.handleClick,
-                () => toggleTheme(theme === "light" ? "dark" : "light"))
-              }
+              onClick={() => {toggleTheme(theme === "light" ? "dark" : "light"); this.handleClick()}}
             >
               <div
                 id="ball"
