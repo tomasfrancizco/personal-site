@@ -30,6 +30,20 @@ FFF Blanco
   }
 }
 
+@keyframes svgAnim {
+  0% {
+    fill: var(--icon);
+  }
+
+  50% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: var(--icon);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -381,9 +395,18 @@ a {
   position: absolute;
   left: 90%;
   top: 75%;
-  width: 20px;
+  width: 25px;
   fill: var(--textTitle);
   cursor: pointer;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  box-sizing: border-box;
+  padding: 5px;
+  animation: svgAnim 2s infinite;
+}
+
+.dot-menu:active {
+  box-shadow: 0;
 }
 
 .skills-card-container {
