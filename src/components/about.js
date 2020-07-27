@@ -2,6 +2,7 @@ import React from "react"
 import Typewriter from "typewriter-effect"
 import profileSinFondo from "../images/sinFondo.png"
 import curriculumVitae from "../files/CVSP - Tomas Freire Knight.pdf"
+import { Link } from "gatsby"
 
 import daftpunktocatguy from "../images/octodex/daftpunktocat-guy.gif"
 import daftpunkttocatthomas from "../images/octodex/daftpunktocat-thomas.gif"
@@ -27,7 +28,7 @@ const About = () => {
       <div className="section" id="cover">
         <img src={profileSinFondo} alt="TomasFreire" />
         <div id="cover-info">
-          <h1>Tomás Freire Knight</h1>
+          <h1>¡Hola! Soy Tomás.</h1>
           <Typewriter
             options={{
               loop: true,
@@ -121,7 +122,6 @@ const About = () => {
             </li>
           </ul>
           <div id="podes">
-            <p>Podés...</p>
             <div>
               <a href="/#projects">
                 <button>Ver mis proyectos</button>
@@ -159,21 +159,25 @@ const About = () => {
         <div uk-scrollspy="cls: uk-animation-fade; delay: 300">
           <h3 className="section-title">ABOUT</h3>
           <p>
-            Hola! Soy Tomás, un desarrollador web ubicado en Buenos Aires.
+            Armé este sitio para mostrar un poco lo que me gusta hacer.
             {/* Hi! I'm a sotware developer currently based in Buenos Aires,
             Argentina. */}
           </p>
+          <p>Soy desarrollador web y vivo en Buenos Aires.</p>
           <p>
             Los últimos 11 años estuve trabajando en la industria de la TV y
-            Publicidad, liderando equipos de operaciones en América Latina.
-            Ahora estoy buscando meterme de lleno en el mundo de desarrollo.
+            Publicidad, liderando equipos de operaciones en Buenos Aires, Ciudad
+            de México, Bogotá y Panamá. Enfocado tanto a los objetivos de la
+            empresa como al desarrollo de mis compañeros y reportes. Ahora estoy
+            buscando meterme de lleno en el mundo del código.
             {/* I've been working for the last 11 years in the media industry,
             leading Ad Operations teams across Latin America and I'm now looking
             for a role in web development. */}
           </p>
           <p>
-            Me doy maña con el MERN Stack y algunas otras cosas copadas, que
-            podés ver en la sección de <a href="/#skills">skills</a>.
+            Manejo principalmente el stack MERN (MongoDB, Express, ReactJS y
+            NodeJs), HTML, CSS y algunas otras herramientas, que podés ver en la
+            sección de <Link to="/#skills">skills</Link>.
             {/* I handle pretty well the MERN stack and some other cool things as well, you can
             check them out in the <a href="/#skills">skills</a> section. */}
           </p>

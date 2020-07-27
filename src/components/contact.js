@@ -4,8 +4,8 @@ import { Form, Button } from "react-bootstrap"
 const Contact = () => {
   return (
     <div className="section" id="contact">
-      <h3>CONTACT</h3>
-      <h6>Let's work together!</h6>
+      <h3>CONTACTO</h3>
+      <h6>Trabajemos juntos!</h6>
       <Form
         className="contact-form"
         method="post"

@@ -5,7 +5,7 @@ const Work = () => {
     <div id="work" uk-scrollspy="cls: uk-animation-slide-top; delay: 300">
       <h3 className="section-title">WORK</h3>
       <div className="card-container we-card-container">
-        <div className="card">
+        <div className="uk-card uk-card-default uk-card-body uk-width-1@m card">
           <h3>Sales Operations Manager</h3>
           <span
             uk-icon="more-vertical"
