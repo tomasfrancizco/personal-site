@@ -12,25 +12,25 @@ const Contact = () => {
         action="https://getform.io/f/035d54f4-515a-461b-8cee-2a2ece721769"
       >
         <Form.Group uk-scrollspy="cls: uk-animation-slide-left; delay: 300">
-          <Form.Label>Full name</Form.Label>
+          <Form.Label>Tu nombre</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Enter your name"
+            placeholder="Regina Falange"
             name="name"
             id="name"
           />
         </Form.Group>
         <Form.Group uk-scrollspy="cls: uk-animation-slide-right; delay: 300">
-          <Form.Label>Email address</Form.Label>
+          <Form.Label>Tu mail</Form.Label>
           <Form.Control
             type="email"
-            placeholder="name@example.com"
+            placeholder="regina@falange.com"
             name="email"
             id="email"
           />
         </Form.Group>
         <Form.Group uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">
-          <Form.Label>Message</Form.Label>
+          <Form.Label>El mensaje</Form.Label>
           <Form.Control as="textarea" rows="3" name="message" id="message" />
         </Form.Group>
         <Button
@@ -39,7 +39,7 @@ const Contact = () => {
           id="submit"
           uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300"
         >
-          Send Message
+          Enviar
         </Button>
       </Form>
     </div>

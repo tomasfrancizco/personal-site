@@ -161,9 +161,9 @@ a {
 }
 
 .burger-menu-list {
-  margin: 5px;
-  border: 0;
-  border-radius: 5px;
+  border: 0 !important;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   overflow: hidden;
   padding-left: 5px;
   background: var(--bg);
@@ -195,6 +195,12 @@ a {
   background-color: gray;
 }
 
+.toggle {
+  height: 35px !important;
+  visibility: visible;
+  color: var(--textNormal);
+}
+
 .darkmode {
   position: absolute;
   left: 90%;
@@ -203,7 +209,7 @@ a {
 }
 
 #toggle-container {
-  background: gray;
+  background: lightgray;
   position: relative;
   top: 50%;
   left: 50%;
@@ -213,6 +219,7 @@ a {
   border-radius: 25px;
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5) inset,
     -2px -2px 5px 0 rgba(255, 255, 255, 0.5) inset;
+  cursor: pointer;
 }
 
 #ball {
@@ -227,19 +234,13 @@ a {
 .light {
   top: 2.5px;
   left: 2.5px;
-  background: black;
+  background: #213766;
   transition: all 0.5s ease;
 }
 
 .off {
   left: 27.5px;
-  background: yellow;
-}
-
-.toggle {
-  height: 35px !important;
-  visibility: visible;
-  color: var(--textNormal);
+  background: #FED188;
 }
 
 #sidebar {
@@ -596,10 +597,9 @@ a {
     left: 0;
     bottom: 0;
     min-height: 100vh;
-    max-width: 60px;
     min-width: 60px;
     z-index: 1;
-    background-color: var(--bg);
+    background-color: var(--elemBg);
     overflow-x: visible;
     margin: 0;
     border-right: 1px solid var(--elemBg);
@@ -611,13 +611,15 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    opacity: 0.3;
-    transition: opacity 0.5s;
+    width: 60px;
+    opacity: 0.5;
+    transition: all 0.5s;
+    transition-property: opacity, width;
   }
 
   #sidebar-cont:hover #sidebar {
     opacity: 1;
+    width: 180px;
   }
 
   .darkmode {

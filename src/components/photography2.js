@@ -41,6 +41,7 @@ export default () => {
           {query.allInstaNode.edges.map(({ node }, i) => {
             return (
               <Img
+                key={i}
                 fluid={node.localFile.childImageSharp.fluid}
                 className="instagram-picture"
                 alt="Instagram picture"
