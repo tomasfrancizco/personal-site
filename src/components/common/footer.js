@@ -3,7 +3,7 @@ import React from "react"
 const Footer = () => {
   return (
     <footer id="footer-container">
-      © {new Date().getFullYear()}, hecho con cariño, sudor, lágrimas y{` `}
+      © {new Date().getFullYear()}, hecho con cariño y{` `}
       <a
         href="https://www.gatsbyjs.org"
         target="_blank"

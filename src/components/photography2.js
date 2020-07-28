@@ -31,7 +31,7 @@ export default () => {
       id="photography"
       uk-scrollspy="cls: uk-animation-fade; delay: 300"
     >
-      <h3 className="section-title">PHOTOGRAPHY</h3>
+      <h3 className="section-title">INSTAGRAM</h3>
       <div
         className="uk-position-relative uk-visible-toggle uk-light"
         tabIndex="-1"

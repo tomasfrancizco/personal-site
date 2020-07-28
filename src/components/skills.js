@@ -8,7 +8,7 @@ import github from "../images/skills/github.svg"
 
 const Skills = () => (
   <div className="section half-height" id="skills">
-    <h3 className="section-title">SKILLS</h3>
+    <h3 className="section-title">HERRAMIENTAS</h3>
     <div
       className="card-container skills-card-container"
       uk-scrollspy="cls: uk-animation-fade; target: .skills-card; delay: 300"

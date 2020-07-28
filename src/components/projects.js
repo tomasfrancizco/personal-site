@@ -12,7 +12,7 @@ const Projects = () => (
     id="projects"
     uk-scrollspy="cls: uk-animation-fade; delay: 200"
   >
-    <h3 className="section-title">PROJECTS</h3>
+    <h3 className="section-title">PROYECTOS</h3>
     <div id="projects-card-container">
       <Card className="card projects-card">
         <Card.Img variant="top" src={morfappImg} />

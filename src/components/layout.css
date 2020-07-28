@@ -490,6 +490,7 @@ a {
   height: 50vh;
   width: 80vw;
   border-radius: 25px;
+  max-width: 1040px;
 }
 
 .instagram-picture picture img {
@@ -533,6 +534,7 @@ a {
 
 .projects-card .card-body .card-text {
   height: 200px;
+  font-size: 0.8em;
 }
 
 .chip-container {
@@ -543,7 +545,7 @@ a {
   display: inline-block;
   padding: 5px 25px;
   margin: 2px 2px 2px 0;
-  /* font-size: 0.45rem; */
+  font-size: 0.6em;
   background-color: var(--bg);
   border-radius: 25px;
   transition: background-color 0.4s;
@@ -586,6 +588,7 @@ a {
 
   #sidebar-cont {
     position: fixed;
+    border-right: 2px 2px 5px 0 rgba(255,255,255,0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -609,7 +612,7 @@ a {
     align-items: center;
     flex-direction: column;
     width: 60px;
-    opacity: 0.5;
+    opacity: 0.7;
     transition: all 0.5s;
     transition-property: opacity, width;
   }
@@ -634,7 +637,7 @@ a {
     text-align: center;
     padding: 5px 0;
     position: absolute;
-    left: 55px;
+    left: 35px;
     z-index: 1;
     transition: opacity 0.2s;
     opacity: 0;
@@ -672,7 +675,8 @@ a {
     display: inline-block;
     width: 120px;
     color: var(--textNormal);
-    text-align: center;
+    text-align: start;
+    margin-left: 15px;
     padding: 5px 0;
     font-size: 0.8em;
     position: absolute;

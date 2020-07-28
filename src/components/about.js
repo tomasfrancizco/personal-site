@@ -157,27 +157,28 @@ const About = () => {
           uk-scrollspy="cls: uk-animation-slide-left; delay: 300"
         />
         <div uk-scrollspy="cls: uk-animation-fade; delay: 300">
-          <h3 className="section-title">ABOUT</h3>
+          <h3 className="section-title">ACERCA DE MI</h3>
           <p>
-            Armé este sitio para mostrar un poco lo que me gusta hacer.
+            Soy desarrollador web, vivo en Buenos Aires y armé este sitio para
+            mostrar un poco lo que me gusta hacer.
             {/* Hi! I'm a sotware developer currently based in Buenos Aires,
             Argentina. */}
           </p>
-          <p>Soy desarrollador web y vivo en Buenos Aires.</p>
           <p>
             Los últimos 11 años estuve trabajando en la industria de la TV y
             Publicidad, liderando equipos de operaciones en Buenos Aires, Ciudad
-            de México, Bogotá y Panamá. Enfocado tanto a los objetivos de la
-            empresa como al desarrollo de mis compañeros y reportes. Ahora estoy
-            buscando meterme de lleno en el mundo del código.
+            de México, Bogotá y Panamá. Siempre estuve muy enfocado a los
+            objetivos de la empresa y al desarrollo de mis compañeros y
+            reportes.
             {/* I've been working for the last 11 years in the media industry,
             leading Ad Operations teams across Latin America and I'm now looking
             for a role in web development. */}
           </p>
+          <p>Ahora estoy buscando meterme de lleno en el mundo del código.</p>
           <p>
-            Manejo principalmente el stack MERN (MongoDB, Express, ReactJS y
-            NodeJs), HTML, CSS y algunas otras herramientas, que podés ver en la
-            sección de <Link to="/#skills">skills</Link>.
+            Manejo el stack MERN (MongoDB, Express, ReactJS y NodeJs), HTML, CSS
+            y algunas otras cosas, que podés ver en la sección de{" "}
+            <Link to="/#skills">herramientas</Link>.
             {/* I handle pretty well the MERN stack and some other cool things as well, you can
             check them out in the <a href="/#skills">skills</a> section. */}
           </p>
