@@ -1,9 +1,3 @@
-/* 14213D Azul
-FCA311 Naranja
-E5E5E5 Gris
-FFF Blanco
-000 Negro */
-
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap");
 
 @keyframes arrowAnimation {
@@ -203,8 +197,8 @@ a {
 
 .darkmode {
   position: absolute;
-  left: 90%;
-  top: 20%;
+  left: 87%;
+  top: 50%;
   width: 8%;
 }
 
@@ -381,7 +375,7 @@ a {
 
 .card {
   margin: 5px;
-  transition: box-shadow 0.5s;
+  transition: box-shadow 0.2s;
   font-size: 0.5rem;
   width: 95%;
   background-color: var(--elemBg);
@@ -625,7 +619,7 @@ a {
   .darkmode {
     position: absolute;
     left: 15%;
-    top: 5%;
+    top: 10%;
     width: 75%;
   }
 
