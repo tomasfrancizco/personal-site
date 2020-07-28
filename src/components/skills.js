@@ -7,7 +7,7 @@ import art from "../images/skills/art.svg"
 import github from "../images/skills/github.svg"
 
 const Skills = () => (
-  <div className="section" id="skills">
+  <div className="section half-height" id="skills">
     <h3 className="section-title">SKILLS</h3>
     <div
       className="card-container skills-card-container"

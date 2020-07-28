@@ -111,7 +111,7 @@ a {
 
 .section-title {
   margin: 10px 0;
-  text-align: center;
+  text-align: start;
   color: var(--textTitle);
 }
 
@@ -161,6 +161,7 @@ a {
   overflow: hidden;
   padding-left: 5px;
   background: var(--bg);
+  margin-top: 0;
 }
 
 .burger-menu-list a {
@@ -178,7 +179,7 @@ a {
   padding-left: 10px;
   transition-property: height, visibility, color;
   transition-duration: 0.5s, 0.5s, 0s;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 .burger-menu-list-item:hover {
@@ -195,21 +196,14 @@ a {
   color: var(--textNormal);
 }
 
-.darkmode {
-  position: absolute;
-  left: 87%;
-  top: 50%;
-  width: 8%;
-}
-
 #toggle-container {
   background: lightgray;
-  position: relative;
+  position: absolute;
   top: 50%;
-  left: 50%;
+  left: 90%;
   transform: translate(-50%, -50%);
-  height: 30px;
-  width: 55px;
+  height: 25px;
+  width: 50px;
   border-radius: 25px;
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5) inset,
     -2px -2px 5px 0 rgba(255, 255, 255, 0.5) inset;
@@ -217,8 +211,8 @@ a {
 }
 
 #ball {
-  height: 25px;
-  width: 25px;
+  height: 22px;
+  width: 22px;
   border-radius: 50%;
   position: absolute;
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5) inset,
@@ -226,15 +220,15 @@ a {
 }
 
 .light {
-  top: 2.5px;
-  left: 2.5px;
+  top: 1.5px;
+  left: 1.5px;
   background: #213766;
   transition: all 0.5s ease;
 }
 
 .off {
-  left: 27.5px;
-  background: #FED188;
+  left: 25px;
+  background: #fed188;
 }
 
 #sidebar {
@@ -376,7 +370,6 @@ a {
 .card {
   margin: 5px;
   transition: box-shadow 0.2s;
-  font-size: 0.5rem;
   width: 95%;
   background-color: var(--elemBg);
   box-shadow: var(--cardShadow);
@@ -389,7 +382,6 @@ a {
 }
 
 .card p {
-  font-size: 0.6rem;
   color: var(--textNormal);
 }
 
@@ -420,13 +412,13 @@ a {
 
 .work-description-ul li {
   margin-left: 20px;
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
   color: var(--textNormal);
 }
 
 .dot-menu {
   position: absolute;
-  left: 90%;
+  left: 85%;
   top: 75%;
   width: 25px;
   fill: var(--textTitle);
@@ -469,6 +461,10 @@ a {
 
 .card-title {
   color: var(--textNormal);
+}
+
+#skills .card-subtitle {
+  font-size: 0.7em;
 }
 
 .skills-card img {
@@ -547,7 +543,7 @@ a {
   display: inline-block;
   padding: 5px 25px;
   margin: 2px 2px 2px 0;
-  font-size: 0.45rem;
+  /* font-size: 0.45rem; */
   background-color: var(--bg);
   border-radius: 25px;
   transition: background-color 0.4s;
@@ -561,6 +557,12 @@ a {
   width: 100%;
 }
 
+#footer-container {
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 /* ------------------------------------------------------------------------ */
 
 @media only screen and (min-width: 768px) {
@@ -570,6 +572,7 @@ a {
 
   .section {
     width: 80%;
+    max-width: 1040px;
     margin: auto;
   }
 
@@ -616,11 +619,30 @@ a {
     width: 180px;
   }
 
-  .darkmode {
+  #darkmode-container {
     position: absolute;
-    left: 15%;
-    top: 10%;
-    width: 75%;
+    display: flex;
+    justify-content: center;
+    top: 10px;
+    left: 5px;
+  }
+
+  .darkmode-tooltip {
+    font-size: 0.8em;
+    width: 120px;
+    color: var(--textNormal);
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    left: 55px;
+    z-index: 1;
+    transition: opacity 0.2s;
+    opacity: 0;
+  }
+
+  #toggle-container {
+    position: static;
+    transform: none;
   }
 
   .sidebar-link {
@@ -645,41 +667,26 @@ a {
     padding-left: 18px;
   }
 
-  .tooltips::before {
-    visibility: hidden;
-    position: absolute;
-    content: "";
-    border-top: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid black;
-    left: 45px;
-    top: 6px;
-    transform: rotate(180deg);
-  }
-
   .tooltips .tooltiptext {
-    visibility: hidden;
+    opacity: 0;
     display: inline-block;
-    width: 100px;
-    background-color: black;
-    color: #fff;
+    width: 120px;
+    color: var(--textNormal);
     text-align: center;
     padding: 5px 0;
-    border-radius: 3px;
-    font-size: 0.5em;
+    font-size: 0.8em;
     position: absolute;
     left: 55px;
     z-index: 1;
+    transition: opacity 0.2s;
   }
 
-  .tooltips:hover .tooltiptext,
-  .tooltips:hover.tooltips::before {
-    visibility: visible;
+  #sidebar-cont:hover .tooltips .tooltiptext,
+  #sidebar-cont:hover .darkmode-tooltip {
+    opacity: 1;
   }
 
   .tooltips:hover .sidebar-icon {
-    width: 23px;
     transform: rotateY(360deg);
   }
 
@@ -688,6 +695,10 @@ a {
   #main {
     top: 0;
     margin-left: 50px;
+  }
+
+  .half-height {
+    height: 50vh;
   }
 
   #cover {
@@ -715,6 +726,7 @@ a {
   #cover.section {
     margin: 0;
     width: 100%;
+    max-width: 2000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -763,7 +775,7 @@ a {
   }
 
   #projects-card-container {
-    width: 80%;
+    width: 100%;
     max-height: 90%;
     grid-template-columns: 40% 40% 40% 40% 40%;
     border-radius: 25px;

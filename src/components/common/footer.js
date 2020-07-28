@@ -2,9 +2,8 @@ import React from "react"
 
 const Footer = () => {
   return (
-    <footer>
-      © {new Date().getFullYear()}, Built with
-      {` `}
+    <footer id="footer-container">
+      © {new Date().getFullYear()}, hecho con cariño, sudor, lágrimas y{` `}
       <a
         href="https://www.gatsbyjs.org"
         target="_blank"
@@ -12,7 +11,7 @@ const Footer = () => {
       >
         Gatsby
       </a>{" "}
-      and love, by Tomás Freire Knight
+      por Tomás Freire Knight
     </footer>
   )
 }

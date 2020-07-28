@@ -150,7 +150,7 @@ const About = () => {
           </svg>
         </a>
       </div>
-      <div className="section" id="about">
+      <div className="section half-height" id="about">
         <img
           src={octoImg}
           alt="codercat"

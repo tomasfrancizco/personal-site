@@ -11,13 +11,14 @@ import Projects from "../components/projects"
 import Photography from "../components/photography"
 import Photography2 from "../components/photography2"
 import Contact from "../components/contact"
+import Footer from "../components/common/footer"
 
 export default function IndexPage() {
   return (
     <Layout>
       <SEO title="Homeee" />
       <About />
-      <div className="section work-education-container">
+      <div className="section work-education-container half-height">
         <Work />
         <Education />
       </div>
@@ -26,6 +27,7 @@ export default function IndexPage() {
       {/* <Photography /> */}
       <Photography2 />
       <Contact />
+      <Footer />
     </Layout>
   )
 }
