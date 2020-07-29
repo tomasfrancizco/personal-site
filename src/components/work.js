@@ -2,8 +2,8 @@ import React from "react"
 
 const Work = () => {
   return (
-    <div id="work" uk-scrollspy="cls: uk-animation-slide-top; delay: 300">
-      <h3 className="section-title">TRABAJO</h3>
+    <div id="work" uk-scrollspy="cls: uk-animation-slide-top; delay: 400; offset-top: -200">
+      <h3 className="section-title">EXPERIENCIA</h3>
       <div className="card-container we-card-container">
         <div className="uk-card uk-card-default uk-card-body uk-width-1@m card">
           <h3>Sales Operations Manager</h3>

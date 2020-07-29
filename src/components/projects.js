@@ -8,9 +8,9 @@ import noImage from "../images/No-Image-Available.png"
 
 const Projects = () => (
   <div
-    className="section"
+    className="section full-height"
     id="projects"
-    uk-scrollspy="cls: uk-animation-fade; delay: 200"
+    uk-scrollspy="cls: uk-animation-fade; delay: 200; offset-top: -200"
   >
     <h3 className="section-title">PROYECTOS</h3>
     <div id="projects-card-container">

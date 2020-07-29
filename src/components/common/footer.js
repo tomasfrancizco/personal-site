@@ -11,7 +11,7 @@ const Footer = () => {
       >
         Gatsby
       </a>{" "}
-      por Tomás Freire Knight
+      por Tomás Freire Knight.
     </footer>
   )
 }

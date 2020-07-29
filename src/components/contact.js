@@ -3,15 +3,15 @@ import { Form, Button } from "react-bootstrap"
 
 const Contact = () => {
   return (
-    <div className="section" id="contact">
+    <div className="section full-height" id="contact">
       <h3>CONTACTO</h3>
-      <h6>Trabajemos juntos!</h6>
+      <h6 id="contact-subtitle">Trabajemos juntos!</h6>
       <Form
         className="contact-form"
         method="post"
         action="https://getform.io/f/035d54f4-515a-461b-8cee-2a2ece721769"
       >
-        <Form.Group uk-scrollspy="cls: uk-animation-slide-left; delay: 300">
+        <Form.Group uk-scrollspy="cls: uk-animation-slide-left; delay: 300; offset-top: -200">
           <Form.Label>Tu nombre</Form.Label>
           <Form.Control
             type="text"
@@ -20,7 +20,7 @@ const Contact = () => {
             id="name"
           />
         </Form.Group>
-        <Form.Group uk-scrollspy="cls: uk-animation-slide-right; delay: 300">
+        <Form.Group uk-scrollspy="cls: uk-animation-slide-right; delay: 300; offset-top: -200">
           <Form.Label>Tu mail</Form.Label>
           <Form.Control
             type="email"
@@ -29,7 +29,7 @@ const Contact = () => {
             id="email"
           />
         </Form.Group>
-        <Form.Group uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">
+        <Form.Group uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; offset-top: -200">
           <Form.Label>El mensaje</Form.Label>
           <Form.Control as="textarea" rows="3" name="message" id="message" />
         </Form.Group>

@@ -57,7 +57,7 @@ S146.75,171.7,146.75,119.4z M406.25,458.9H77.05v-55.6c0-90.7,73.8-164.6,164.6-16
                   <path d="m221.569 204.698h68.857v30h-68.857z" />
                 </g>
               </svg>
-              TRABAJO
+              EXPERIENCIA
             </li>
           </Link>
           <Link to="/#education">
@@ -167,7 +167,7 @@ S146.75,171.7,146.75,119.4z M406.25,458.9H77.05v-55.6c0-90.7,73.8-164.6,164.6-16
                   <path d="m221.569 204.698h68.857v30h-68.857z" />
                 </g>
               </svg>
-              <span className="tooltiptext">Trabajo</span>
+              <span className="tooltiptext">Experiencia</span>
             </Link>
           </div>
           <div className="tooltips">

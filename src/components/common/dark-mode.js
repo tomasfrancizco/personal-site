@@ -16,17 +16,19 @@ class DarkMode extends React.Component {
     return (
       <ThemeToggler>
         {({ theme, toggleTheme, state }) => (
-          <div className="darkmode">
-            <div
-              id="toggle-container"
-              onClick={() => {
-                toggleTheme(theme === "light" ? "dark" : "light")
-                this.handleClick()
-              }}
-            >
+          <div
+            className="darkmode"
+            onClick={() => {
+              toggleTheme(theme === "light" ? "dark" : "light")
+              this.handleClick()
+            }}
+          >
+            <div id="toggle-container">
               <div
                 id="ball"
-                className={this.state.condition === "dark" ? "light off" : "light"}
+                className={
+                  this.state.condition === "dark" ? "light off" : "light"
+                }
               ></div>
             </div>
           </div>

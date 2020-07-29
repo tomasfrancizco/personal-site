@@ -27,9 +27,9 @@ export default () => {
   `)
   return (
     <div
-      className="section"
+      className="section full-height"
       id="photography"
-      uk-scrollspy="cls: uk-animation-fade; delay: 300"
+      uk-scrollspy="cls: uk-animation-fade; delay: 300; offset-top: -200"
     >
       <h3 className="section-title">INSTAGRAM</h3>
       <div

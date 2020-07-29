@@ -25,7 +25,7 @@ const About = () => {
 
   return (
     <div>
-      <div className="section" id="cover">
+      <div className="section full-height" id="cover">
         <img src={profileSinFondo} alt="TomasFreire" />
         <div id="cover-info">
           <h1>¡Hola! Soy Tomás.</h1>
@@ -153,10 +153,10 @@ const About = () => {
       <div className="section half-height" id="about">
         <img
           src={octoImg}
-          alt="codercat"
-          uk-scrollspy="cls: uk-animation-slide-left; delay: 300"
+          alt="octocat"
+          uk-scrollspy="cls: uk-animation-slide-left; delay: 300; offset-top: -200"
         />
-        <div uk-scrollspy="cls: uk-animation-fade; delay: 300">
+        <div uk-scrollspy="cls: uk-animation-fade; delay: 300; offset-top: -200">
           <h3 className="section-title">ACERCA DE MI</h3>
           <p>
             Soy desarrollador web, vivo en Buenos Aires y armé este sitio para
@@ -181,6 +181,10 @@ const About = () => {
             <Link to="/#skills">herramientas</Link>.
             {/* I handle pretty well the MERN stack and some other cool things as well, you can
             check them out in the <a href="/#skills">skills</a> section. */}
+          </p>
+          <p>
+            También me gusta la fotografía, podés ver mis últimos posteos en la
+            sección de <Link to="/#photography">Instagram</Link>{" "}
           </p>
         </div>
       </div>

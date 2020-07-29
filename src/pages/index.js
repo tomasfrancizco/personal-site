@@ -14,6 +14,7 @@ import Contact from "../components/contact"
 import Footer from "../components/common/footer"
 
 export default function IndexPage() {
+  
   return (
     <Layout>
       <SEO title="Homeee" />
