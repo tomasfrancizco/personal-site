@@ -184,7 +184,7 @@ const About = () => {
           </p>
           <p>
             También me gusta la fotografía, podés ver mis últimos posteos en la
-            sección de <Link to="/#photography">Instagram</Link>{" "}
+            sección de <Link to="/#photography">Instagram.</Link>{" "}
           </p>
         </div>
       </div>

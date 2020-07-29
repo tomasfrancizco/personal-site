@@ -240,6 +240,7 @@ a {
   position: absolute;
   top: 40px;
   background-color: var(--bg);
+  /* max-width: 100%; */
 }
 
 #cover {
@@ -249,6 +250,7 @@ a {
   align-items: center;
   flex-direction: column;
   margin-top: 40px;
+  height: 100vh;
 }
 
 #cover.section {
@@ -489,17 +491,8 @@ a {
   text-align: center;
 }
 
-.instagram-picture {
-  height: 50vh;
-  width: 80vw;
-  border-radius: 25px;
-  max-width: 1040px;
-}
-
-.instagram-picture picture img {
-  object-fit: contain !important;
-  background: var(--elemBg);
-  border-radius: 5px;
+.uk-slider-items a {
+  margin: auto
 }
 
 #projects.section {
@@ -712,11 +705,11 @@ a {
   }
 
   .half-height {
-    height: 434px;
+    min-height: 434px;
   }
 
   .full-height {
-    height: 868px;
+    min-height: 868px;
   }
 
   #cover {
@@ -726,6 +719,7 @@ a {
     margin-top: 40px;
     flex-direction: row;
     color: #000810;
+    height: auto;
   }
 
   #cover-info {
@@ -802,10 +796,6 @@ a {
 
   .projects-card {
     width: 95%;
-  }
-
-  .instagram-picture {
-    height: 75vh;
   }
 
   .contact-form {

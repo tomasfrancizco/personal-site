@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 
 export default () => {
   const query = useStaticQuery(graphql`
@@ -11,6 +10,9 @@ export default () => {
           node {
             localFile {
               childImageSharp {
+                original {
+                  src
+                }
                 fluid {
                   ...GatsbyImageSharpFluid
                 }
@@ -31,59 +33,23 @@ export default () => {
     >
       <h3 className="section-title">INSTAGRAM</h3>
       <div
-        className="uk-position-relative uk-visible-toggle uk-light"
-        tabIndex="-1"
-        uk-slideshow="true"
+        uk-slider="true; autoplay: true; center: true"
+        style={{ borderRadius: "25px" }}
       >
-        <ul className="uk-slideshow-items">
+        <ul className="uk-slider-items uk-child-width-1-2@s uk-grid">
           {query.allInstaNode.edges.map(({ node }, i) => {
             return (
-              <Img
-                key={i}
-                fluid={node.localFile.childImageSharp.fluid}
-                className="instagram-picture"
-                alt="Instagram picture"
-                uk-cover="true"
-              />
+              <a href={"https://www.instagram.com/p/" + node.id} target="_blank">
+                <img
+                  src={node.localFile.childImageSharp.fluid.src}
+                  alt="Instagram Picture"
+                />
+              </a>
             )
           })}
         </ul>
-
-        <a
-          className="uk-position-center-left uk-position-small uk-hidden-hover"
-          href="#"
-          uk-slidenav-previous="true"
-          uk-slideshow-item="previous"
-        ></a>
-        <a
-          className="uk-position-center-right uk-position-small uk-hidden-hover"
-          href="#"
-          uk-slidenav-next="true"
-          uk-slideshow-item="next"
-        ></a>
+        <ul className="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
       </div>
-      {/* <Carousel>
-        {query.allInstaNode.edges.map(({ node }, i) => {
-          return (
-            <Carousel.Item key={i}>
-              <a
-                href={`https://www.instagram.com/p/${node.id}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Img
-                  fluid={node.localFile.childImageSharp.fluid}
-                  className="instagram-picture"
-                  alt="Instagram picture"
-                />
-              </a>
-              <Carousel.Caption>
-                <p>{node.caption !== null ? node.caption.slice(0, 20) + "..." : null}</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          )
-        })}
-      </Carousel> */}
     </div>
   )
 }
