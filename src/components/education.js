@@ -19,7 +19,7 @@ const Education = () => (
         <p>2019</p>
       </div>
       <div className="uk-card uk-card-default uk-card-body uk-width-1@m card">
-        <h3 className="uk-card-title">Publicidad</h3>
+        <h3 className="uk-card-title">Licenciatura en Publicidad</h3>
         <p>
           @{" "}
           <a

@@ -1,18 +1,22 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Footer = () => {
   return (
-    <footer id="footer-container">
-      © {new Date().getFullYear()}, hecho con cariño y{` `}
-      <a
-        href="https://www.gatsbyjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Gatsby
-      </a>{" "}
-      por Tomás Freire Knight.
-    </footer>
+    <div id="footer-container">
+      <Link href="" uk-totop="true" id="totop"></Link>
+      <footer>
+        © {new Date().getFullYear()}, hecho con cariño y{` `}
+        <a
+          href="https://www.gatsbyjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Gatsby
+        </a>{" "}
+        por Tomás Freire Knight.
+      </footer>
+    </div>
   )
 }
 

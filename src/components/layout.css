@@ -46,6 +46,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-color: red;
 }
 
 body {
@@ -559,7 +560,12 @@ a {
 #footer-container {
   font-size: 0.8em;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px 20px;
+  border-top: 1px solid var(--elemBg);
+}
+
+#totop {
+  margin: 15px 0;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -609,14 +615,13 @@ a {
     align-items: center;
     flex-direction: column;
     width: 60px;
-    opacity: 0.7;
-    transition: all 0.5s;
-    transition-property: opacity, width;
+    transition: width 0.7s;
   }
 
   #sidebar-cont:hover #sidebar {
     opacity: 1;
     width: 180px;
+    transition: width 0.3s;
   }
 
   #darkmode-container {
@@ -629,16 +634,17 @@ a {
 
   .darkmode-tooltip {
     font-size: 0.8em;
-    width: 120px;
+    width: 0px;
     color: var(--textNormal);
-    text-align: center;
+    text-align: start;
     padding: 5px 0;
     position: absolute;
-    left: 35px;
+    left: 70px;
     z-index: 1;
-    transition: opacity 0.2s;
-    opacity: 0;
-    visibility: hidden;
+    transition: all .5s;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
   }
 
   #toggle-container {
@@ -669,10 +675,10 @@ a {
   }
 
   .tooltips .tooltiptext {
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
     display: inline-block;
-    width: 120px;
+    width: 0px;
     color: var(--textNormal);
     text-align: start;
     margin-left: 15px;
@@ -681,13 +687,15 @@ a {
     position: absolute;
     left: 55px;
     z-index: 1;
-    transition: opacity .5s;
+    transition: all .5s;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
   }
 
   #sidebar-cont:hover .tooltips .tooltiptext,
   #sidebar-cont:hover .darkmode-tooltip {
-    opacity: 1;
-    visibility: visible;
+    width: 120px;
   }
 
   .tooltips:hover .sidebar-icon {
