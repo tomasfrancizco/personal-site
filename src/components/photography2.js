@@ -2,8 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import photo from "../images/Instagram/New York.jpg"
-
 export default () => {
   const query = useStaticQuery(graphql`
     query MyQuery2 {

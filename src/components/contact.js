@@ -37,7 +37,7 @@ const Contact = () => {
           type="submit"
           variant="primary"
           id="submit"
-          uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300"
+          uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; offset-top: -200"
         >
           Enviar
         </Button>

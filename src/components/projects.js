@@ -5,6 +5,8 @@ import romaImg from "../images/projects/roma.png"
 import denunciaImg from "../images/projects/denuncia.jpg"
 import trophy from "../../public/icons/trophy.svg"
 import noImage from "../images/No-Image-Available.png"
+import calculatorImg from "../images/projects/Calculator.png"
+import pomodoroImg from "../images/projects/Pomodoro.png"
 
 const Projects = () => (
   <div
@@ -124,7 +126,7 @@ const Projects = () => (
         </Card.Body>
       </Card>
       <Card className="card projects-card">
-        <Card.Img variant="top" src={noImage} />
+        <Card.Img variant="top" src={pomodoroImg} />
         <Card.Body>
           <Card.Title>Pomodoro</Card.Title>
           <Card.Subtitle>
@@ -150,7 +152,7 @@ const Projects = () => (
         </Card.Body>
       </Card>
       <Card className="card projects-card">
-        <Card.Img variant="top" src={noImage} />
+        <Card.Img variant="top" src={calculatorImg} />
         <Card.Body>
           <Card.Title>Calculadora Javascript</Card.Title>
           <Card.Subtitle>

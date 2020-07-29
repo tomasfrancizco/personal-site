@@ -11,7 +11,7 @@ const Skills = () => (
     <h3 className="section-title">HERRAMIENTAS</h3>
     <div
       className="card-container skills-card-container"
-      uk-scrollspy="cls: uk-animation-fade; target: .skills-card; delay: 300"
+      uk-scrollspy="cls: uk-animation-fade; target: .skills-card; delay: 300; offset-top: -200"
     >
       <div className="card skills-card">
         <img src={webdev} alt="webdev" />

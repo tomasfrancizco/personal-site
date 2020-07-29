@@ -616,10 +616,12 @@ a {
     flex-direction: column;
     width: 60px;
     transition: width 0.7s;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
   }
 
   #sidebar-cont:hover #sidebar {
-    opacity: 1;
     width: 180px;
     transition: width 0.3s;
   }
@@ -669,7 +671,7 @@ a {
     position: relative;
     display: inline-block;
     color: black;
-    margin: 2.5px 0;
+    margin: 5px 0;
     width: 100%;
     padding-left: 18px;
   }
@@ -688,9 +690,9 @@ a {
     left: 55px;
     z-index: 1;
     transition: all .5s;
-    overflow: hidden;
+    /* overflow: hidden;
     text-overflow: clip;
-    white-space: nowrap;
+    white-space: nowrap; */
   }
 
   #sidebar-cont:hover .tooltips .tooltiptext,
