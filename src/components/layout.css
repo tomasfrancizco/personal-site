@@ -450,8 +450,10 @@ a {
 .skills-card-container {
   display: grid;
   grid-template-columns: 50% 50%;
+  gap: 15px;
   place-items: center;
   place-content: center;
+  max-width: calc(100vw - 60px);
 }
 
 .skills-card {
@@ -492,7 +494,7 @@ a {
 }
 
 .uk-slider-items a {
-  margin: auto
+  margin: auto;
 }
 
 #projects.section {
@@ -808,6 +810,7 @@ a {
 @media only screen and (min-width: 960px) {
   .skills-card-container {
     grid-template-columns: 45% 45% 45%;
+    gap: 15px;
   }
 }
 

@@ -39,7 +39,12 @@ export default () => {
         <ul className="uk-slider-items uk-child-width-1-2@s uk-grid">
           {query.allInstaNode.edges.map(({ node }, i) => {
             return (
-              <a href={"https://www.instagram.com/p/" + node.id} target="_blank">
+              <a
+                href={"https://www.instagram.com/p/" + node.id}
+                target="_blank"
+                key={i}
+                rel="noopener noreferrer"
+              >
                 <img
                   src={node.localFile.childImageSharp.fluid.src}
                   alt="Instagram Picture"
