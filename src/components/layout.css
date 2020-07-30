@@ -409,6 +409,10 @@ a {
   margin: 5px 0;
 }
 
+.uk-card-title {
+  font-size: 1.2em;
+}
+
 #work,
 #education {
   width: 100%;
@@ -468,12 +472,13 @@ a {
   box-shadow: var(--cardShadow);
 }
 
-.card-title {
+#skills .card-title {
   color: var(--textNormal);
+  font-size: 0.8em;
 }
 
 #skills .card-subtitle {
-  font-size: 0.7em;
+  font-size: 0.6em;
 }
 
 .skills-card img {
@@ -588,7 +593,7 @@ a {
 
   #sidebar-cont {
     position: fixed;
-    border-right: 2px 2px 5px 0 rgba(255,255,255,0.8);
+    border-right: 2px 2px 5px 0 rgba(255, 255, 255, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -640,7 +645,7 @@ a {
     position: absolute;
     left: 70px;
     z-index: 1;
-    transition: all .5s;
+    transition: all 0.5s;
     overflow: hidden;
     text-overflow: clip;
     white-space: nowrap;
@@ -686,7 +691,7 @@ a {
     position: absolute;
     left: 55px;
     z-index: 1;
-    transition: all .5s;
+    transition: all 0.5s;
     /* overflow: hidden;
     text-overflow: clip;
     white-space: nowrap; */
@@ -802,6 +807,14 @@ a {
   .skills-card {
     max-width: 325px;
     gap: 0px;
+  }
+
+  #skills .card-title {
+    font-size: 1em;
+  }
+  
+  #skills .card-subtitle {
+    font-size: 0.7em;
   }
 
   #projects-card-container {
