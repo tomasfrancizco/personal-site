@@ -171,7 +171,7 @@ const Projects = () => (
             <div className="chip">CSS</div>
             <div className="chip">Javascript</div>
           </div>
-          <Card.Text>Una calculadora con diseño neomorfista.</Card.Text>
+          <Card.Text>Una calculadora con diseño neomorfista y funcionalidad con Javascript.</Card.Text>
         </Card.Body>
       </Card>
     </div>

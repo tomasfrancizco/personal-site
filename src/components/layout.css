@@ -243,6 +243,10 @@ a {
   /* max-width: 100%; */
 }
 
+#skills, #projects, #photography, #contact {
+  margin-top: 30px;
+}
+
 #cover {
   display: flex;
   justify-content: start;
@@ -551,7 +555,7 @@ a {
 }
 
 #contact-subtitle {
-  margin: -15px 0 15px 0;
+  margin: -15px 0 25px 0;
 }
 
 #submit {
@@ -692,9 +696,6 @@ a {
     left: 55px;
     z-index: 1;
     transition: all 0.5s;
-    /* overflow: hidden;
-    text-overflow: clip;
-    white-space: nowrap; */
   }
 
   #sidebar-cont:hover .tooltips .tooltiptext,
@@ -719,6 +720,10 @@ a {
 
   .full-height {
     min-height: 868px;
+  }
+
+  #skills, #projects, #photography, #contact {
+    margin-top: 0;
   }
 
   #cover {
@@ -801,7 +806,8 @@ a {
 
   .skills-card-container {
     max-width: calc(100vw - 60px);
-    gap: 5px;
+    column-gap: 5px;
+    row-gap: 15px;
   }
 
   .skills-card {
@@ -830,7 +836,7 @@ a {
   }
 
   .contact-form {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -839,7 +845,6 @@ a {
 @media only screen and (min-width: 960px) {
   .skills-card-container {
     grid-template-columns: 35% 35% 35%;
-    gap: 0px;
   }
 }
 

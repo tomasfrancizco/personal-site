@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="section full-height" id="contact">
       <h3>CONTACTO</h3>
-      <h6 id="contact-subtitle">Trabajemos juntos!</h6>
+      <h6 id="contact-subtitle">¡Trabajemos juntos!</h6>
       <Form
         className="contact-form"
         method="post"
