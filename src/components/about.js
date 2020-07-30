@@ -176,7 +176,7 @@ const About = () => {
           </p>
           <p>Ahora estoy buscando meterme de lleno en el mundo del código.</p>
           <p>
-            Manejo el stack MERN (MongoDB, Express, ReactJS y NodeJs), HTML, CSS
+            Manejo el stack MERN, HTML, CSS
             y algunas otras cosas, que podés ver en la sección de{" "}
             <Link to="/#skills">herramientas</Link>.
             {/* I handle pretty well the MERN stack and some other cool things as well, you can

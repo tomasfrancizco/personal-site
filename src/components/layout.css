@@ -263,7 +263,7 @@ a {
 }
 
 #cover > img {
-  height: 45vh;
+  height: 35vh;
 }
 
 #cover-info {
@@ -295,6 +295,7 @@ a {
   align-items: center;
   list-style-type: none;
   padding: 0;
+  margin-top: 0;
 }
 
 #social-list li {
@@ -322,7 +323,7 @@ a {
 }
 
 #podes button {
-  height: 40px;
+  height: 35px;
   width: 150px;
   border: 0;
   margin: 0 5px;
@@ -330,6 +331,7 @@ a {
   transition: opacity 0.5s;
   border-radius: 50px;
   box-shadow: var(--shadow);
+  font-size: 0.9em;
 }
 
 #podes button:hover {
@@ -453,7 +455,7 @@ a {
   gap: 15px;
   place-items: center;
   place-content: center;
-  max-width: calc(100vw - 60px);
+  width: 95%;
 }
 
 .skills-card {
@@ -540,7 +542,7 @@ a {
 }
 
 .contact-form {
-  width: 100%;
+  width: 95%;
 }
 
 #contact-subtitle {
@@ -724,6 +726,10 @@ a {
     height: auto;
   }
 
+  #cover > img {
+    height: 45vh;
+  }
+
   #cover-info {
     display: flex;
     justify-content: flex-start;
@@ -788,6 +794,16 @@ a {
     width: 50%;
   }
 
+  .skills-card-container {
+    max-width: calc(100vw - 60px);
+    gap: 5px;
+  }
+
+  .skills-card {
+    max-width: 325px;
+    gap: 0px;
+  }
+
   #projects-card-container {
     width: 95%;
     max-height: 85%;
@@ -809,8 +825,8 @@ a {
 
 @media only screen and (min-width: 960px) {
   .skills-card-container {
-    grid-template-columns: 45% 45% 45%;
-    gap: 15px;
+    grid-template-columns: 35% 35% 35%;
+    gap: 0px;
   }
 }
 
