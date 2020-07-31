@@ -27,5 +27,11 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
     },
     "gatsby-plugin-dark-mode",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/images/icon.png`,
+      },
+    },
   ],
 }

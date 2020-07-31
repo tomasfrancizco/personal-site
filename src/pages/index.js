@@ -9,7 +9,6 @@ import Education from "../components/education"
 import Skills from "../components/skills"
 import Projects from "../components/projects"
 import Photography from "../components/photography"
-import Photography2 from "../components/photography2"
 import Contact from "../components/contact"
 import Footer from "../components/common/footer"
 
@@ -25,8 +24,7 @@ export default function IndexPage() {
       </div>
       <Skills />
       <Projects />
-      {/* <Photography /> */}
-      <Photography2 />
+      <Photography />
       <Contact />
       <Footer />
     </Layout>

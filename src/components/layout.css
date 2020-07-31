@@ -60,7 +60,8 @@ body {
   --shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.8),
     -2px -2px 5px 0 rgba(255, 255, 255, 0.8);
   --cardShadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  --backgroundImg: url("../images/backgrounds/earth-nasa.jpg");
+  /* --backgroundImg: url("../images/backgrounds/earth-nasa.jpg"); */
+  --backgroundImg: url("../../../../../Desktop/videoblocks-abstract-motion-background-digital-plexus-data-networks-alpha-matte-loop_s-zvyghew_thumbnail-full01.png");
 
   min-height: 100%;
   background-color: var(--bg);
@@ -79,8 +80,11 @@ body.dark {
   --shadow: 2px 2px 5px 0 rgba(255, 255, 255, 0.8),
     -2px -2px 5px 0 rgba(0, 0, 0, 0.8);
   --cardShadow: 0 5px 15px rgba(255, 255, 255, 0.08);
-  --backgroundImg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/backgrounds/earth-nasa.jpg");
+  /* --backgroundImg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/backgrounds/earth-nasa.jpg"); */
+    --backgroundImg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../../../Desktop/videoblocks-abstract-motion-background-digital-plexus-data-networks-alpha-matte-loop_s-zvyghew_thumbnail-full01.png");
+    
 }
 
 @media only screen and (max-width: 325px) {
@@ -680,10 +684,12 @@ a {
   .tooltips {
     position: relative;
     display: inline-block;
-    color: black;
-    margin: 5px 0;
     width: 100%;
     padding-left: 18px;
+    background: var(--elemBg);
+    border-radius: 25px;
+    padding: 10px 0 10px 10px;
+    transition: background .3s;
   }
 
   .tooltips .tooltiptext {
@@ -709,6 +715,10 @@ a {
 
   .tooltips:hover .sidebar-icon {
     transform: rotateY(360deg);
+  }
+
+  .tooltips:hover {
+    background: var(--bg);
   }
 
   /* end of Sidebar tooltips */
