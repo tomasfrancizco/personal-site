@@ -70,8 +70,8 @@ body {
 
 body.dark {
   -webkit-font-smoothing: antialiased;
-  --bg: #222831;
-  --elemBg: #30475e;
+  --bg: #393e46;
+  --elemBg: #222831;
   --textNormal: #ececec;
   --textTitle: white;
   --textLink: #f2a365;
@@ -82,9 +82,8 @@ body.dark {
   --cardShadow: 0 5px 15px rgba(255, 255, 255, 0.08);
   /* --backgroundImg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/backgrounds/earth-nasa.jpg"); */
-    --backgroundImg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  --backgroundImg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../../../../Desktop/videoblocks-abstract-motion-background-digital-plexus-data-networks-alpha-matte-loop_s-zvyghew_thumbnail-full01.png");
-    
 }
 
 @media only screen and (max-width: 325px) {
@@ -116,7 +115,7 @@ a {
 
 .section-title {
   margin: 10px 0;
-  text-align: start;
+  text-align: center;
   color: var(--textTitle);
 }
 
@@ -246,7 +245,10 @@ a {
   /* max-width: 100%; */
 }
 
-#skills, #projects, #photography, #contact {
+#skills,
+#projects,
+#photography,
+#contact {
   margin-top: 30px;
 }
 
@@ -265,6 +267,7 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   margin-top: 10px;
   animation: coverInfoAnimation 2s;
 }
@@ -528,7 +531,7 @@ a {
 }
 
 .projects-card .card-img-top {
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
@@ -551,15 +554,20 @@ a {
   font-size: 0.6em;
   background-color: var(--bg);
   border-radius: 25px;
-  transition: background-color 0.4s;
+  transition: background-color 0.3s;
 }
 
 .chip:hover {
-  background-color: #9e9e9e;
+  background-color: #8f8f8f;
+  color: white;
 }
 
 .contact-form {
   width: 95%;
+}
+
+.form-input {
+  border-radius: 25px;
 }
 
 #contact-subtitle {
@@ -569,6 +577,7 @@ a {
 #submit {
   border-radius: 25px;
   border: 0;
+  width: 100%;
 }
 
 #footer-container {
@@ -671,6 +680,7 @@ a {
   .sidebar-link {
     width: 24px;
     height: 24px;
+    margin-left: 10px;
   }
 
   .sidebar-icon {
@@ -688,8 +698,7 @@ a {
     padding-left: 18px;
     background: var(--elemBg);
     border-radius: 25px;
-    padding: 10px 0 10px 10px;
-    transition: background .3s;
+    padding: 8px 0 8px 10px;
   }
 
   .tooltips .tooltiptext {
@@ -736,7 +745,10 @@ a {
     min-height: 868px;
   }
 
-  #skills, #projects, #photography, #contact {
+  #skills,
+  #projects,
+  #photography,
+  #contact {
     margin-top: 0;
   }
 
@@ -832,7 +844,7 @@ a {
   #skills .card-title {
     font-size: 1em;
   }
-  
+
   #skills .card-subtitle {
     font-size: 0.7em;
   }
@@ -851,6 +863,14 @@ a {
 
   .contact-form {
     width: 100%;
+  }
+
+  #submit-container {
+    text-align: center;
+  }
+
+  #submit {
+    width: 25%;
   }
 }
 

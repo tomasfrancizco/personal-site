@@ -8,7 +8,7 @@ const Work = () => {
         <div className="uk-card uk-card-default uk-card-body uk-width-1@m card">
           <h3 className="uk-card-title">Sales Operations Manager</h3>
           <span
-            uk-icon="more-vertical"
+            uk-icon="plus"
             className="dot-menu"
             uk-toggle="target: #modal-close-default-a"
           ></span>
@@ -71,7 +71,7 @@ const Work = () => {
         <div className="uk-card uk-card-default uk-card-body uk-width-1@m card">
           <h3 className="uk-card-title">Ad Sales Supervisor</h3>
           <span
-            uk-icon="more-vertical"
+            uk-icon="plus"
             className="dot-menu"
             uk-toggle="target: #modal-close-default-b"
           ></span>
