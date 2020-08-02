@@ -231,7 +231,7 @@ a {
 
 .off {
   left: 25px;
-  background: #fed188;
+  background: #f2a365;
 }
 
 #sidebar {
@@ -574,6 +574,10 @@ a {
   margin: -15px 0 25px 0;
 }
 
+#submit-container {
+  margin-top: 30px;
+}
+
 #submit {
   border-radius: 25px;
   border: 0;
@@ -870,7 +874,7 @@ a {
   }
 
   #submit {
-    width: 25%;
+    width: 33%;
   }
 }
 
