@@ -33,5 +33,28 @@ module.exports = {
         icon: `src/images/icon.png`,
       },
     },
+    {
+      // The name of the plugin
+      resolve: "gatsby-source-mongodb",
+      options: {
+        // Name of the database and collection where are books reside
+        dbName: "portfolio-site",
+        collection: "messages",
+        server: {
+          address: "cluster0-shard-00-01.damdm.mongodb.net",
+          port: 27017,
+        },
+        auth: {
+          user: "tomasfrancizco",
+          password: "C61%21%23Hf9",
+        },
+        extraParams: {
+          replicaSet: "Main-shard-0",
+          ssl: true,
+          authSource: "admin",
+          retryWrites: true,
+        },
+      },
+    },
   ],
 }

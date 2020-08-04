@@ -57,9 +57,9 @@ body {
   --textLink: blue;
   --hr: hsla(0, 0%, 0%, 0.2);
   --icon: black;
-  --shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.8),
-    -2px -2px 5px 0 rgba(255, 255, 255, 0.8);
-  --cardShadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  --shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.8),
+    -2px -2px 2px 0 rgba(255, 255, 255, 0.8);
+  --cardShadow: 2px 2px 2px rgba(0, 0, 0, 0.08), -2px -2px 2px rgba(255, 255, 255, 0.08);
   /* --backgroundImg: url("../images/backgrounds/earth-nasa.jpg"); */
   --backgroundImg: url("../../../../../Desktop/videoblocks-abstract-motion-background-digital-plexus-data-networks-alpha-matte-loop_s-zvyghew_thumbnail-full01.png");
 
@@ -77,13 +77,17 @@ body.dark {
   --textLink: #f2a365;
   --hr: hsla(0, 0%, 100%, 0.2);
   --icon: white;
-  --shadow: 2px 2px 5px 0 rgba(255, 255, 255, 0.8),
-    -2px -2px 5px 0 rgba(0, 0, 0, 0.8);
-  --cardShadow: 0 5px 15px rgba(255, 255, 255, 0.08);
+  --shadow: 2px 2px 2px 0 rgba(255, 255, 255, 0.8),
+    -2px -2px 2px 0 rgba(0, 0, 0, 0.8);
+  --cardShadow: 2px 2px 2px rgba(255, 255, 255, 0.08), -2px -2px 2px rgba(0, 0, 0, 0.08);
   /* --backgroundImg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/backgrounds/earth-nasa.jpg"); */
   --backgroundImg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../../../../Desktop/videoblocks-abstract-motion-background-digital-plexus-data-networks-alpha-matte-loop_s-zvyghew_thumbnail-full01.png");
+}
+
+h3 {
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 325px) {
@@ -533,6 +537,7 @@ a {
 .projects-card .card-img-top {
   width: 100%;
   margin: auto;
+  border-radius: 25px;
 }
 
 .projects-card .card-body {
@@ -780,7 +785,7 @@ a {
   #cover-info > h1 {
     margin-left: -20px;
     text-align: start;
-    font-size: 220%;
+    font-size: 300%;
   }
 
   #cover.section {
@@ -794,7 +799,7 @@ a {
 
   .Typewriter {
     text-align: start;
-    font-size: 150%;
+    font-size: 180%;
   }
 
   #about {
