@@ -142,7 +142,9 @@ S146.75,171.7,146.75,119.4z M406.25,458.9H77.05v-55.6c0-90.7,73.8-164.6,164.6-16
         <div id="sidebar">
           <div id="darkmode-container">
             <DarkMode />
-            <span className="darkmode-tooltip">Dark Mode</span>
+            <span className="darkmode-tooltip">
+              {window.localStorage.theme == "dark" ? "LIGHT" : "DARK"}
+            </span>
           </div>
           <div className="tooltips">
             <Link to="/#cover" className="sidebar-link">

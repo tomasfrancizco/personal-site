@@ -15,7 +15,6 @@ class Contact extends React.Component {
     const { message } = this.state
     let field = e.target.name
     message[field] = e.target.value
-    console.log(message)
     this.setState({ message })
   }
 
@@ -29,10 +28,23 @@ class Contact extends React.Component {
   }
 
   onUpload = () => {
-    uploadMessage(this.state.message)
+    const { message } = this.state
+    uploadMessage(message)
+      .then(() => {
+        this.setState({
+          message: {
+            name: "",
+            email: "",
+            message: "",
+          },
+        })
+      })
+      .catch(error => this.setState({ error: error.message }))
   }
 
   render() {
+    const { name, email, message } = this.state
+
     return (
       <div className="section full-height" id="contact">
         <h3>CONTACTO</h3>
@@ -45,6 +57,7 @@ class Contact extends React.Component {
               type="text"
               placeholder="Regina Falange"
               name="name"
+              value={name}
               id="name"
               onChange={this.handleChange}
             />
@@ -56,6 +69,7 @@ class Contact extends React.Component {
               type="email"
               placeholder="regina@falange.com"
               name="email"
+              value={email}
               id="email"
               onChange={this.handleChange}
             />
@@ -66,6 +80,7 @@ class Contact extends React.Component {
               as="textarea"
               rows="3"
               name="message"
+              value={email}
               id="message"
               className="form-input"
               onChange={this.handleChange}
