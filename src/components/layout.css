@@ -795,6 +795,7 @@ a {
 
   .Typewriter {
     text-align: start;
+    min-width: 365px;
     font-size: 180%;
   }
 

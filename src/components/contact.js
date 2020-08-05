@@ -21,7 +21,7 @@ class Contact extends React.Component {
   handleFormSubmit = e => {
     e.preventDefault()
     const { message } = this.state
-    if (message.name == "" || message.email == "" || message.message == "") {
+    if (message.name === "" || message.email === "" || message.message === "") {
       return this.setState({ error: "Por favor completá todos los campos!" })
     }
     this.onUpload()
@@ -43,7 +43,7 @@ class Contact extends React.Component {
   }
 
   render() {
-    const { name, email, message } = this.state
+    const { name, email, message } = this.state.message
 
     return (
       <div className="section full-height" id="contact">
@@ -80,7 +80,7 @@ class Contact extends React.Component {
               as="textarea"
               rows="3"
               name="message"
-              value={email}
+              value={message}
               id="message"
               className="form-input"
               onChange={this.handleChange}
