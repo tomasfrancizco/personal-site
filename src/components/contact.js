@@ -2,16 +2,6 @@ import React from "react"
 import { Form, Button } from "react-bootstrap"
 
 class Contact extends React.Component {
-  validateForm = () => {
-    const name = document.getElementById("name")
-    const email = document.getElementById("email")
-    const message = document.getElementById("message")
-    if (name.value == "" || email.value == "" || message.value == "") {
-      alert("Debes completar todos los campos")
-      return
-    }
-  }
-
   render() {
     return (
       <div className="section full-height" id="contact">

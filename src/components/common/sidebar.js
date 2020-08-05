@@ -3,21 +3,24 @@ import React from "react"
 import DarkMode from "./dark-mode"
 
 const Header = () => {
-  const listItems = document.getElementsByClassName("burger-menu-list-item")
-  const list = document.getElementsByClassName("burger-menu-list")
-  const icon = document.getElementsByClassName("navbar-icon")
-  const toggleMenu = () => {
-    if (listItems[0].getAttribute("class") === "burger-menu-list-item") {
-      list[0].style.border = "1px solid gray"
-      for (let i = 0; i < listItems.length; i++) {
-        icon[i].style.visibility = "visible"
-        listItems[i].setAttribute("class", "burger-menu-list-item toggle")
-      }
-    } else {
-      list[0].style.border = "0"
-      for (let i = 0; i < listItems.length; i++) {
-        icon[i].style.visibility = "hidden"
-        listItems[i].setAttribute("class", "burger-menu-list-item")
+  if (typeof window !== `undefined`) {
+    var theme = window.localStorage.theme
+    const listItems = document.getElementsByClassName("burger-menu-list-item")
+    const list = document.getElementsByClassName("burger-menu-list")
+    const icon = document.getElementsByClassName("navbar-icon")
+    var toggleMenu = () => {
+      if (listItems[0].getAttribute("class") === "burger-menu-list-item") {
+        list[0].style.border = "1px solid gray"
+        for (let i = 0; i < listItems.length; i++) {
+          icon[i].style.visibility = "visible"
+          listItems[i].setAttribute("class", "burger-menu-list-item toggle")
+        }
+      } else {
+        list[0].style.border = "0"
+        for (let i = 0; i < listItems.length; i++) {
+          icon[i].style.visibility = "hidden"
+          listItems[i].setAttribute("class", "burger-menu-list-item")
+        }
       }
     }
   }
@@ -143,7 +146,7 @@ S146.75,171.7,146.75,119.4z M406.25,458.9H77.05v-55.6c0-90.7,73.8-164.6,164.6-16
           <div id="darkmode-container">
             <DarkMode />
             <span className="darkmode-tooltip">
-              {window.localStorage.theme == "dark" ? "LIGHT" : "DARK"}
+              {theme === "dark" ? "LIGHT" : "DARK"}
             </span>
           </div>
           <div className="tooltips">

@@ -47,7 +47,7 @@ export default () => {
               >
                 <img
                   src={node.localFile.childImageSharp.fluid.src}
-                  alt="Instagram Picture"
+                  alt="instagram"
                 />
               </a>
             )
