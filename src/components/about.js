@@ -28,7 +28,7 @@ const About = () => {
       <div className="section full-height" id="cover">
         <img src={profileSinFondo} alt="TomasFreire" />
         <div id="cover-info">
-          <h1>¡Hola! Soy Tomás.</h1>
+          <h1>¡HOLA! SOY TOMÁS.</h1>
           <Typewriter
             options={{
               loop: true,

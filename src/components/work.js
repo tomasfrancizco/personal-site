@@ -57,7 +57,7 @@ const Work = () => {
                 <li>
                   Lideré la migración de la operación digital desde la oficina
                   de Buenos Aires hacia la de México, convirtiendo a esta última
-                  en la central digital de la Latinoamérica.
+                  en la central digital de Latinoamérica.
                 </li>
                 {/* <li>
                   Migrated the digital operation from Buenos Aires to México,

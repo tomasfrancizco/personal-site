@@ -22,7 +22,10 @@ class Contact extends React.Component {
     e.preventDefault()
     const { message } = this.state
     if (message.name === "" || message.email === "" || message.message === "") {
-      return this.setState({ error: "Por favor completá todos los campos!" })
+      return this.setState({
+        success: "",
+        error: "¡Por favor, completá todos los campos!",
+      })
     }
     this.onUpload()
   }
@@ -37,6 +40,8 @@ class Contact extends React.Component {
             email: "",
             message: "",
           },
+          success: "¡Gracias por tu mensaje!",
+          error: "",
         })
       })
       .catch(error => this.setState({ error: error.message }))
@@ -44,6 +49,7 @@ class Contact extends React.Component {
 
   render() {
     const { name, email, message } = this.state.message
+    const { error, success } = this.state
 
     return (
       <div className="section full-height" id="contact">
@@ -93,9 +99,18 @@ class Contact extends React.Component {
             <Button type="submit" variant="primary" id="submit">
               Enviar
             </Button>
-            {this.state.error && (
-              <div className="uk-alert-danger" uk-alert="true">
-                <p>{this.state.error}</p>
+            {success && (
+              <div className="uk-alert-container">
+                <p className="uk-alert-success uk-alert" uk-alert="true">
+                  {success}
+                </p>
+              </div>
+            )}
+            {error && (
+              <div className="uk-alert-container">
+                <p className="uk-alert-danger uk-alert" uk-alert="true">
+                  {error}
+                </p>
               </div>
             )}
           </Form.Group>

@@ -586,6 +586,16 @@ a {
   width: 100%;
 }
 
+.uk-alert-container {
+  margin-top: 30px;
+}
+
+.uk-alert {
+  border-radius: 25px;
+  margin: auto;
+  text-align: center;
+}
+
 #footer-container {
   font-size: 0.8em;
   text-align: center;
@@ -877,6 +887,10 @@ a {
 
   #submit {
     width: 33%;
+  }
+
+  .uk-alert {
+    width: 50%;
   }
 }
 
