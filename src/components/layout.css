@@ -52,17 +52,16 @@ html {
 body {
   --bg: #f9f9f9;
   --elemBg: #efefef;
-  --textNormal: #222;
-  --textTitle: rgb(143, 131, 131);
+  --textNormal: #111D36;
+  --textTitle: #0C1527;
   --textLink: blue;
   --hr: hsla(0, 0%, 0%, 0.2);
-  --icon: black;
+  --icon: #111D36;
   --shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.8),
     -2px -2px 2px 0 rgba(255, 255, 255, 0.8);
-  --cardShadow: 2px 2px 2px rgba(0, 0, 0, 0.08), -2px -2px 2px rgba(255, 255, 255, 0.08);
-  /* --backgroundImg: url("../images/backgrounds/earth-nasa.jpg"); */
-  --backgroundImg: url("../../../../../Desktop/videoblocks-abstract-motion-background-digital-plexus-data-networks-alpha-matte-loop_s-zvyghew_thumbnail-full01.png");
-
+  --cardShadow: 2px 2px 2px rgba(0, 0, 0, 0.08),
+    -2px -2px 2px rgba(255, 255, 255, 0.08);
+  --backgroundImg: url("../images/backgrounds/thomas-tastet-hSODeSbvzE0-unsplash.jpg");
   min-height: 100%;
   background-color: var(--bg);
   color: var(--textNormal);
@@ -79,11 +78,10 @@ body.dark {
   --icon: white;
   --shadow: 2px 2px 2px 0 rgba(255, 255, 255, 0.8),
     -2px -2px 2px 0 rgba(0, 0, 0, 0.8);
-  --cardShadow: 2px 2px 2px rgba(255, 255, 255, 0.08), -2px -2px 2px rgba(0, 0, 0, 0.08);
-  /* --backgroundImg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/backgrounds/earth-nasa.jpg"); */
+  --cardShadow: 2px 2px 2px rgba(255, 255, 255, 0.08),
+    -2px -2px 2px rgba(0, 0, 0, 0.08);
   --backgroundImg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../../../../Desktop/videoblocks-abstract-motion-background-digital-plexus-data-networks-alpha-matte-loop_s-zvyghew_thumbnail-full01.png");
+    url("../images/backgrounds/thomas-tastet-hSODeSbvzE0-unsplash.jpg");
 }
 
 h3 {
@@ -108,7 +106,6 @@ a {
 }
 
 .section {
-  /* height: 100vh; */
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -187,7 +184,6 @@ a {
   padding-left: 10px;
   transition-property: height, visibility, color;
   transition-duration: 0.5s, 0.5s, 0s;
-  /* font-size: 1.5rem; */
 }
 
 .burger-menu-list-item:hover {
@@ -246,7 +242,6 @@ a {
   position: absolute;
   top: 40px;
   background-color: var(--bg);
-  /* max-width: 100%; */
 }
 
 #skills,
@@ -285,14 +280,13 @@ a {
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 2px black;
 }
 
 #cover-info > h1 {
   font-size: 150%;
   text-align: center;
-  -webkit-text-stroke: 0.3px black;
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: #ececec;
 }
 
 .Typewriter {
@@ -300,7 +294,7 @@ a {
   min-width: 300px;
   font-size: 100%;
   text-align: center;
-  color: #fff;
+  color: #ececec;
 }
 
 #social-list {
@@ -320,7 +314,7 @@ a {
 #social-list svg {
   width: 35px;
   transition: transform 0.2s;
-  fill: #f9f9f9;
+  fill: white;
 }
 
 #social-list svg:hover {
@@ -332,7 +326,7 @@ a {
 }
 
 #podes p {
-  color: white;
+  color: var(--textTitle);
   text-align: center;
 }
 
@@ -362,7 +356,7 @@ a {
   animation: arrowAnimation 2s infinite;
   transform: rotate(90deg);
   width: 40px;
-  fill: #f9f9f9;
+  fill: white;
 }
 
 #about {
