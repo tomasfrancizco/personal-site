@@ -11,7 +11,7 @@ class DarkMode extends React.Component {
     this.setState({
       condition: window.localStorage.theme,
     })
-    return this.state.condition == "dark" ? darkhtml.innerHTML = "DARK" : darkhtml.innerHTML = "LIGHT"
+    return this.state.condition == "dark" ? darkhtml.innerHTML = "LIGHT" : darkhtml.innerHTML = "DARK"
   }
 
   render() {
@@ -29,7 +29,7 @@ class DarkMode extends React.Component {
               <div
                 id="ball"
                 className={
-                  this.state.condition === "dark" ? "light off" : "light"
+                  this.state.condition === "dark" ? "light-off" : "light"
                 }
               ></div>
             </div>
