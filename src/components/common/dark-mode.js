@@ -15,12 +15,17 @@ class DarkMode extends React.Component {
     this.setState({
       condition: window.localStorage.theme,
     })
+<<<<<<< HEAD
     return this.state.condition === "dark"
       ? (darkhtml.innerHTML = "DARK")
       : (darkhtml.innerHTML = "LIGHT")
+=======
+    return this.state.condition == "dark" ? darkhtml.innerHTML = "LIGHT" : darkhtml.innerHTML = "DARK"
+>>>>>>> development
   }
 
   render() {
+    let { condition } = this.state
     return (
       <ThemeToggler>
         {({ theme, toggleTheme }) => (
@@ -36,9 +41,7 @@ class DarkMode extends React.Component {
             <div id="toggle-container">
               <div
                 id="ball"
-                className={
-                  this.state.condition === "dark" ? "light off" : "light"
-                }
+                className={condition === "dark" ? "light-off" : "light"}
               ></div>
             </div>
           </div>
