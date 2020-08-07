@@ -18,7 +18,7 @@ class DarkMode extends React.Component {
               <div id="toggle-container">
                 <div
                   id="ball"
-                  className={theme === "dark" ? "light-off" : "light"}
+                  className={theme == "light" ? "light" : "light-off"}
                 ></div>
               </div>
             </div>
