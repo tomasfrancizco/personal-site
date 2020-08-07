@@ -500,6 +500,7 @@ a {
 
 .uk-modal-dialog {
   background: var(--elemBg);
+  border-radius: var(--radiusStd);
 }
 
 .skills-card-container {
@@ -781,8 +782,8 @@ a {
     transition: all 0.5s;
   }
 
-  #sidebar-cont:hover .tooltips .tooltiptext,
-  #sidebar-cont:hover .darkmode-tooltip {
+  #navbars:hover .tooltips .tooltiptext,
+  #navbars:hover .darkmode-tooltip {
     width: 120px;
   }
 
