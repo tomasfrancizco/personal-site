@@ -3,21 +3,23 @@ import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
 class DarkMode extends React.Component {
   state = {
-    condition: ""
+    condition: "",
   }
 
   componentDidMount() {
-    this.setState({ condition: window.localStorage.theme })
+    const darkhtml = document.getElementsByClassName("darkmode-tooltip")[0]
+    return this.setState({ condition: window.localStorage.theme })
   }
 
   handleClick = () => {
     const darkhtml = document.getElementsByClassName("darkmode-tooltip")[0]
+    const { condition } = this.state;
     this.setState({
       condition: window.localStorage.theme,
     })
-    return this.state.condition === "dark"
-      ? (darkhtml.innerHTML = "DARK")
-      : (darkhtml.innerHTML = "LIGHT")
+    return condition === "dark"
+      ? (darkhtml.innerHTML = "LIGHT")
+      : (darkhtml.innerHTML = "DARK");
   }
 
   render() {

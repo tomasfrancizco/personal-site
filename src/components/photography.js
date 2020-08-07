@@ -34,7 +34,6 @@ export default () => {
       <h3 className="section-title">INSTAGRAM</h3>
       <div
         uk-slider="true; autoplay: true; center: true"
-        style={{ borderRadius: "25px" }}
       >
         <ul className="uk-slider-items uk-child-width-1-2@s uk-grid">
           {query.allInstaNode.edges.map(({ node }, i) => {

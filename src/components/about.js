@@ -167,7 +167,7 @@ const About = () => {
           <p>
             Los últimos 11 años estuve trabajando en la industria de la TV y
             Publicidad, liderando equipos de operaciones en Buenos Aires, Ciudad
-            de México, Bogotá y Panamá. Siempre estuve muy enfocado a los
+            de México, Bogotá y Panamá. Siempre muy enfocado a los
             objetivos de la empresa y al desarrollo de mis compañeros y
             reportes.
             {/* I've been working for the last 11 years in the media industry,

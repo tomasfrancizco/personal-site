@@ -63,6 +63,7 @@ body {
   --cardShadow: 2px 2px 2px rgba(0, 0, 0, 0.08),
     -2px -2px 2px rgba(255, 255, 255, 0.08);
   --backgroundImg: url("../images/backgrounds/thomas-tastet-hSODeSbvzE0-unsplash.jpg");
+  --radiusStd: 25px;
   min-height: 100%;
   background-color: var(--bg);
   color: var(--textNormal);
@@ -179,12 +180,13 @@ a {
   visibility: hidden;
   width: 100%;
   height: 0px;
+  font-size: 0em;
   list-style-type: none;
   color: transparent;
   text-align: left;
   padding-left: 10px;
-  transition-property: height, visibility, color;
-  transition-duration: 0.5s, 0.5s, 0s;
+  transition-property: height, visibility, color, font-size;
+  transition-duration: 0.5s, 0.5s, 0s, 0.5s;
 }
 
 .burger-menu-list-item:hover {
@@ -195,8 +197,21 @@ a {
   background-color: gray;
 }
 
+.darkmode-container {
+  position: fixed;
+  display: block;
+  top: 12px;
+  right: 10px;
+  z-index: 99;
+}
+
+.darkmode-tooltip {
+  display: none;
+}
+
 .toggle {
-  height: 35px !important;
+  height: 50px !important;
+  font-size: 1.5em;
   visibility: visible;
   color: var(--textNormal);
 }
@@ -244,7 +259,7 @@ a {
   background: white;
   overflow: hidden;
   border: 0;
-  transition: all 0.5 ease;
+  transition: all 0.5s ease;
 }
 
 .light-off::after {
@@ -362,7 +377,7 @@ a {
   border: 0;
   margin: 0 5px;
   transition: all .3s;
-  border-radius: 50px;
+  border-radius: var(--radiusStd);
   /* box-shadow: var(--shadow); */
   font-size: 0.9em;
   background: white;
@@ -397,7 +412,7 @@ a {
   text-align: justify;
   background: var(--elemBg);
   box-shadow: var(--cardShadow);
-  border-radius: 25px;
+  border-radius: var(--radiusStd);
   box-sizing: border-box;
   margin-bottom: 50px;
 }
@@ -409,17 +424,17 @@ a {
 
 .work-education-container {
   width: 100%;
-  padding: 20px;
+  padding: 5px;
 }
 
 .card {
-  margin: 5px;
+  margin: 5px auto;
   transition: box-shadow 0.2s;
   width: 95%;
   background-color: var(--elemBg);
   box-shadow: var(--cardShadow);
   border: 0;
-  border-radius: 25px;
+  border-radius: var(--radiusStd);
 }
 
 .card h3 {
@@ -436,10 +451,6 @@ a {
 
 .we-card-container {
   width: 100%;
-}
-
-.we-card-container .card {
-  padding: 15px;
 }
 
 .we-card-container p {
@@ -489,12 +500,13 @@ a {
 
 .uk-modal-dialog {
   background: var(--elemBg);
+  border-radius: var(--radiusStd);
 }
 
 .skills-card-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 15px;
+  gap: 10px;
   place-items: center;
   place-content: center;
   width: 95%;
@@ -506,7 +518,7 @@ a {
   grid-template-columns: 25% 75%;
   padding: 5px;
   box-sizing: border-box;
-  min-height: 78px;
+  min-height: 90px;
   box-shadow: var(--cardShadow);
 }
 
@@ -553,6 +565,10 @@ a {
   overflow-x: auto;
 }
 
+.uk-slider {
+  border-radius: var(--radiusStd);
+}
+
 .projects-card {
   width: 95%;
   box-shadow: var(--cardShadow);
@@ -561,7 +577,7 @@ a {
 .projects-card .card-img-top {
   width: 100%;
   margin: auto;
-  border-radius: 25px;
+  border-radius: var(--radiusStd);
 }
 
 .projects-card .card-body {
@@ -582,7 +598,7 @@ a {
   margin: 2px 2px 2px 0;
   font-size: 0.6em;
   background-color: var(--bg);
-  border-radius: 25px;
+  border-radius: var(--radiusStd);
   transition: background-color 0.3s;
 }
 
@@ -596,7 +612,7 @@ a {
 }
 
 .form-input {
-  border-radius: 25px;
+  border-radius: var(--radiusStd);
 }
 
 #contact-subtitle {
@@ -608,7 +624,7 @@ a {
 }
 
 #submit {
-  border-radius: 25px;
+  border-radius: var(--radiusStd);
   border: 0;
   width: 100%;
 }
@@ -618,7 +634,7 @@ a {
 }
 
 .uk-alert {
-  border-radius: 25px;
+  border-radius: var(--radiusStd);
   margin: auto;
   text-align: center;
 }
@@ -687,20 +703,26 @@ a {
     white-space: nowrap;
   }
 
-  #sidebar-cont:hover #sidebar {
+  #navbars:hover #sidebar {
     width: 180px;
     transition: width 0.3s;
   }
 
-  #darkmode-container {
-    position: absolute;
+  .darkmode-container {
     display: flex;
     justify-content: center;
     top: 10px;
     left: 5px;
+    z-index: 99;
+    max-width: 50px;
+  }
+
+  #darkmode-container:focus, .darkmode {
+    outline: 0;
   }
 
   .darkmode-tooltip {
+    display: block;
     font-size: 0.8em;
     width: 0px;
     color: var(--textNormal);
@@ -740,7 +762,7 @@ a {
     width: 100%;
     padding-left: 18px;
     background: var(--elemBg);
-    border-radius: 25px;
+    border-radius: var(--radiusStd);
     padding: 8px 0 8px 10px;
   }
 
@@ -760,8 +782,8 @@ a {
     transition: all 0.5s;
   }
 
-  #sidebar-cont:hover .tooltips .tooltiptext,
-  #sidebar-cont:hover .darkmode-tooltip {
+  #navbars:hover .tooltips .tooltiptext,
+  #navbars:hover .darkmode-tooltip {
     width: 120px;
   }
 
@@ -824,7 +846,7 @@ a {
   #cover.section {
     margin: 0;
     width: 100%;
-    max-width: 2000px;
+    max-width: 2560px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -896,7 +918,7 @@ a {
     width: 95%;
     max-height: 85%;
     grid-template-columns: 40% 40% 40% 40% 40%;
-    border-radius: 25px;
+    border-radius: var(--radiusStd);
     justify-items: center;
   }
 
