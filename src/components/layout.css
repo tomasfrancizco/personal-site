@@ -238,7 +238,7 @@ a {
   top: 2px;
   left: 2px;
   background: #f0f0a4;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .light::before {
@@ -259,7 +259,7 @@ a {
   background: white;
   overflow: hidden;
   border: 0;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .light-off::after {
@@ -418,7 +418,7 @@ a {
 }
 
 #about > img {
-  width: 50%;
+  max-width: 150px;
   margin-right: 20px;
 }
 
@@ -729,6 +729,7 @@ a {
     text-align: start;
     padding: 5px 0;
     position: absolute;
+    top: 0;
     left: 70px;
     z-index: 1;
     transition: all 0.5s;
@@ -863,7 +864,7 @@ a {
   }
 
   #about > img {
-    width: 30%;
+    max-width: 200px;
   }
 
   #podes p {
@@ -949,11 +950,19 @@ a {
   .skills-card-container {
     grid-template-columns: 35% 35% 35%;
   }
+
+  #about > img {
+    max-width: 250px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   #projects-card-container {
     grid-template-columns: 40% 40% 40% 40% 40%;
     width: 100%;
+  }
+
+  #about > img {
+    max-width: 350px;
   }
 }
