@@ -253,7 +253,7 @@ a {
   border: 1px dotted #f0f0a4;
 }
 
-.light-off {
+.dark {
   top: 2px;
   left: 27px;
   background: white;
@@ -262,7 +262,7 @@ a {
   transition: all 0.3s ease;
 }
 
-.light-off::after {
+.dark::after {
   content: "";
   position: absolute;
   width: 21px;

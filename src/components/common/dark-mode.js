@@ -16,10 +16,7 @@ class DarkMode extends React.Component {
               tabIndex="-1"
             >
               <div id="toggle-container">
-                <div
-                  id="ball"
-                  className={theme == "light" ? "light" : "light-off"}
-                ></div>
+                <div id="ball" className={theme}></div>
               </div>
             </div>
             <span className="darkmode-tooltip">
