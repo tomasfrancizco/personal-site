@@ -19,8 +19,8 @@ class DarkMode extends React.Component {
   componentDidMount() {
     const darkhtml = document.getElementsByClassName("darkmode-tooltip")[0]
     this.state.condition == "dark"
-      ? (darkhtml.innerHTML = "LIGHT")
-      : (darkhtml.innerHTML = "DARK")
+      ? (darkhtml.innerHTML = "DARK")
+      : (darkhtml.innerHTML = "LIGHT")
   }
 
   render() {

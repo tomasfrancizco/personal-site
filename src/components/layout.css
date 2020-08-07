@@ -259,7 +259,7 @@ a {
   background: white;
   overflow: hidden;
   border: 0;
-  transition: all 0.5 ease;
+  transition: all 0.5s ease;
 }
 
 .light-off::after {
@@ -428,7 +428,7 @@ a {
 }
 
 .card {
-  margin: 5px;
+  margin: 5px auto;
   transition: box-shadow 0.2s;
   width: 95%;
   background-color: var(--elemBg);
@@ -506,7 +506,7 @@ a {
 .skills-card-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 15px;
+  gap: 10px;
   place-items: center;
   place-content: center;
   width: 95%;
@@ -518,7 +518,7 @@ a {
   grid-template-columns: 25% 75%;
   padding: 5px;
   box-sizing: border-box;
-  min-height: 78px;
+  min-height: 90px;
   box-shadow: var(--cardShadow);
 }
 
@@ -846,7 +846,7 @@ a {
   #cover.section {
     margin: 0;
     width: 100%;
-    max-width: 2000px;
+    max-width: 2560px;
     display: flex;
     justify-content: center;
     align-items: center;
