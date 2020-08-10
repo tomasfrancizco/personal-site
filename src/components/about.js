@@ -2,7 +2,8 @@ import React from "react"
 import Typewriter from "typewriter-effect"
 import profileSinFondo from "../images/sinFondo.png"
 import curriculumVitae from "../files/CVSP - Tomas Freire Knight.pdf"
-import { Link } from "gatsby"
+import { Link, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
 import daftpunktocatguy from "../images/octodex/daftpunktocat-guy.gif"
 import daftpunkttocatthomas from "../images/octodex/daftpunktocat-thomas.gif"
@@ -23,10 +24,31 @@ const About = () => {
 
   const octoImg = octoFiles[Math.floor(Math.random() * octoFiles.length)]
 
+  const query = useStaticQuery(graphql`
+    query MyCoverQuery {
+      allImageSharp(
+        filter: { fluid: { originalName: { eq: "sinFondo.png" } } }
+      ) {
+        edges {
+          node {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <div>
+      {console.log(query)}
       <div className="section full-height" id="cover">
-        <img src={profileSinFondo} alt="TomasFreire" />
+        <Img
+          fluid={query.allImageSharp.edges[0].node.fluid}
+          alt="TomasFreire"
+          className="cover-img"
+        />
         <div id="cover-info">
           <h1>¡HOLA! SOY TOMÁS.</h1>
           <Typewriter
@@ -159,32 +181,30 @@ const About = () => {
         <div uk-scrollspy="cls: uk-animation-fade; delay: 300; offset-top: -200">
           <h3 className="section-title">ACERCA DE MI</h3>
           <p>
-            Soy desarrollador web, vivo en Buenos Aires y durante la cuarentena armé este sitio para
-            mostrar un poco lo que me gusta hacer.
+            Soy desarrollador web, vivo en Buenos Aires y durante la cuarentena
+            armé este sitio para mostrar un poco lo que me gusta hacer.
             {/* Hi! I'm a sotware developer currently based in Buenos Aires,
             Argentina. */}
           </p>
           <p>
             Los últimos 11 años estuve trabajando en la industria de la TV y
             Publicidad, liderando equipos de operaciones en Buenos Aires, Ciudad
-            de México, Bogotá y Panamá. Siempre muy enfocado a los
-            objetivos de la empresa y al desarrollo de mis compañeros y
-            reportes.
+            de México, Bogotá y Panamá. Siempre muy enfocado a los objetivos de
+            la empresa y al desarrollo de mis compañeros y reportes.
             {/* I've been working for the last 11 years in the media industry,
             leading Ad Operations teams across Latin America and I'm now looking
             for a role in web development. */}
           </p>
           <p>Ahora estoy buscando meterme de lleno en el mundo del código.</p>
           <p>
-            Manejo el stack MERN, HTML, CSS
-            y algunas otras cosas, que podés ver en la sección de{" "}
-            <Link to="/#skills">herramientas</Link>.
+            Manejo el stack MERN, HTML, CSS y algunas otras cosas, que podés ver
+            en la sección de <Link to="/#skills">herramientas</Link>.
             {/* I handle pretty well the MERN stack and some other cool things as well, you can
             check them out in the <a href="/#skills">skills</a> section. */}
           </p>
           <p>
-            También me divierte la fotografía, podés ver mis últimos posteos en la
-            sección de <Link to="/#photography">Instagram.</Link>{" "}
+            También me divierte la fotografía, podés ver mis últimos posteos en
+            la sección de <Link to="/#photography">Instagram.</Link>{" "}
           </p>
         </div>
       </div>
