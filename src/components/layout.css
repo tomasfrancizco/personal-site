@@ -62,7 +62,7 @@ body {
     -2px -2px 2px 0 rgba(255, 255, 255, 0.8);
   --cardShadow: 2px 2px 2px rgba(0, 0, 0, 0.08),
     -2px -2px 2px rgba(255, 255, 255, 0.08);
-  --backgroundImg: url("../images/backgrounds/thomas-tastet-hSODeSbvzE0-unsplash.jpg");
+  --backgroundImg: url("../images/backgrounds/Pattern-Randomized.svg");
   --radiusStd: 25px;
   min-height: 100%;
   background-color: var(--bg);
@@ -83,7 +83,7 @@ body.dark {
   --cardShadow: 2px 2px 2px rgba(255, 255, 255, 0.08),
     -2px -2px 2px rgba(0, 0, 0, 0.08);
   --backgroundImg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/backgrounds/thomas-tastet-hSODeSbvzE0-unsplash.jpg");
+    url("../images/backgrounds/Pattern-Randomized\ \(1\).svg");
 }
 
 h3 {
@@ -267,7 +267,7 @@ a {
 }
 
 .cover-img {
-  width: 40%;
+  width: 55%;
 }
 
 #cover-info {
@@ -282,7 +282,7 @@ a {
   font-size: 150%;
   font-weight: 800;
   text-align: center;
-  -webkit-text-fill-color: #ececec;
+  -webkit-text-fill-color: var(--textTitle);
 }
 
 .Typewriter {
@@ -290,7 +290,7 @@ a {
   min-width: 300px;
   font-size: 100%;
   text-align: center;
-  color: #ececec;
+  color: var(--textTitle);
 }
 
 #social-list {
@@ -310,7 +310,7 @@ a {
 #social-list svg {
   width: 35px;
   transition: transform 0.2s;
-  fill: white;
+  fill: var(--icon);
 }
 
 #social-list svg:hover {
@@ -335,13 +335,13 @@ a {
   border-radius: var(--radiusStd);
   font-size: 0.9em;
   background: transparent;
-  color: white;
-  border: 2px solid #ececec;
+  color: var(--textNormal);
+  border: 2px solid var(--icon);
 }
 
 #podes button:hover {
-  background: white;
-  color: black;
+  background: var(--textNormal);
+  color: var(--bg);
 }
 
 #continue {
@@ -354,7 +354,7 @@ a {
   animation: arrowAnimation 2s infinite;
   transform: rotate(90deg);
   width: 40px;
-  fill: white;
+  fill: var(--textNormal);
 }
 
 #about {
@@ -512,13 +512,6 @@ a {
   width: 100%;
 }
 
-/* #projects-card-container {
-  width: 95%;
-  display: grid;
-  grid-template-columns: 100% 100% 100% 100% 100%;
-  overflow-x: auto;
-} */
-
 .uk-slider {
   border-radius: var(--radiusStd);
 }
@@ -562,6 +555,10 @@ a {
 .chip:hover {
   background-color: #8f8f8f;
   color: white;
+}
+
+#photography .uk-slider {
+  width: 100%;
 }
 
 .contact-form {

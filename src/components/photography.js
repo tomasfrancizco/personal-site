@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 export default () => {
   const query = useStaticQuery(graphql`
@@ -44,8 +45,8 @@ export default () => {
                 key={i}
                 rel="noopener noreferrer"
               >
-                <img
-                  src={node.localFile.childImageSharp.fluid.src}
+                <Img
+                  fluid={node.localFile.childImageSharp.fluid}
                   alt="instagram"
                 />
               </a>
