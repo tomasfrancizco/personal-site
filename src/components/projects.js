@@ -18,7 +18,7 @@ const Projects = () => (
         <div>
           <div className="uk-card uk-card-default">
             <div className="uk-card-media-top">
-              <img src={morfappImg} alt="" className="projects-img"/>
+              <img src={morfappImg} alt="" className="projects-img" />
             </div>
             <div className="uk-card-body">
               <h3 className="uk-card-title">morfApp</h3>
@@ -76,7 +76,7 @@ const Projects = () => (
         <div>
           <div className="uk-card uk-card-default">
             <div className="uk-card-media-top">
-              <img src={romaImg} alt="La Roma Wars" className="projects-img"/>
+              <img src={romaImg} alt="La Roma Wars" className="projects-img" />
             </div>
             <div className="uk-card-body">
               <h3 className="uk-card-title">La Roma Wars</h3>
@@ -107,7 +107,11 @@ const Projects = () => (
         <div>
           <div className="uk-card uk-card-default">
             <div className="uk-card-media-top">
-              <img src={denunciaImg} alt="Denuncia Chilanga" className="projects-img"/>
+              <img
+                src={denunciaImg}
+                alt="Denuncia Chilanga"
+                className="projects-img"
+              />
             </div>
             <div className="uk-card-body">
               <h3 className="uk-card-title">Denuncia Chilanga</h3>
@@ -120,15 +124,15 @@ const Projects = () => (
                 >
                   Link al repo
                 </a>
-                <p>
-                  Una plataforma en la que los usuarios, luego de registrarse y
-                  acceder, pueden realizar denuncias y/u observaciones acerca de
-                  situaciones o problemas con los que se cruzan en la ciudad.
-                  <br />
-                  El objetivo es generar conciencia y un sentido de pertenencia
-                  a la comunidad, impulsando de esta manera el cuidado de los
-                  espacios comunes.
-                </p>
+              </p>
+              <p>
+                Una plataforma en la que los usuarios, luego de registrarse y
+                acceder, pueden realizar denuncias y/u observaciones acerca de
+                situaciones o problemas con los que se cruzan en la ciudad.
+                <br />
+                El objetivo es generar conciencia y un sentido de pertenencia a
+                la comunidad, impulsando de esta manera el cuidado de los
+                espacios comunes.
               </p>
             </div>
           </div>
@@ -136,7 +140,11 @@ const Projects = () => (
         <div>
           <div className="uk-card uk-card-default">
             <div className="uk-card-media-top">
-              <img src={pomodoroImg} alt="Pomodoro app" className="projects-img"/>
+              <img
+                src={pomodoroImg}
+                alt="Pomodoro app"
+                className="projects-img"
+              />
             </div>
             <div className="uk-card-body">
               <h3 className="uk-card-title">Pomodoro</h3>
@@ -160,7 +168,11 @@ const Projects = () => (
         <div>
           <div className="uk-card uk-card-default">
             <div className="uk-card-media-top">
-              <img src={calculatorImg} alt="Javascript Calculator" className="projects-img"/>
+              <img
+                src={calculatorImg}
+                alt="Javascript Calculator"
+                className="projects-img"
+              />
             </div>
             <div className="uk-card-body">
               <h3 className="uk-card-title">Javascript Calculator</h3>

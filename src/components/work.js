@@ -2,7 +2,10 @@ import React from "react"
 
 const Work = () => {
   return (
-    <div id="work" uk-scrollspy="cls: uk-animation-slide-top; delay: 400; offset-top: -200">
+    <div
+      id="work"
+      uk-scrollspy="cls: uk-animation-slide-top; delay: 400; offset-top: -200"
+    >
       <h3 className="section-title">EXPERIENCIA</h3>
       <div className="card-container we-card-container">
         <div className="uk-card uk-card-default uk-card-body uk-width-1@m card">
@@ -48,7 +51,7 @@ const Work = () => {
                 </li> */}
                 <li>
                   Ideé un proceso para optimizar los ingresos y el inventario
-                  comercial, ahorrando con el millones de dólares por año.
+                  comercial, ahorrando con éste millones de dólares por año.
                 </li>
                 {/* <li>
                   Built a process to optimize revenue & ad inventory, saving

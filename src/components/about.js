@@ -1,6 +1,5 @@
 import React from "react"
 import Typewriter from "typewriter-effect"
-import profileSinFondo from "../images/sinFondo.png"
 import curriculumVitae from "../files/CVSP - Tomas Freire Knight.pdf"
 import { Link, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
@@ -50,7 +49,7 @@ const About = () => {
           className="cover-img"
         />
         <div id="cover-info">
-          <h1>¡HOLA! SOY TOMÁS.</h1>
+          <h1>TOMÁS FREIRE KNIGHT</h1>
           <Typewriter
             options={{
               loop: true,
@@ -181,8 +180,7 @@ const About = () => {
         <div uk-scrollspy="cls: uk-animation-fade; delay: 300; offset-top: -200">
           <h3 className="section-title">ACERCA DE MI</h3>
           <p>
-            Soy desarrollador web, vivo en Buenos Aires y durante la cuarentena
-            armé este sitio para mostrar un poco lo que me gusta hacer.
+            ¡Hola! Soy desarrollador web, vivo en Buenos Aires y armé este sitio para mostrar un poco lo que me gusta hacer.
             {/* Hi! I'm a sotware developer currently based in Buenos Aires,
             Argentina. */}
           </p>
@@ -195,7 +193,6 @@ const About = () => {
             leading Ad Operations teams across Latin America and I'm now looking
             for a role in web development. */}
           </p>
-          <p>Ahora estoy buscando meterme de lleno en el mundo del código.</p>
           <p>
             Manejo el stack MERN, HTML, CSS y algunas otras cosas, que podés ver
             en la sección de <Link to="/#skills">herramientas</Link>.
