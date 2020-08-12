@@ -21,8 +21,6 @@ const About = () => {
     daftpunkttocatthomas,
   ]
 
-  const octoImg = octoFiles[Math.floor(Math.random() * octoFiles.length)]
-
   const query = useStaticQuery(graphql`
     query MyCoverQuery {
       allImageSharp(
@@ -41,7 +39,6 @@ const About = () => {
 
   return (
     <div>
-      {console.log(query)}
       <div className="section full-height" id="cover">
         <Img
           fluid={query.allImageSharp.edges[0].node.fluid}
@@ -173,7 +170,7 @@ const About = () => {
       </div>
       <div className="section half-height" id="about">
         <img
-          src={octoImg}
+          src={octoFiles[Math.floor(Math.random() * octoFiles.length)]}
           alt="octocat"
           uk-scrollspy="cls: uk-animation-slide-left; delay: 300; offset-top: -200"
         />
