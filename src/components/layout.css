@@ -716,7 +716,7 @@ a {
 
   .sidebar-icon {
     width: 20px;
-    transition: all 1s;
+    transition: all 0s;
     fill: var(--icon);
   }
 
@@ -755,6 +755,7 @@ a {
 
   .tooltips:hover .sidebar-icon {
     transform: rotateY(360deg);
+    transition: all 1s;
   }
 
   .tooltips:hover {
