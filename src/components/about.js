@@ -117,7 +117,7 @@ const About = () => {
                 </svg>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="https://api.whatsapp.com/send?phone=5491140577446"
                 target="_blank"
@@ -137,6 +137,20 @@ const About = () => {
                   />
                 </svg>
               </a>
+            </li> */}
+            <li>
+              <Link
+                to="#contact"
+              >
+                <svg viewBox="0 0 512 512">
+                  <path d="m187 390c0-112.968.1-126.93 0-126.98-.2-.06-3.28-.02-42.53-.02-8.1 0-15.09-6.22-15.45-14.31-.39-8.59 6.47-15.69 14.98-15.69 39.66 0 42.8.04 43-.02.1-.05 0-12.775 0-110.98 0-8.28 6.72-15 15-15h169.02c-39.58-41.19-94.91-66-155.02-66-119.1 0-216 96.45-216 215s96.9 215 216 215c60.08 0 115.42-24.79 155.02-66h-169.02c-8.28 0-15-6.72-15-15zm-59-221h23.53c8.1 0 15.09 6.22 15.45 14.31.39 8.59-6.47 15.69-14.98 15.69h-23.53c-8.1 0-15.09-6.22-15.45-14.31-.39-8.59 6.47-15.69 14.98-15.69zm16 158h-47.53c-8.1 0-15.09-6.22-15.45-14.31-.39-8.59 6.47-15.69 14.98-15.69h47.53c8.1 0 15.09 6.22 15.45 14.31.39 8.59-6.47 15.69-14.98 15.69z" />
+                  <path d="m491.77 137h-255.558l129.652 99.956z" />
+                  <path d="m375.327 267.748c-5.382 4.273-13.009 4.354-18.485.131l-139.842-107.81v199.931c0 8.284 6.716 15 15 15h265c8.284 0 15-6.716 15-15v-200.756z" />
+                </svg>
+              </Link>
+            </li>
+            <li id="contactame">
+              <p>Contactame</p>
             </li>
           </ul>
           <div id="podes">
@@ -177,7 +191,8 @@ const About = () => {
         <div uk-scrollspy="cls: uk-animation-fade; delay: 300; offset-top: -200">
           <h3 className="section-title">ACERCA DE MI</h3>
           <p>
-            ¡Hola! Soy desarrollador web, vivo en Buenos Aires y armé este sitio para mostrar un poco lo que me gusta hacer.
+            ¡Hola! Soy desarrollador web, vivo en Buenos Aires y armé este sitio
+            para mostrar un poco lo que me gusta hacer.
             {/* Hi! I'm a sotware developer currently based in Buenos Aires,
             Argentina. */}
           </p>
