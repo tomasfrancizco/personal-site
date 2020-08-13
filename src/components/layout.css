@@ -90,19 +90,6 @@ h3 {
   font-weight: 600;
 }
 
-@media only screen and (max-width: 325px) {
-  #podes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  #podes div {
-    text-align: center;
-  }
-}
-
 a {
   color: var(--textLink);
 }
@@ -612,6 +599,51 @@ a {
 
 #totop {
   margin: 15px 0;
+}
+
+@media only screen and (max-width: 325px) {
+  #podes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #podes div {
+    text-align: center;
+  }
+
+  .cover-img {
+    width: 40%;
+  }
+
+  #cover-info > h1 {
+    font-size: 120%;
+  }
+
+  .Typewriter {
+    font-size: 80%;
+  }
+
+  #social-list li {
+    width: 30px;
+    height: 30px;
+  }
+
+  #social-list svg {
+    width: 25px;
+  }
+
+  #podes button {
+    height: 25px;
+    width: 120px;
+    font-size: 0.7em;
+  }
+
+  #arrow {
+    width: 30px;
+  }
+
 }
 
 @media only screen and (min-width: 600px) {
