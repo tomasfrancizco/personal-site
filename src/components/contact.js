@@ -7,7 +7,7 @@ class Contact extends React.Component {
       <div className="section half-height" id="contact">
         <h3>CONTACTO</h3>
         <h6 id="contact-subtitle">¡Trabajemos juntos!</h6>
-        <h6 id="contact-subtitle">
+        <h6 id="direct-mail">
           También podés mandarme un mail directo a{" "}
           <a
             href="mailto:tomasfreire@gmail.com"
