@@ -296,6 +296,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   list-style-type: none;
   padding: 0;
   margin-top: 0;
@@ -516,7 +517,7 @@ a {
   width: 100%;
 }
 
-.uk-slider {
+.uk-slider-container {
   border-radius: var(--radiusStd);
 }
 
@@ -575,6 +576,11 @@ a {
 
 #contact-subtitle {
   margin: -15px 0 25px 0;
+}
+
+#direct-mail {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #submit-container {
@@ -892,6 +898,10 @@ a {
 
   #skills .card-subtitle {
     font-size: 0.7em;
+  }
+
+  #projects.section {
+    width: 80%;
   }
 
   .projects-card-container {
