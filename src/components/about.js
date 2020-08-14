@@ -9,14 +9,12 @@ import daftpunkttocatthomas from "../images/octodex/daftpunktocat-thomas.gif"
 import original from "../images/octodex/original.png"
 import oktobercat from "../images/octodex/oktobercat.png"
 import orderedList from "../images/octodex/orderedlistocat.png"
-import homercat from "../images/octodex/homercat.png"
 
 const About = () => {
   const octoFiles = [
     original,
     oktobercat,
     orderedList,
-    homercat,
     daftpunktocatguy,
     daftpunkttocatthomas,
   ]
