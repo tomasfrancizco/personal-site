@@ -332,7 +332,7 @@ a {
 }
 
 #podes button:hover {
-  background: var(--textNormal);
+  background: var(--icon);
   color: var(--bg);
 }
 
