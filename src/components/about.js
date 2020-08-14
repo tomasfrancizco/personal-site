@@ -193,8 +193,7 @@ const About = () => {
         <div uk-scrollspy="cls: uk-animation-fade; delay: 300; offset-top: -200">
           <h3 className="section-title">ACERCA DE MI</h3>
           <p>
-            ¡Hola! Soy desarrollador web, vivo en Buenos Aires y armé este sitio
-            para mostrar un poco lo que me gusta hacer.
+            ¡Hola! Soy desarrollador web, vivo en Buenos Aires.
             {/* Hi! I'm a sotware developer currently based in Buenos Aires,
             Argentina. */}
           </p>
