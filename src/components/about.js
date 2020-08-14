@@ -21,8 +21,6 @@ const About = () => {
     daftpunkttocatthomas,
   ]
 
-  const octoImg = octoFiles[Math.floor(Math.random() * octoFiles.length)]
-
   const query = useStaticQuery(graphql`
     query MyCoverQuery {
       allImageSharp(
@@ -186,14 +184,14 @@ const About = () => {
       </div>
       <div className="section half-height" id="about">
         <img
-          src={octoImg}
+          src={octoFiles[Math.floor(Math.random() * octoFiles.length)]}
           alt="octocat"
           uk-scrollspy="cls: uk-animation-slide-left; delay: 300; offset-top: -200"
         />
         <div uk-scrollspy="cls: uk-animation-fade; delay: 300; offset-top: -200">
           <h3 className="section-title">ACERCA DE MI</h3>
           <p>
-            ¡Hola! Soy desarrollador web, vivo en Buenos Aires.
+            ¡Hola! Soy desarrollador web y vivo en Buenos Aires.
             {/* Hi! I'm a sotware developer currently based in Buenos Aires,
             Argentina. */}
           </p>
