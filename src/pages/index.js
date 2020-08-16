@@ -16,7 +16,7 @@ export default function IndexPage() {
   
   return (
     <Layout>
-      <SEO title="Homeee" />
+      <SEO title="Tomás Freire Knight - Web Developer" />
       <About />
       <div className="section work-education-container half-height">
         <Work />
