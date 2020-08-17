@@ -362,6 +362,7 @@ a {
   border-radius: var(--radiusStd);
   box-sizing: border-box;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 #about > img {
