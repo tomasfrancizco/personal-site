@@ -508,6 +508,14 @@ a {
   margin: auto;
 }
 
+#projects .uk-card-body a {
+  color: var(--textLink);
+}
+
+.uk-position-small {
+  color: var(--icon);
+}
+
 #projects.section {
   width: 100%;
 }
