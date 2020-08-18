@@ -438,6 +438,11 @@ a {
   animation: svgAnim 2s infinite;
 }
 
+.dot-menu svg {
+  position: relative;
+  top: -4px;
+}
+
 .dot-menu:active {
   box-shadow: 0;
 }

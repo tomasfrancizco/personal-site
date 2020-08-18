@@ -10,11 +10,14 @@ const Work = () => {
       <div className="card-container we-card-container">
         <div className="uk-card uk-card-default uk-card-body uk-width-1@m card">
           <h3 className="uk-card-title">Sales Operations Manager</h3>
-          <span
-            uk-icon="plus"
-            className="dot-menu"
-            uk-toggle="target: #modal-close-default-a"
-          ></span>
+          <span className="dot-menu" uk-toggle="target: #modal-close-default-a">
+            <svg viewBox="0 0 512 512">
+              <path
+                d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216
+			v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"
+              />
+            </svg>
+          </span>
           <p>
             @{" "}
             <a
@@ -73,11 +76,14 @@ const Work = () => {
 
         <div className="uk-card uk-card-default uk-card-body uk-width-1@m card">
           <h3 className="uk-card-title">Ad Sales Supervisor</h3>
-          <span
-            uk-icon="plus"
-            className="dot-menu"
-            uk-toggle="target: #modal-close-default-b"
-          ></span>
+          <span className="dot-menu" uk-toggle="target: #modal-close-default-b">
+            <svg viewBox="0 0 512 512">
+              <path
+                d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216
+  v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"
+              />
+            </svg>
+          </span>
           <p>
             @{" "}
             <a
