@@ -441,6 +441,7 @@ a {
 .dot-menu svg {
   position: relative;
   top: -4px;
+  fill: var(--icon);
 }
 
 .dot-menu:active {
