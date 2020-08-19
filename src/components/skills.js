@@ -4,6 +4,7 @@ import react from "../images/skills/react.svg"
 import node from "../images/skills/nodejs.svg"
 import database from "../images/skills/database.svg"
 import art from "../images/skills/art.svg"
+import api from "../images/skills/api.svg"
 import github from "../images/skills/github.svg"
 
 const Skills = () => (
@@ -41,15 +42,22 @@ const Skills = () => (
         <div className="skills-card-info">
           <h6 className="card-title">Database Management</h6>
           <p className="card-subtitle mb-2 text-muted">
-            (MongoDB/MySQL/GraphQL)
+            (MongoDB/MySQL)
           </p>
         </div>
       </div>
-      <div className="card skills-card">
+      {/* <div className="card skills-card">
         <img src={art} alt="art" />
         <div className="skills-card-info">
           <h6 className="card-title">UX/UI Libraries</h6>
           <p className="card-subtitle mb-2 text-muted">(Bootstrap/UIKit)</p>
+        </div>
+      </div> */}
+      <div className="card skills-card">
+        <img src={api} alt="art" />
+        <div className="skills-card-info">
+          <h6 className="card-title">APIs</h6>
+          <p className="card-subtitle mb-2 text-muted">(REST/GraphQL)</p>
         </div>
       </div>
       <div className="card skills-card">
