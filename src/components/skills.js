@@ -3,7 +3,7 @@ import webdev from "../images/skills/web.svg"
 import react from "../images/skills/react.svg"
 import node from "../images/skills/nodejs.svg"
 import database from "../images/skills/database.svg"
-import art from "../images/skills/art.svg"
+// import art from "../images/skills/art.svg"
 import api from "../images/skills/api.svg"
 import github from "../images/skills/github.svg"
 
@@ -64,7 +64,7 @@ const Skills = () => (
         <img src={github} alt="github" />
         <div className="skills-card-info">
           <h6 className="card-title">Version Control Systems</h6>
-          <p className="card-subtitle mb-2 text-muted">Git/Github</p>
+          <p className="card-subtitle mb-2 text-muted">(Git/Github)</p>
         </div>
       </div>
     </div>
