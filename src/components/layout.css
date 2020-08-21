@@ -346,7 +346,6 @@ a {
 
 #arrow {
   animation: arrowAnimation 2s infinite;
-  transform: rotate(90deg);
   width: 40px;
   fill: var(--textNormal);
 }
