@@ -45,7 +45,8 @@ const About = () => {
             className="cover-img"
           />
           <div id="cover-info">
-            <h1>TOMÁS FREIRE KNIGHT</h1>
+            <h1>TOMÁS</h1>
+            <h1>FREIRE KNIGHT</h1>
             <Typewriter
               options={{
                 loop: true,
@@ -59,6 +60,20 @@ const About = () => {
                   .start()
               }}
             />
+            <div id="podes">
+              <div>
+                <a href="/#projects">
+                  <button>Ver mis proyectos</button>
+                </a>
+                <a
+                  href={curriculumVitae}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>Descargar mi CV</button>
+                </a>
+              </div>
+            </div>
             <ul id="social-list">
               <li>
                 <a
@@ -129,20 +144,6 @@ const About = () => {
                 <p>Contactame</p>
               </li>
             </ul>
-            <div id="podes">
-              <div>
-                <a href="/#projects">
-                  <button>Ver mis proyectos</button>
-                </a>
-                <a
-                  href={curriculumVitae}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button>Descargar mi CV</button>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
         <div id="continue">
