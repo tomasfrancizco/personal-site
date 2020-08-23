@@ -49,6 +49,7 @@
 html {
   scroll-behavior: smooth;
   scrollbar-color: red;
+  background-color: var(--bg)
 }
 
 body {
@@ -127,9 +128,10 @@ a {
   height: 50px;
   width: 100%;
   z-index: 1;
-  background-color: var(--bg);
+  /* background-color: var(--bg); */
   margin: 0;
   overflow-y: visible;
+  backdrop-filter: blur(10px);
 }
 
 .navbar-icon {

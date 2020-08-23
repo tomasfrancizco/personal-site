@@ -28,7 +28,7 @@ const Projects = () => {
       uk-scrollspy="cls: uk-animation-fade; delay: 200; offset-top: -200"
     >
       <h3 className="section-title">PROYECTOS</h3>
-      <div uk-slider="true; autoplay: true; center: true">
+      <div uk-slider="true; autoplay: true;">
         <div className="uk-position-relative">
           <div className="uk-slider-container uk-light">
             <ul className="uk-slider-items uk-child-width-1-3@s uk-grid projects-card-container">
@@ -193,7 +193,7 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-              <div>
+              {/* <div>
                 <div className="uk-card uk-card-default">
                   <div className="uk-card-media-top">
                     <Img
@@ -220,7 +220,7 @@ const Projects = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </ul>
           </div>
           <div className="uk-hidden@s uk-light">
