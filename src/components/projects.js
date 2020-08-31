@@ -35,11 +35,19 @@ const Projects = () => {
               <div>
                 <div className="uk-card uk-card-default">
                   <div className="uk-card-media-top">
-                    <Img
-                      fluid={query.allFile.edges[3].node.childImageSharp.fluid}
-                      alt="app logo"
-                      className="projects-img"
-                    />
+                    <a
+                      href="https://morfapp.herokuapp.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Img
+                        fluid={
+                          query.allFile.edges[3].node.childImageSharp.fluid
+                        }
+                        alt="app logo"
+                        className="projects-img"
+                      />
+                    </a>
                   </div>
                   <div className="uk-card-body">
                     <h3 className="uk-card-title">morfApp</h3>
@@ -97,11 +105,19 @@ const Projects = () => {
               <div>
                 <div className="uk-card uk-card-default">
                   <div className="uk-card-media-top">
-                    <Img
-                      fluid={query.allFile.edges[1].node.childImageSharp.fluid}
-                      alt="app logo"
-                      className="projects-img"
-                    />
+                    <a
+                      href="https://tomasfrancizco.github.io/La-Roma-Wars-Videogame/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Img
+                        fluid={
+                          query.allFile.edges[1].node.childImageSharp.fluid
+                        }
+                        alt="app logo"
+                        className="projects-img"
+                      />
+                    </a>
                   </div>
                   <div className="uk-card-body">
                     <h3 className="uk-card-title">La Roma Wars</h3>
@@ -168,11 +184,19 @@ const Projects = () => {
               <div>
                 <div className="uk-card uk-card-default">
                   <div className="uk-card-media-top">
-                    <Img
-                      fluid={query.allFile.edges[4].node.childImageSharp.fluid}
-                      alt="app logo"
-                      className="projects-img"
-                    />
+                    <a
+                      href="https://tomasfrancizco.github.io/pomodoro/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Img
+                        fluid={
+                          query.allFile.edges[4].node.childImageSharp.fluid
+                        }
+                        alt="app logo"
+                        className="projects-img"
+                      />
+                    </a>
                   </div>
                   <div className="uk-card-body">
                     <h3 className="uk-card-title">Pomodoro</h3>

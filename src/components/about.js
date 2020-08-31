@@ -177,7 +177,7 @@ const About = () => {
             for a role in web development. */}
           </p>
           <p>
-            Manejo el stack MERN, HTML, CSS y algunas otras cosas, que podés ver
+            Manejo el stack <code>MERN, HTML, CSS</code> y algunas otras cosas, que podés ver
             en la sección de <Link to="/#skills">herramientas</Link>.
             {/* I handle pretty well the MERN stack and some other cool things as well, you can
             check them out in the <a href="/#skills">skills</a> section. */}
