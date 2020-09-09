@@ -7,6 +7,14 @@ module.exports = {
     author: `Tomás Freire Knight`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-177530147-1",
+        head: true,
+        anonymize: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,12 +39,6 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         icon: `src/images/icon.png`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-177530147-1",
       },
     },
     {
