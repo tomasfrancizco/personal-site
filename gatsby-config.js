@@ -34,6 +34,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-177530147-1",
+      },
+    },
+    {
       // The name of the plugin
       resolve: "gatsby-source-mongodb",
       options: {
