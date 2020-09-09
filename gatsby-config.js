@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 const path = require("path")
 
 module.exports = {
@@ -10,7 +14,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-177530147-1",
+        trackingId: process.env.GA_TRACKING_ID,
         head: true,
         anonymize: true,
       },
