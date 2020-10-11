@@ -3,6 +3,7 @@ import Typewriter from "typewriter-effect"
 import curriculumVitae from "../files/CVSP - Tomas Freire Knight.pdf"
 import { Link, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import Particles from "react-particles-js";
 
 import daftpunktocatguy from "../images/octodex/daftpunktocat-guy.gif"
 import daftpunkttocatthomas from "../images/octodex/daftpunktocat-thomas.gif"
@@ -37,6 +38,7 @@ const About = () => {
 
   return (
     <div>
+      {/* <Particles className="particles" /> */}
       <div className="section" id="cover">
         <div id="img-info-container">
           <Img

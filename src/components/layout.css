@@ -240,6 +240,12 @@ a {
   min-height: calc(100vh - 50px);
 }
 
+/* .particles {
+  position: absolute;
+  width: 100vw;
+  height: calc(100vh - 50px);
+} */
+
 #cover.section {
   background-image: var(--backgroundImg);
   background-size: cover;
@@ -269,6 +275,7 @@ a {
   margin-top: 20px;
   text-shadow: 1px 1px 2px black;
   text-align: center;
+  z-index: 1;
 }
 
 #cover-info > h1 {
@@ -835,6 +842,11 @@ a {
     color: #000810;
     min-height: 100vh;
   }
+
+  /* .particles {
+    width: calc(100vw - 50px);
+    height: 100vh;
+  } */
 
   .cover-img {
     width: 35%;
