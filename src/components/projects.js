@@ -19,8 +19,6 @@ const Projects = () => {
       }
     }
   `)
-
-  console.log(query)
   return (
     <div
       className="section full-height"

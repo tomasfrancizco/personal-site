@@ -1,17 +1,14 @@
 import React from "react"
 
 const Work = () => {
-
-  if (typeof window !== `undefined`) {
-
-    var supervisor = document.getElementById('supervisor-card')
-    var triangle = document.getElementById('triangle-down')
-    console.log(supervisor)
-    var showExperience = () => {
-      supervisor.style.display = 'block'
-      triangle.style.display = 'none'
-    }
-  }
+  // if (typeof window !== `undefined`) {
+  //   var supervisor = document.getElementById("supervisor-card")
+  //   var triangle = document.getElementById("triangle-down")
+  //   var showExperience = () => {
+  //     supervisor.style.display = "block"
+  //     triangle.style.display = "none"
+  //   }
+  // }
 
   return (
     <div
@@ -20,7 +17,6 @@ const Work = () => {
     >
       <h3 className="section-title">EXPERIENCIA</h3>
       <div className="card-container we-card-container">
-
         <div className="uk-card uk-card-default uk-card-body uk-width-1@m card">
           <h3 className="uk-card-title">DCO Developer</h3>
           <span className="dot-menu" uk-toggle="target: #modal-close-default-a">
@@ -52,7 +48,14 @@ const Work = () => {
               ></button>
               <h4 className="uk-modal-title">DCO Developer</h4>
               <ul className="work-description-ul">
-                <li>tbc</li>
+                <li>
+                  Desarrollo de creatividades dinámicas para la cuenta General
+                  Motors Argentina.
+                </li>
+                <li>
+                  Puesta en marcha y cambio de diseño de las diferentes etapas
+                  de consumo de la marca.
+                </li>
               </ul>
             </div>
           </div>
@@ -124,8 +127,15 @@ const Work = () => {
           </div>
         </div>
 
-        <span uk-icon="triangle-down" onClick={showExperience} id="triangle-down"></span>
-        <div className="uk-card uk-card-default uk-card-body uk-width-1@m card" id="supervisor-card">
+        {/* <span
+          uk-icon="triangle-down"
+          onClick={showExperience}
+          id="triangle-down"
+        ></span> */}
+        <div
+          className="uk-card uk-card-default uk-card-body uk-width-1@m card"
+          id="supervisor-card"
+        >
           <h3 className="uk-card-title">Ad Sales Supervisor</h3>
           <span className="dot-menu" uk-toggle="target: #modal-close-default-b">
             <svg viewBox="0 0 512 512">

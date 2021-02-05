@@ -33,7 +33,7 @@ export default () => {
               {query.allFile.edges.map(({ node }, i) => {
                 return (
                   <a
-                    href={"https://www.instagram.com/p/" + node.id}
+                    href={node.childImageSharp.fluid.src}
                     target="_blank"
                     key={i}
                     rel="noopener noreferrer"
