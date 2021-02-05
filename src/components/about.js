@@ -111,7 +111,7 @@ const About = () => {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/tomas-f-freire-knight-376b0219/"
+                  href="https://www.linkedin.com/in/tomasfreire"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

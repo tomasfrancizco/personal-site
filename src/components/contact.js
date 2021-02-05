@@ -21,7 +21,6 @@ class Contact extends React.Component {
           className="contact-form"
           method="post"
           action="https://getform.io/f/035d54f4-515a-461b-8cee-2a2ece721769"
-          onSubmit={this.validateForm}
         >
           <Form.Group uk-scrollspy="cls: uk-animation-slide-left; delay: 300; offset-top: -200">
             <Form.Label>Nombre</Form.Label>

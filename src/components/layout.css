@@ -472,6 +472,10 @@ a {
   border-radius: var(--radiusStd);
 }
 
+#supervisor-card {
+  display: none;
+}
+
 .skills-card-container {
   display: grid;
   grid-template-columns: 50% 50%;
