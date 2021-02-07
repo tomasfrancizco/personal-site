@@ -777,7 +777,6 @@ a {
     width: 100%;
     padding-left: 18px;
     background: var(--elemBg);
-    border-radius: var(--radiusStd);
     padding: 8px 0 8px 10px;
   }
 

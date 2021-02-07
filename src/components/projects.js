@@ -40,7 +40,7 @@ const Projects = () => {
                     >
                       <Img
                         fluid={
-                          query.allFile.edges[3].node.childImageSharp.fluid
+                          query.allFile.edges[2].node.childImageSharp.fluid
                         }
                         alt="app logo"
                         className="projects-img"
@@ -189,7 +189,7 @@ const Projects = () => {
                     >
                       <Img
                         fluid={
-                          query.allFile.edges[4].node.childImageSharp.fluid
+                          query.allFile.edges[3].node.childImageSharp.fluid
                         }
                         alt="app logo"
                         className="projects-img"
