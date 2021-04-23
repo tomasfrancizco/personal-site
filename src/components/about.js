@@ -1,6 +1,6 @@
 import React from "react"
 import Typewriter from "typewriter-effect"
-import curriculumVitae from "../files/CVSP - Tomas Freire Knight.pdf"
+// import curriculumVitae from "../files/CVSP - Tomas Freire Knight.pdf"
 import { Link, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Particles from "react-particles-js";
@@ -68,11 +68,11 @@ const About = () => {
                   <button>Ver mis proyectos</button>
                 </a>
                 <a
-                  href={curriculumVitae}
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button>Descargar mi CV</button>
+                  <button disabled={true}>Descargar mi CV</button>
                 </a>
               </div>
             </div>
