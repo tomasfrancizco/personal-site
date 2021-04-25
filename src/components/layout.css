@@ -122,6 +122,12 @@ a {
   color: var(--textTitle);
 }
 
+#recaptcha-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #navbar {
   position: fixed;
   top: 0;

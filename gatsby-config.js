@@ -1,5 +1,5 @@
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`
+  path: `.env.${process.env.NODE_ENV}`,
 })
 
 const path = require("path")
@@ -62,5 +62,13 @@ module.exports = {
         },
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-recaptcha`,
+    //   options: {
+    //     async: false,
+    //     defer: false,
+    //     args: `?onload=onloadCallback&render=explicit`,
+    //   },
+    // },
   ],
 }

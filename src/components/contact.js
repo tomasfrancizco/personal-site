@@ -1,7 +1,20 @@
 import React from "react"
+import Recaptcha from "react-google-recaptcha"
 import { Form, Button } from "react-bootstrap"
 
+// const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY
+
+const RECAPTCHA_KEY = "6LfMWLkaAAAAAFYM11ctU1Dxfz_v3SVrAKLOR3rM"
 class Contact extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+
+  handleRecaptcha = value => {
+    this.setState({ "g-recaptcha-response": value })
+  }
+
   render() {
     return (
       <div className="section half-height" id="contact">
@@ -21,6 +34,8 @@ class Contact extends React.Component {
           className="contact-form"
           method="post"
           action="https://getform.io/f/035d54f4-515a-461b-8cee-2a2ece721769"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
         >
           <Form.Group uk-scrollspy="cls: uk-animation-slide-left; delay: 300; offset-top: -200">
             <Form.Label>Nombre</Form.Label>
@@ -57,9 +72,20 @@ class Contact extends React.Component {
           </Form.Group>
           <Form.Group
             uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; offset-top: -100"
+            id="recaptcha-container"
+          >
+            <Recaptcha
+              ref="recaptcha"
+              sitekey={RECAPTCHA_KEY}
+              onChange={this.handleRecaptcha}
+            />
+          </Form.Group>
+
+          <Form.Group
+            uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; offset-top: -100"
             id="submit-container"
           >
-            <Button type="submit" variant="primary" id="submit">
+            <Button type="submit" variant="primary" id="submit" disabled={true}>
               Enviar
             </Button>
           </Form.Group>
