@@ -66,12 +66,13 @@ class Contact extends React.Component {
             uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; offset-top: -100"
             id="recaptcha-container"
           >
-            <div
+            {/* <div
               id="g-recaptcha"
               className="g-recaptcha"
               render="explicit"
               data-netlify-recaptcha="true"
-            ></div>
+            ></div> */}
+            <div data-netlify-recaptcha="true"></div>
           </Form.Group>
           <Form.Group
             uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; offset-top: -100"
