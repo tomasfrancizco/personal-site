@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const Footer = () => {
   return (
     <div id="footer-container">
-      <Link href="" uk-totop="true" id="totop" uk-tooltip="title: Back to Top; pos: top"></Link>
+      <Link to="" uk-totop="true" id="totop" uk-tooltip="title: Back to Top; pos: top"></Link>
       <footer>
         © {new Date().getFullYear()}, hecho con cariño y{` `}
         <a

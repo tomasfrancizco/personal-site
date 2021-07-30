@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect"
 // import curriculumVitae from "../files/CVSP - Tomas Freire Knight.pdf"
 import { Link, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import Particles from "react-particles-js";
+import Particles from "react-particles-js"
 
 import daftpunktocatguy from "../images/octodex/daftpunktocat-guy.gif"
 import daftpunkttocatthomas from "../images/octodex/daftpunktocat-thomas.gif"
@@ -41,11 +41,11 @@ const About = () => {
       {/* <Particles className="particles" /> */}
       <div className="section" id="cover">
         <div id="img-info-container">
-          <Img
+          {/* <Img
             fluid={query.allImageSharp.edges[0].node.fluid}
             alt="TomasFreire"
             className="cover-img"
-          />
+          /> */}
           <div id="cover-info">
             <h1>TOMÁS</h1>
             <h1>FREIRE KNIGHT</h1>
@@ -67,11 +67,7 @@ const About = () => {
                 <a href="/#projects">
                   <button>Ver mis proyectos</button>
                 </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="#" target="_blank" rel="noopener noreferrer">
                   <button disabled={true}>Descargar mi CV</button>
                 </a>
               </div>
@@ -142,10 +138,10 @@ const About = () => {
                   </svg>
                 </Link>
               </li>
-              <li id="contactame">
-                <p>Contactame</p>
-              </li>
             </ul>
+            <div id="contactame">
+              <p>contactame</p>
+            </div>
           </div>
         </div>
         <div id="continue">
@@ -179,8 +175,9 @@ const About = () => {
             for a role in web development. */}
           </p>
           <p>
-            Manejo el stack <code>MERN, HTML, CSS</code> y algunas otras cosas, que podés ver
-            en la sección de <Link to="/#skills">herramientas</Link>.
+            Manejo el stack <code>MERN, HTML, CSS</code> y algunas otras cosas,
+            que podés ver en la sección de{" "}
+            <Link to="/#skills">herramientas</Link>.
             {/* I handle pretty well the MERN stack and some other cool things as well, you can
             check them out in the <a href="/#skills">skills</a> section. */}
           </p>

@@ -64,7 +64,7 @@ body {
     -2px -2px 2px 0 rgba(255, 255, 255, 0.8);
   --cardShadow: 2px 2px 2px rgba(0, 0, 0, 0.08),
     -2px -2px 2px rgba(255, 255, 255, 0.08);
-  --backgroundImg: url("../images/backgrounds/Pattern-Randomized.svg");
+  --backgroundImg: url("../images/backgrounds/Pattern-Randomized\ white.svg");
   --radiusStd: 10px;
   min-height: 100%;
   background-color: var(--bg);
@@ -85,7 +85,7 @@ body.dark {
   --cardShadow: 2px 2px 2px rgba(255, 255, 255, 0.08),
     -2px -2px 2px rgba(0, 0, 0, 0.08);
   --backgroundImg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/backgrounds/Pattern-Randomized\ \(1\).svg");
+    url("../images/backgrounds/Pattern-Randomized\ black.svg");
 }
 
 h3 {
@@ -246,12 +246,6 @@ a {
   min-height: calc(100vh - 50px);
 }
 
-/* .particles {
-  position: absolute;
-  width: 100vw;
-  height: calc(100vh - 50px);
-} */
-
 #cover.section {
   background-image: var(--backgroundImg);
   background-size: cover;
@@ -284,12 +278,15 @@ a {
   z-index: 1;
 }
 
+#cover-info > div:not(:nth-child(3)), #cover-info > ul {
+  margin-bottom: 5%;
+}
+
 #cover-info > h1 {
   font-size: 180%;
   font-weight: 800;
   -webkit-text-fill-color: var(--textTitle);
-  margin-top: 0;
-  margin-bottom: 15px;
+  margin-top: 3%;
 }
 
 #cover-info > h1:first-child {
@@ -298,7 +295,7 @@ a {
 
 .Typewriter {
   margin-top: -5px;
-  margin-bottom: 15px;
+  margin-bottom: 20%;
   min-width: 300px;
   font-size: 100%;
   color: var(--textTitle);
@@ -351,7 +348,7 @@ a {
   height: 35px;
   width: 150px;
   border: 0;
-  margin: 0 5px;
+  margin: 5px 5px;
   transition: all .3s;
   border-radius: var(--radiusStd);
   font-size: 0.9em;
@@ -363,6 +360,13 @@ a {
 #podes button:hover {
   background: var(--icon);
   color: var(--bg);
+}
+
+#podes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #continue {
@@ -623,7 +627,7 @@ a {
   margin: 15px 0;
 }
 
-@media only screen and (max-width: 325px) {
+@media only screen and (min-width: 325px) {
   #podes {
     display: flex;
     justify-content: center;
@@ -641,6 +645,7 @@ a {
 
   .Typewriter {
     font-size: 80%;
+    margin-bottom: 20%;
   }
 
   #social-list li {
@@ -649,13 +654,13 @@ a {
   }
 
   #social-list svg {
-    width: 25px;
+    width: 30px;
   }
 
   #podes button {
-    height: 25px;
+    height: 30px;
     width: 120px;
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
 
   #arrow {
@@ -840,10 +845,10 @@ a {
 
   #img-info-container {
     width: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; */
   }
 
   #cover {
@@ -852,18 +857,13 @@ a {
     min-height: 100vh;
   }
 
-  /* .particles {
-    width: calc(100vw - 50px);
-    height: 100vh;
-  } */
-
   .cover-img {
     width: 35%;
   }
 
   #cover-info {
     margin: 20px 0 0 -10px;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     text-align: start;
   } 
 
@@ -885,6 +885,7 @@ a {
     text-align: start;
     min-width: 365px;
     font-size: 180%;
+    margin-bottom: 20%;
   }
 
   #contactame {
@@ -894,7 +895,7 @@ a {
   }
   
   #contactame p {
-    margin-top: 50%;
+    /* margin-top: 50%; */
     transform: translate(0, -50%);
     color: var(--textNormal);
   }
@@ -907,7 +908,7 @@ a {
     margin-left: 0;
   }
   
-  #social-list:hover #contactame {
+  #social-list:hover ~ #contactame {
     opacity: 1;
   }
 
