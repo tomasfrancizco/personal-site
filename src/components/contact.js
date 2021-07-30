@@ -20,7 +20,7 @@ class Contact extends React.Component {
           className="contact-form"
           method="post"
           // action="https://getform.io/f/035d54f4-515a-461b-8cee-2a2ece721769"
-          data-netlify-recaptcha="true"
+          // data-netlify-recaptcha="true"
           data-netlify="true"
           netlify-honeypot="bot-field"
         >
@@ -72,7 +72,7 @@ class Contact extends React.Component {
               render="explicit"
               data-netlify-recaptcha="true"
             ></div> */}
-            <div data-netlify-recaptcha="true"></div>
+            {/* <div data-netlify-recaptcha="true"></div> */}
           </Form.Group>
           <Form.Group
             uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; offset-top: -100"
