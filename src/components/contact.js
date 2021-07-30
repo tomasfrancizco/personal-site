@@ -19,6 +19,7 @@ class Contact extends React.Component {
         <Form
           className="contact-form"
           method="post"
+          data-netlify-recaptcha="true"
           data-netlify="true"
           netlify-honeypot="bot-field"
         >
@@ -31,6 +32,7 @@ class Contact extends React.Component {
               name="name"
               id="name"
               required
+              disabled="true"
             />
           </Form.Group>
           <p className="hidden">
@@ -47,6 +49,7 @@ class Contact extends React.Component {
               name="email"
               id="email"
               required
+              disabled="true"
             />
           </Form.Group>
           <Form.Group uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; offset-top: -200">
@@ -58,13 +61,25 @@ class Contact extends React.Component {
               id="message"
               className="form-input"
               required
+              disabled="true"
             />
+          </Form.Group>
+          <Form.Group
+            uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; offset-top: -100"
+            id="recaptcha-container"
+          >
+            <div
+              id="g-recaptcha"
+              className="g-recaptcha"
+              data-netlify-recaptcha="true"
+              render="explicit"
+            ></div>
           </Form.Group>
           <Form.Group
             uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; offset-top: -100"
             id="submit-container"
           >
-            <Button type="submit" variant="primary" id="submit">
+            <Button type="submit" variant="primary" id="submit" disabled="true">
               Enviar
             </Button>
           </Form.Group>
