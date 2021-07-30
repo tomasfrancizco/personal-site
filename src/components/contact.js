@@ -19,7 +19,10 @@ class Contact extends React.Component {
         <Form
           className="contact-form"
           method="post"
-          action="https://getform.io/f/035d54f4-515a-461b-8cee-2a2ece721769"
+          // action="https://getform.io/f/035d54f4-515a-461b-8cee-2a2ece721769"
+          data-netlify-recaptcha="true"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
         >
           <Form.Group uk-scrollspy="cls: uk-animation-slide-left; delay: 300; offset-top: -200">
             <Form.Label>Nombre</Form.Label>
@@ -32,6 +35,11 @@ class Contact extends React.Component {
               required
             />
           </Form.Group>
+          <p className="hidden">
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
           <Form.Group uk-scrollspy="cls: uk-animation-slide-right; delay: 300; offset-top: -200">
             <Form.Label>Mail</Form.Label>
             <Form.Control
@@ -62,6 +70,7 @@ class Contact extends React.Component {
               id="g-recaptcha"
               className="g-recaptcha"
               render="explicit"
+              data-netlify-recaptcha="true"
             ></div>
           </Form.Group>
           <Form.Group

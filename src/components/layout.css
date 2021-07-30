@@ -122,6 +122,10 @@ a {
   color: var(--textTitle);
 }
 
+.hidden {
+  display: none;
+}
+
 #recaptcha-container {
   display: flex;
   justify-content: center;
