@@ -849,6 +849,7 @@ a {
 
   #img-info-container {
     width: 100%;
+    margin-left: 15px;
     /* display: flex;
     justify-content: center;
     align-items: center;
@@ -893,15 +894,18 @@ a {
   }
 
   #contactame {
-    display: block;
-    opacity: 0;
+    display: flex;
     transition: opacity .5s;
+    width: 100%;
+
+    justify-content: center;
   }
   
   #contactame p {
-    /* margin-top: 50%; */
+    position: absolute;
     transform: translate(0, -50%);
     color: var(--textNormal);
+    margin-top: 0;
   }
 
   #social-list {
@@ -912,9 +916,9 @@ a {
     margin-left: 0;
   }
   
-  #social-list:hover ~ #contactame {
+  /* #social-list:hover ~ #contactame {
     opacity: 1;
-  }
+  } */
 
   #about {
     flex-direction: row;

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Typewriter from "typewriter-effect"
 // import curriculumVitae from "../files/CVSP - Tomas Freire Knight.pdf"
 import { Link, useStaticQuery } from "gatsby"
@@ -20,25 +20,73 @@ const About = () => {
     daftpunkttocatthomas,
   ]
 
-  const query = useStaticQuery(graphql`
-    query MyCoverQuery {
-      allImageSharp(
-        filter: { fluid: { originalName: { eq: "sinFondo.png" } } }
-      ) {
-        edges {
-          node {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  `)
+  const [showGithub, setShowGithub] = useState("0");
+  const [showLinkedin, setShowLinkedin] = useState("0");
+  const [showInstagram, setShowInstagram] = useState("0");
+  const [showMail, setShowMail] = useState("0");
+
+  const handleOverGithub = () => {
+    setShowGithub("1");
+    setShowLinkedin("0");
+    setShowInstagram("0");
+    setShowMail("0");
+  }
+
+  const handleLeaveGithub = () => {
+    setShowGithub("0");
+  }
+
+  const handleOverLinkedin = () => {
+    setShowGithub("0");
+    setShowLinkedin("1");
+    setShowInstagram("0");
+    setShowMail("0");
+  }
+
+  const handleLeaveLinkedin = () => {
+    setShowLinkedin("0");
+  }
+
+  const handleOverInstagram = () => {
+    setShowGithub("0");
+    setShowLinkedin("0");
+    setShowInstagram("1");
+    setShowMail("0");
+  }
+
+  const handleLeaveInstagram = () => {
+    setShowInstagram("0");
+  }
+
+  const handleOverMail = () => {
+    setShowGithub("0");
+    setShowLinkedin("0");
+    setShowInstagram("0");
+    setShowMail("1");
+  }
+
+  const handleLeaveMail = () => {
+    setShowMail("0");
+  }
+
+  // const query = useStaticQuery(graphql`
+  //   query MyCoverQuery {
+  //     allImageSharp(
+  //       filter: { fluid: { originalName: { eq: "sinFondo.png" } } }
+  //     ) {
+  //       edges {
+  //         node {
+  //           fluid {
+  //             ...GatsbyImageSharpFluid
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <div>
-      {/* <Particles className="particles" /> */}
       <div className="section" id="cover">
         <div id="img-info-container">
           {/* <Img
@@ -65,15 +113,15 @@ const About = () => {
             <div id="podes">
               <div>
                 <a href="/#projects">
-                  <button>Ver mis proyectos</button>
+                  <button>proyectos</button>
                 </a>
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                  <button disabled={true}>Descargar mi CV</button>
+                  <button disabled={true}>curriculum</button>
                 </a>
               </div>
             </div>
             <ul id="social-list">
-              <li>
+              <li onMouseOver={handleOverGithub} onMouseLeave={handleLeaveGithub}>
                 <a
                   href="https://github.com/tomasfrancizco"
                   target="_blank"
@@ -105,7 +153,7 @@ const About = () => {
                   </svg>
                 </a>
               </li>
-              <li>
+              <li onMouseOver={handleOverLinkedin} onMouseLeave={handleLeaveLinkedin}>
                 <a
                   href="https://www.linkedin.com/in/tomasfreire"
                   target="_blank"
@@ -116,7 +164,7 @@ const About = () => {
                   </svg>
                 </a>
               </li>
-              <li>
+              <li onMouseOver={handleOverInstagram} onMouseLeave={handleLeaveInstagram}>
                 <a
                   href="https://www.instagram.com/tomasfrancizco/"
                   target="_blank"
@@ -129,7 +177,7 @@ const About = () => {
                   </svg>
                 </a>
               </li>
-              <li>
+              <li onMouseOver={handleOverMail} onMouseLeave={handleLeaveMail}>
                 <Link to="#contact">
                   <svg viewBox="0 0 512 512">
                     <path d="m187 390c0-112.968.1-126.93 0-126.98-.2-.06-3.28-.02-42.53-.02-8.1 0-15.09-6.22-15.45-14.31-.39-8.59 6.47-15.69 14.98-15.69 39.66 0 42.8.04 43-.02.1-.05 0-12.775 0-110.98 0-8.28 6.72-15 15-15h169.02c-39.58-41.19-94.91-66-155.02-66-119.1 0-216 96.45-216 215s96.9 215 216 215c60.08 0 115.42-24.79 155.02-66h-169.02c-8.28 0-15-6.72-15-15zm-59-221h23.53c8.1 0 15.09 6.22 15.45 14.31.39 8.59-6.47 15.69-14.98 15.69h-23.53c-8.1 0-15.09-6.22-15.45-14.31-.39-8.59 6.47-15.69 14.98-15.69zm16 158h-47.53c-8.1 0-15.09-6.22-15.45-14.31-.39-8.59 6.47-15.69 14.98-15.69h47.53c8.1 0 15.09 6.22 15.45 14.31.39 8.59-6.47 15.69-14.98 15.69z" />
@@ -140,7 +188,18 @@ const About = () => {
               </li>
             </ul>
             <div id="contactame">
-              <p>contactame</p>
+              <p className="contactame-via" id="contactame-github" style={{opacity: showGithub}} >
+                contactame via Github
+              </p>
+              <p className="contactame-via" id="contactame-linkedin" style={{opacity: showLinkedin}}>
+                contactame via Linkedin
+              </p>
+              <p className="contactame-via" id="contactame-instagram" style={{opacity: showInstagram}}>
+                contactame via Instagram
+              </p>
+              <p className="contactame-via" id="contactame-mail" style={{opacity: showMail}}>
+                contactame via Mail
+              </p>
             </div>
           </div>
         </div>
