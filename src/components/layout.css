@@ -318,6 +318,8 @@ a {
 #social-list li {
   width: 40px;
   height: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 #social-list svg {
@@ -329,11 +331,6 @@ a {
 #social-list svg:hover {
   transform: scale(1.1);
 }
-
-#social-list > li {
-  margin: 2px 5px;
-}
-
 
 #contactame {
   display: none
@@ -352,7 +349,7 @@ a {
   height: 35px;
   width: 150px;
   border: 0;
-  margin: 5px 5px;
+  margin: 5px;
   transition: all .3s;
   border-radius: var(--radiusStd);
   font-size: 0.9em;
@@ -641,6 +638,8 @@ a {
 
   #podes div {
     text-align: center;
+    display: flex;
+    justify-content: center;
   }
 
   #cover-info > h1 {
@@ -653,7 +652,7 @@ a {
   }
 
   #social-list li {
-    width: 30px;
+    width: 40px;
     height: 30px;
   }
 
@@ -850,10 +849,6 @@ a {
   #img-info-container {
     width: 100%;
     margin-left: 15px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row-reverse; */
   }
 
   #cover {
@@ -915,10 +910,6 @@ a {
   #social-list li:first-child {
     margin-left: 0;
   }
-  
-  /* #social-list:hover ~ #contactame {
-    opacity: 1;
-  } */
 
   #about {
     flex-direction: row;
@@ -929,8 +920,8 @@ a {
     margin-right: 20px;
   }
 
-  #podes button:first-child {
-    margin-left: 0;
+  #continue {
+    margin-left: 5px;
   }
 
   .card:hover {
