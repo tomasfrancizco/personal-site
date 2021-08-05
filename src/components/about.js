@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react"
 import Typewriter from "typewriter-effect"
 // import curriculumVitae from "../files/CVSP - Tomas Freire Knight.pdf"
 import { Link, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
-import Particles from "react-particles-js"
+// import Img from "gatsby-image"
 
 import daftpunktocatguy from "../images/octodex/daftpunktocat-guy.gif"
 import daftpunkttocatthomas from "../images/octodex/daftpunktocat-thomas.gif"
@@ -20,6 +19,7 @@ const About = () => {
     daftpunkttocatthomas,
   ]
 
+  const [octoImage, setOctoImage] = useState(octoFiles[0])
   const [social, setSocial] = useState("")
   const [showContactame, setShowContactame] = useState("0")
 
@@ -31,6 +31,10 @@ const About = () => {
   const handleLeaveContactame = () => {
     setShowContactame("0")
   }
+
+  useEffect(() => {
+    setOctoImage(octoFiles[Math.floor(Math.random() * octoFiles.length)])
+  }, [])
 
   // const query = useStaticQuery(graphql`
   //   query MyCoverQuery {
@@ -218,7 +222,7 @@ const About = () => {
       </div>
       <div className="section half-height" id="about">
         <img
-          src={octoFiles[Math.floor(Math.random() * octoFiles.length)]}
+          src={octoImage}
           alt="octocat"
           uk-scrollspy="cls: uk-animation-slide-left; delay: 300; offset-top: -200"
         />
