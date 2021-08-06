@@ -1,14 +1,16 @@
-import React, { useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
 import sun from "../../images/sun.svg"
 import moon from "../../images/moon.svg"
 
 const DarkMode = () => {
 
+  const [darkTheme, setDarkTheme] = useState(null);
+
   useEffect(() => {
     const theme = window.document.body.getAttribute("class");
     const ball = window.document.getElementById("ball-img");
-    theme === "dark" ? ball.src = sun : ball.src = moon;
+    theme === "dark" ? setDarkTheme(sun) : setDarkTheme(moon);
   }, [])
 
   return (
@@ -20,6 +22,7 @@ const DarkMode = () => {
               className="darkmode"
               onClick={() => {
                 toggleTheme(theme === "light" ? "dark" : "light")
+                setDarkTheme(theme === "light" ? sun : moon)
               }}
               role="button"
               tabIndex="-1"
@@ -29,7 +32,7 @@ const DarkMode = () => {
                   {" "}
                   <img
                     id="ball-img"
-                    src={theme === "dark" ? sun : moon}
+                    src={darkTheme}
                     alt="darkmode"
                   />
                 </div>
