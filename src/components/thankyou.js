@@ -2,13 +2,16 @@ import { navigate, Link } from "gatsby"
 import React, { useState } from "react"
 
 const ThankYou = () => {
-  const [timeLeft, setTimeLeft] = useState(5)
+
+  let secs = 5;
+
+  const [timeLeft, setTimeLeft] = useState(secs)
 
   // const time = () => {
-  //   let secs = 5
   //   const interval = setInterval(() => {
-  //     setTimeLeft(secs)
   //     secs -= 1
+  //     console.log(secs)
+  //     setTimeLeft(secs)
   //   }, 1000)
   //   console.log(timeLeft)
   //   if (secs <= 0) {
