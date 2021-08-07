@@ -1,33 +1,28 @@
 import { navigate, Link } from "gatsby"
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 
 const ThankYou = () => {
+  const [seconds, setSeconds] = useState(5)
 
-  let secs = 5;
-
-  const [timeLeft, setTimeLeft] = useState(secs)
-
-  // const time = () => {
-  //   const interval = setInterval(() => {
-  //     secs -= 1
-  //     console.log(secs)
-  //     setTimeLeft(secs)
-  //   }, 1000)
-  //   console.log(timeLeft)
-  //   if (secs <= 0) {
-  //     clearInterval(interval)
-  //     navigate("/")
-  //   }
-  // }
+  useEffect(() => {
+    let counter = 5
+    let interval = setInterval(() => {
+      setSeconds(seconds => seconds - 1)
+      counter--
+      if (seconds <= 0 || counter <= 0) {
+        clearInterval(interval)
+        navigate("/")
+      }
+    }, 1000)
+  }, [])
 
   return (
     <div className="section full-height">
       <div>Gracias por tu mensaje!</div>
-      {/* <div>
-        Tu navegador te redirigirá a la Home nuevamente en... {timeLeft}{" "}
-        segundos
-      </div> */}
-      <Link to="/">Volver</Link>
+      <div>
+        Tu navegador te redirigirá a la Home nuevamente en... {seconds >= 0 ? seconds : "0"} segundos
+      </div>
+      <Link to="/">Volver ahora</Link>
     </div>
   )
 }

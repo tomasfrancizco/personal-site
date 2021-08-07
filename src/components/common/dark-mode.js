@@ -4,13 +4,11 @@ import sun from "../../images/sun.svg"
 import moon from "../../images/moon.svg"
 
 const DarkMode = () => {
-
-  const [darkTheme, setDarkTheme] = useState(null);
+  const [darkTheme, setDarkTheme] = useState(null)
 
   useEffect(() => {
-    const theme = window.document.body.getAttribute("class");
-    const ball = window.document.getElementById("ball-img");
-    theme === "dark" ? setDarkTheme(sun) : setDarkTheme(moon);
+    const theme = window.document.body.getAttribute("class")
+    theme === "dark" ? setDarkTheme(sun) : setDarkTheme(moon)
   }, [])
 
   return (
@@ -30,11 +28,7 @@ const DarkMode = () => {
               <div id="toggle-container">
                 <div id="ball">
                   {" "}
-                  <img
-                    id="ball-img"
-                    src={darkTheme}
-                    alt="darkmode"
-                  />
+                  <img id="ball-img" src={darkTheme} alt="darkmode" />
                 </div>
               </div>
             </div>
